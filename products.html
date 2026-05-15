@@ -4,17 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products | Winco Blinds</title>
+  <meta name="description" content="Explore custom dual shades, roller shades, and motorized blinds made locally by Winco Blinds in Edmonton." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Winco Blinds</span></a>
-    <button class="nav-toggle" aria-label="Open navigation">Menu</button>
-    <nav class="site-nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">W</span>
+      <span class="brand-name">Winco Blinds</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="products.html">Products</a>
+      <a href="products.html" class="active">Products</a>
       <a href="guides.html">Guides</a>
       <a href="gallery.html">Gallery</a>
       <a href="faq.html">FAQ</a>
@@ -23,23 +27,130 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <section class="page-hero">
-      <p class="eyebrow">Winco Blinds</p>
+    <section class="page-hero inner-page-hero">
+      <p class="eyebrow">Products</p>
       <h1>Products</h1>
-      <p>This is the starter page for Products. Replace this content with the final page copy, images, and sections.</p>
+      <p>Custom window covering solutions made locally in Edmonton.</p>
     </section>
+
     <section class="section">
-      <div class="placeholder-panel">
-        <h2>Page Content Area</h2>
-        <p>Codex can use this file as the starting point for the Products page.</p>
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Product Categories</p>
+          <h2>Choose the window covering style that fits your space.</h2>
+        </div>
+        <p>Explore Winco Window Fashion products for privacy, light control, convenience, and a clean finished look.</p>
+      </div>
+      <div class="card-grid three">
+        <article class="product-card category-card">
+          <div class="image-placeholder category-image-placeholder dual-shades-category-placeholder">
+            <span>Dual Shades Image</span>
+          </div>
+          <div class="card-body">
+            <h3>Dual Shades</h3>
+            <p>Modern layered shades designed for privacy, light control, and a clean interior look.</p>
+            <a href="dual-shades.html">View Products</a>
+          </div>
+        </article>
+        <article class="product-card category-card">
+          <div class="image-placeholder category-image-placeholder roller-shades-category-placeholder">
+            <span>Roller Shades Image</span>
+          </div>
+          <div class="card-body">
+            <h3>Roller Shades</h3>
+            <p>Simple, durable, and versatile shades available in blackout, light-filtering, and sunscreen fabrics.</p>
+            <a href="roller-shades.html">View Products</a>
+          </div>
+        </article>
+        <article class="product-card category-card">
+          <div class="image-placeholder category-image-placeholder motorized-blinds-category-placeholder">
+            <span>Motorized Blinds Image</span>
+          </div>
+          <div class="card-body">
+            <h3>Motorized Blinds</h3>
+            <p>Convenient control options for homes, offices, and commercial spaces.</p>
+            <a href="motorized-blinds.html">View Products</a>
+          </div>
+        </article>
       </div>
     </section>
+
+    <section class="section soft-section">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Winco Window Fashion</p>
+          <h2>Local product support from selection to installation.</h2>
+        </div>
+        <p>Winco Blinds helps customers compare fabrics, measure accurately, manufacture locally, and finish each project with professional installation.</p>
+      </div>
+      <div class="feature-card-grid product-feature-grid">
+        <article class="feature-card"><span>01</span><h3>Local Manufacturing</h3><p>Custom products are made locally for better fit control and reliable turnaround.</p></article>
+        <article class="feature-card"><span>02</span><h3>Factory-Direct Pricing</h3><p>Direct production keeps projects competitively priced without a complicated process.</p></article>
+        <article class="feature-card"><span>03</span><h3>Wide Fabric Selection</h3><p>Choose from room darkening, light filtering, blackout, and sunscreen options.</p></article>
+        <article class="feature-card"><span>04</span><h3>Professional Measurement</h3><p>Each project starts with accurate measuring and practical product guidance.</p></article>
+        <article class="feature-card"><span>05</span><h3>Installation Service</h3><p>Installers mount, test, and review the final result for a polished finish.</p></article>
+        <article class="feature-card"><span>06</span><h3>5-Year Warranty</h3><p>Warranty support is available after installation for added confidence.</p></article>
+      </div>
+    </section>
+
+    <section class="section showroom-section">
+      <div class="showroom-panel">
+        <div>
+          <p class="eyebrow">Seeing Is Believing</p>
+          <h2>Visit our Edmonton showroom</h2>
+          <p>See fabrics, compare opacity levels, and review custom window covering options in person.</p>
+          <div class="showroom-address">
+            <strong>9790 - 51 Ave NW</strong>
+            <span>Edmonton, AB, Canada</span>
+          </div>
+        </div>
+        <div class="service-area-card">
+          <h3>Service Area</h3>
+          <p>Edmonton, Sherwood Park, St. Albert, Nisku, Leduc, Millet, Stony Plain, Spruce Grove, and surrounding areas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inquiry-section">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Quick Inquiry</p>
+          <h2>Contact Winco about products, fabrics, or measurements.</h2>
+        </div>
+        <p>This static inquiry layout is ready for a backend connection later.</p>
+      </div>
+      <form class="inquiry-form" action="#" method="post">
+        <label>Subject<input type="text" name="subject" placeholder="Product inquiry" /></label>
+        <label>First Name<input type="text" name="first-name" placeholder="Your first name" /></label>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" /></label>
+        <label>Organization<input type="text" name="organization" placeholder="Optional" /></label>
+        <label>Contact Number<input type="tel" name="contact-number" placeholder="Phone number" /></label>
+        <label class="form-field-full">Message<textarea name="message" rows="5" placeholder="Tell us what you are looking for"></textarea></label>
+        <div class="form-actions form-field-full">
+          <button class="btn btn-primary" type="button">Send Inquiry</button>
+          <p>Form connection will be added later.</p>
+        </div>
+      </form>
+    </section>
   </main>
+
   <footer class="site-footer">
-    <div><strong>Winco Blinds</strong><p>Custom blinds and window fashion in Edmonton.</p></div>
-    <div class="footer-links"><a href="app/index.html">Dealer / Staff App</a><a href="contact.html">Contact</a></div>
+    <div class="footer-brand">
+      <strong>Winco Blinds</strong>
+      <p>Custom blinds and window fashion in Edmonton.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="app/index.html">Dealer / Staff App</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

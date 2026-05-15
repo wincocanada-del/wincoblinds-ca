@@ -4,17 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roller Shades | Winco Blinds</title>
+  <meta name="description" content="Explore Winco Blinds roller shades including blackout, light filtering, and sunscreen fabric collections." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Winco Blinds</span></a>
-    <button class="nav-toggle" aria-label="Open navigation">Menu</button>
-    <nav class="site-nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">W</span>
+      <span class="brand-name">Winco Blinds</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="products.html">Products</a>
+      <a href="products.html" class="active">Products</a>
       <a href="guides.html">Guides</a>
       <a href="gallery.html">Gallery</a>
       <a href="faq.html">FAQ</a>
@@ -23,23 +27,66 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <section class="page-hero">
-      <p class="eyebrow">Winco Blinds</p>
+    <section class="page-hero inner-page-hero">
+      <p class="eyebrow">Products</p>
       <h1>Roller Shades</h1>
-      <p>This is the starter page for Roller Shades. Replace this content with the final page copy, images, and sections.</p>
+      <p>Simple, durable, and versatile shades for privacy, glare control, and clean modern interiors.</p>
     </section>
-    <section class="section">
-      <div class="placeholder-panel">
-        <h2>Page Content Area</h2>
-        <p>Codex can use this file as the starting point for the Roller Shades page.</p>
+
+    <section class="section product-intro-section">
+      <div class="intro-layout">
+        <div>
+          <p class="eyebrow">Category Intro</p>
+          <h2>Blackout, light filtering, and sunscreen fabrics for every room.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Roller shades are a practical choice for homes, offices, and commercial projects where clean lines and fabric performance matter.</p>
+          <p>The catalog below is powered by product data so fabric families can be expanded as images and specifications are finalized.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Roller Shades Collection</p>
+          <h2>Practical fabric choices with a minimal profile.</h2>
+        </div>
+        <p>Each card is ready for a future detail page, fabric gallery, or sample request flow.</p>
+      </div>
+      <div class="product-catalog-grid" data-product-grid="roller"></div>
+    </section>
+
+    <section class="section contact-cta-section">
+      <div class="contact-cta-inner">
+        <p class="eyebrow">Fabric Guidance</p>
+        <h2>Need help choosing a fabric?</h2>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Contact Winco</a>
+          <a class="btn btn-secondary" href="products.html">Visit Showroom</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <div><strong>Winco Blinds</strong><p>Custom blinds and window fashion in Edmonton.</p></div>
-    <div class="footer-links"><a href="app/index.html">Dealer / Staff App</a><a href="contact.html">Contact</a></div>
+    <div class="footer-brand">
+      <strong>Winco Blinds</strong>
+      <p>Custom blinds and window fashion in Edmonton.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="app/index.html">Dealer / Staff App</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </footer>
+
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/products-data.js"></script>
 </body>
 </html>
