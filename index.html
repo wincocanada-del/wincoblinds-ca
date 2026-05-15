@@ -13,8 +13,8 @@
       <span class="brand-mark">W</span>
       <span>Winco Blinds</span>
     </a>
-    <button class="nav-toggle" aria-label="Open navigation">Menu</button>
-    <nav class="site-nav">
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -29,19 +29,28 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero home-hero">
       <div class="hero-content">
         <p class="eyebrow">Edmonton Local Manufacturing</p>
-        <h1>Custom blinds made for modern homes and businesses.</h1>
-        <p class="hero-text">Factory-direct pricing, local production, and professional installation from measurement to completion.</p>
+        <h1>Custom blinds, made locally for calm modern spaces.</h1>
+        <p class="hero-text">Premium window coverings with factory-direct pricing, thoughtful fabric guidance, and professional installation from measurement to final fit.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="contact.html">Get Free Estimate</a>
           <a class="btn btn-secondary" href="products.html">View Products</a>
         </div>
       </div>
+      <div class="hero-visual" aria-label="Modern window blinds preview">
+        <div class="image-placeholder hero-image-placeholder">
+          <span>Home Hero Image</span>
+        </div>
+        <div class="hero-note">
+          <span>Factory direct</span>
+          <strong>Local production, precise fit, clean finish.</strong>
+        </div>
+      </div>
     </section>
 
-    <section class="trust-bar section-narrow">
+    <section class="trust-bar section-narrow" aria-label="Why choose Winco Blinds">
       <div>Local Manufacturing</div>
       <div>Factory Direct Price</div>
       <div>7-Day Turnaround</div>
@@ -50,49 +59,137 @@
     </section>
 
     <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Products</p>
-        <h2>Window coverings designed around your space.</h2>
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Products</p>
+          <h2>Window coverings for every room and routine.</h2>
+        </div>
+        <p>Start with the most requested styles for Edmonton homes, offices, rentals, and commercial interiors.</p>
       </div>
       <div class="card-grid three">
         <article class="product-card">
-          <div class="image-placeholder">Dual Shades Image</div>
-          <h3>Dual Shades</h3>
-          <p>Flexible light control with a soft modern look.</p>
-          <a href="dual-shades.html">View Dual Shades</a>
+          <div class="image-placeholder product-image-placeholder dual-shades-placeholder">
+            <span>Dual Shades Image</span>
+          </div>
+          <div class="card-body">
+            <h3>Dual Shades</h3>
+            <p>Layered light control with a soft architectural look for living rooms, bedrooms, and offices.</p>
+            <a href="dual-shades.html">View Dual Shades</a>
+          </div>
         </article>
         <article class="product-card">
-          <div class="image-placeholder">Roller Shades Image</div>
-          <h3>Roller Shades</h3>
-          <p>Clean, practical shades for residential and commercial spaces.</p>
-          <a href="roller-shades.html">View Roller Shades</a>
+          <div class="image-placeholder product-image-placeholder roller-shades-placeholder">
+            <span>Roller Shades Image</span>
+          </div>
+          <div class="card-body">
+            <h3>Roller Shades</h3>
+            <p>Minimal, practical shades with clean lines and fabric options for privacy, glare, and comfort.</p>
+            <a href="roller-shades.html">View Roller Shades</a>
+          </div>
         </article>
         <article class="product-card">
-          <div class="image-placeholder">Motorized Image</div>
-          <h3>Motorized Blinds</h3>
-          <p>Smart, convenient control for everyday living.</p>
-          <a href="motorized-blinds.html">View Motorized</a>
+          <div class="image-placeholder product-image-placeholder motorized-blinds-placeholder">
+            <span>Motorized Blinds Image</span>
+          </div>
+          <div class="card-body">
+            <h3>Motorized Blinds</h3>
+            <p>Smart everyday control for high windows, family routines, and polished modern interiors.</p>
+            <a href="motorized-blinds.html">View Motorized Blinds</a>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="section soft-section">
-      <div class="section-head">
-        <p class="eyebrow">Process</p>
-        <h2>From measurement to installation.</h2>
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Process</p>
+          <h2>A clear path from first visit to final installation.</h2>
+        </div>
+        <p>Every project is measured, quoted, built, and installed with one local team.</p>
       </div>
       <div class="process-grid">
-        <div><span>01</span><h3>Free Measurement</h3><p>We visit your space and check exact sizes.</p></div>
-        <div><span>02</span><h3>Quote & Selection</h3><p>Choose product, fabric, color, and control options.</p></div>
-        <div><span>03</span><h3>Local Production</h3><p>Your blinds are manufactured locally in Edmonton.</p></div>
-        <div><span>04</span><h3>Installation</h3><p>Professional installation and final check.</p></div>
+        <article>
+          <span>01</span>
+          <h3>Free Measurement</h3>
+          <p>We visit your space, confirm window sizes, and note installation details.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Quote & Fabric Selection</h3>
+          <p>Choose product type, fabric, color, opacity, and control options with clear pricing.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Local Manufacturing</h3>
+          <p>Your blinds are made locally for a precise fit and faster project timeline.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Professional Installation</h3>
+          <p>Our installers mount, test, and finish each covering so everything works smoothly.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section cta-section">
-      <h2>Ready to upgrade your windows?</h2>
-      <p>Contact Winco Blinds for a free onsite estimate.</p>
-      <a class="btn btn-primary" href="contact.html">Contact Winco</a>
+    <section class="section gallery-preview-section">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Gallery</p>
+          <h2>Preview the look before the final image library arrives.</h2>
+        </div>
+        <a class="text-arrow" href="gallery.html">View Gallery</a>
+      </div>
+      <div class="gallery-preview-grid">
+        <div class="image-placeholder gallery-image-placeholder gallery-image-large">
+          <span>Gallery Image 01</span>
+        </div>
+        <div class="image-placeholder gallery-image-placeholder">
+          <span>Gallery Image 02</span>
+        </div>
+        <div class="image-placeholder gallery-image-placeholder">
+          <span>Gallery Image 03</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-preview-section">
+      <div class="section-head centered-head">
+        <p class="eyebrow">Reviews</p>
+        <h2>Trusted for attentive service and clean installation.</h2>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="review-stars">5.0 / 5.0</div>
+          <p>Great service from measurement to install. The blinds look clean and fit perfectly.</p>
+          <strong>Residential Client</strong>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">5.0 / 5.0</div>
+          <p>Helpful fabric recommendations, transparent pricing, and a smooth installation day.</p>
+          <strong>Homeowner in Edmonton</strong>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">5.0 / 5.0</div>
+          <p>Fast turnaround and professional finish for our office window coverings.</p>
+          <strong>Commercial Client</strong>
+        </article>
+      </div>
+      <div class="section-link-row">
+        <a class="text-arrow" href="reviews.html">Read Reviews</a>
+      </div>
+    </section>
+
+    <section class="section contact-cta-section">
+      <div class="contact-cta-inner">
+        <p class="eyebrow">Free Onsite Estimate</p>
+        <h2>Ready to make your windows feel finished?</h2>
+        <p>Book a local visit for measurement, product guidance, and a clear factory-direct quote.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Contact Winco</a>
+          <a class="btn btn-secondary" href="services.html">Explore Services</a>
+        </div>
+      </div>
     </section>
   </main>
 
