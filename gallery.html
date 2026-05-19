@@ -4,42 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Winco Blinds</title>
+  <meta name="description" content="Browse completed window covering projects for homes, offices, clinics, and commercial spaces by Winco Blinds." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Winco Blinds</span></a>
-    <button class="nav-toggle" aria-label="Open navigation">Menu</button>
-    <nav class="site-nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">W</span>
+      <span class="brand-name">Winco Blinds</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="products.html">Products</a>
       <a href="guides.html">Guides</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="gallery.html" class="active">Gallery</a>
       <a href="faq.html">FAQ</a>
       <a href="reviews.html">Reviews</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <section class="page-hero">
-      <p class="eyebrow">Winco Blinds</p>
+    <section class="page-hero inner-page-hero">
+      <p class="eyebrow">Gallery</p>
       <h1>Gallery</h1>
-      <p>This is the starter page for Gallery. Replace this content with the final page copy, images, and sections.</p>
+      <p>A look at completed window covering projects for homes and businesses.</p>
     </section>
-    <section class="section">
-      <div class="placeholder-panel">
-        <h2>Page Content Area</h2>
-        <p>Codex can use this file as the starting point for the Gallery page.</p>
+
+    <section class="section gallery-section">
+      <div class="gallery-filter-bar" aria-label="Gallery categories">
+        <button class="gallery-filter active" type="button" data-gallery-filter="all">All</button>
+        <button class="gallery-filter" type="button" data-gallery-filter="residential">Residential</button>
+        <button class="gallery-filter" type="button" data-gallery-filter="commercial">Commercial</button>
+        <button class="gallery-filter" type="button" data-gallery-filter="dual">Dual Shades</button>
+        <button class="gallery-filter" type="button" data-gallery-filter="roller">Roller Shades</button>
+        <button class="gallery-filter" type="button" data-gallery-filter="motorized">Motorized</button>
+      </div>
+
+      <div class="project-gallery-grid">
+        <article class="gallery-project-card" data-gallery-category="residential dual">
+          <div class="image-placeholder project-gallery-image-placeholder living-room-dual-shades-placeholder"><span>Project Image 01</span></div>
+          <span>Residential</span>
+          <h3>Living Room Dual Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="commercial roller">
+          <div class="image-placeholder project-gallery-image-placeholder office-roller-shades-placeholder"><span>Project Image 02</span></div>
+          <span>Commercial</span>
+          <h3>Office Roller Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="residential roller">
+          <div class="image-placeholder project-gallery-image-placeholder bedroom-blackout-shades-placeholder"><span>Project Image 03</span></div>
+          <span>Residential</span>
+          <h3>Bedroom Blackout Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="commercial dual">
+          <div class="image-placeholder project-gallery-image-placeholder commercial-window-coverings-placeholder"><span>Project Image 04</span></div>
+          <span>Commercial</span>
+          <h3>Commercial Window Coverings</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="commercial roller">
+          <div class="image-placeholder project-gallery-image-placeholder dental-clinic-shades-placeholder"><span>Project Image 05</span></div>
+          <span>Commercial</span>
+          <h3>Dental Clinic Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="residential motorized">
+          <div class="image-placeholder project-gallery-image-placeholder modern-condo-blinds-placeholder"><span>Project Image 06</span></div>
+          <span>Residential</span>
+          <h3>Modern Condo Blinds</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="commercial dual">
+          <div class="image-placeholder project-gallery-image-placeholder conference-room-dual-shades-placeholder"><span>Project Image 07</span></div>
+          <span>Commercial</span>
+          <h3>Conference Room Dual Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="residential roller">
+          <div class="image-placeholder project-gallery-image-placeholder kitchen-roller-shades-placeholder"><span>Project Image 08</span></div>
+          <span>Residential</span>
+          <h3>Kitchen Roller Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="commercial roller">
+          <div class="image-placeholder project-gallery-image-placeholder gym-sunscreen-shades-placeholder"><span>Project Image 09</span></div>
+          <span>Commercial</span>
+          <h3>Gym Sunscreen Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="residential dual">
+          <div class="image-placeholder project-gallery-image-placeholder bedroom-dual-shades-placeholder"><span>Project Image 10</span></div>
+          <span>Residential</span>
+          <h3>Bedroom Dual Shades</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="commercial motorized">
+          <div class="image-placeholder project-gallery-image-placeholder boardroom-motorized-blinds-placeholder"><span>Project Image 11</span></div>
+          <span>Commercial</span>
+          <h3>Boardroom Motorized Blinds</h3>
+        </article>
+        <article class="gallery-project-card" data-gallery-category="residential motorized">
+          <div class="image-placeholder project-gallery-image-placeholder family-room-motorized-shades-placeholder"><span>Project Image 12</span></div>
+          <span>Residential</span>
+          <h3>Family Room Motorized Shades</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section featured-project-section soft-section">
+      <div class="featured-project-panel">
+        <div class="image-placeholder featured-gallery-image-placeholder">
+          <span>Featured Project Image</span>
+        </div>
+        <div>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Designed for every space</h2>
+          <p>From residential living rooms to commercial offices, Winco provides custom window coverings designed for privacy, light control, and a clean finished look.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-cta-section">
+      <div class="contact-cta-inner">
+        <p class="eyebrow">Project Planning</p>
+        <h2>Want to see what works for your space?</h2>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Book Free Estimate</a>
+          <a class="btn btn-secondary" href="products.html">View Products</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <div><strong>Winco Blinds</strong><p>Custom blinds and window fashion in Edmonton.</p></div>
-    <div class="footer-links"><a href="app/index.html">Dealer / Staff App</a><a href="contact.html">Contact</a></div>
+    <div class="footer-brand">
+      <strong>Winco Blinds</strong>
+      <p>Custom blinds and window fashion in Edmonton.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="app/index.html">Dealer / Staff App</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

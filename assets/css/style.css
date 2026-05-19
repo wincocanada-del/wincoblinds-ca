@@ -513,6 +513,126 @@ p { color: var(--muted); line-height: 1.7; }
     linear-gradient(90deg, rgba(255,255,255,0.18) 0 14%, transparent 14% 20%, rgba(255,255,255,0.16) 20% 38%, transparent 38% 44%, rgba(255,255,255,0.18) 44% 62%, transparent 62% 100%),
     linear-gradient(135deg, #ece4d8, #bbb5aa);
 }
+.guide-card-grid {
+  display: grid;
+  gap: 18px;
+}
+.guide-card-grid.two { grid-template-columns: repeat(2, 1fr); }
+.guide-card-grid.four { grid-template-columns: repeat(4, 1fr); }
+.guide-card {
+  padding: 14px;
+  background: rgba(255,255,255,0.74);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+.guide-card h3 { margin-bottom: 10px; }
+.guide-card p { margin-bottom: 0; }
+.guide-image-placeholder {
+  height: 260px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.18), rgba(255,255,255,0)),
+    linear-gradient(135deg, #e8dfd3, #cfc2b0);
+}
+.outside-mount-guide-placeholder { background: linear-gradient(135deg, #ece7de, #c7cfcc); }
+.compact-guide-card {
+  min-height: 210px;
+  padding: 24px;
+}
+.compact-guide-card > span {
+  display: inline-flex;
+  margin-bottom: 28px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+}
+.note-cta-section { padding-top: 74px; }
+.note-cta-panel {
+  display: grid;
+  justify-items: center;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+.note-cta-panel p:not(.eyebrow) { max-width: 680px; }
+.gallery-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.gallery-filter {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  color: var(--muted-strong);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+.gallery-filter:hover,
+.gallery-filter.active {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: white;
+}
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.gallery-project-card {
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: opacity 180ms ease, transform 180ms ease, border-color 180ms ease;
+}
+.gallery-project-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--line-strong);
+}
+.gallery-project-card.is-hidden { display: none; }
+.gallery-project-card > span {
+  display: inline-flex;
+  margin: 2px 0 10px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+}
+.gallery-project-card h3 { margin-bottom: 4px; }
+.project-gallery-image-placeholder {
+  height: 240px;
+  margin-bottom: 14px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0)),
+    linear-gradient(145deg, #e9e3da, #c8beb0);
+}
+.office-roller-shades-placeholder,
+.dental-clinic-shades-placeholder,
+.gym-sunscreen-shades-placeholder { background: linear-gradient(145deg, #e7e4de, #c9d0ce); }
+.modern-condo-blinds-placeholder,
+.boardroom-motorized-blinds-placeholder,
+.family-room-motorized-shades-placeholder { background: linear-gradient(145deg, #efe8dd, #bbb5aa); }
+.featured-project-panel {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.86fr) minmax(0, 0.78fr);
+  gap: clamp(28px, 5vw, 70px);
+  align-items: center;
+}
+.featured-gallery-image-placeholder {
+  height: min(42vw, 430px);
+  min-height: 320px;
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.18), rgba(255,255,255,0)),
+    linear-gradient(135deg, #e8dfd3, #c8beb0);
+}
 
 .site-footer {
   display: grid;
@@ -584,6 +704,9 @@ p { color: var(--muted); line-height: 1.7; }
   .mission-copy { padding: 0; border-left: 0; }
   .showroom-panel, .motorized-layout { grid-template-columns: 1fr; }
   .product-catalog-grid { grid-template-columns: repeat(2, 1fr); }
+  .guide-card-grid.two, .guide-card-grid.four { grid-template-columns: repeat(2, 1fr); }
+  .project-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .featured-project-panel { grid-template-columns: 1fr; }
   .gallery-preview-grid { grid-template-columns: 1fr; grid-template-rows: none; }
   .gallery-image-large { grid-row: auto; min-height: 300px; }
   .site-footer { grid-template-columns: 1fr; }
@@ -617,6 +740,10 @@ p { color: var(--muted); line-height: 1.7; }
   .form-actions { align-items: stretch; }
   .product-catalog-grid { grid-template-columns: 1fr; }
   .motorized-control-placeholder { min-height: 280px; }
+  .guide-card-grid.two, .guide-card-grid.four, .project-gallery-grid { grid-template-columns: 1fr; }
+  .compact-guide-card { min-height: auto; padding: 22px; }
+  .guide-image-placeholder, .project-gallery-image-placeholder, .featured-gallery-image-placeholder { min-height: 240px; height: 64vw; }
+  .gallery-filter { flex: 1 1 auto; }
   .process-grid article { min-height: auto; }
   .footer-links { flex-direction: column; gap: 10px; }
 }

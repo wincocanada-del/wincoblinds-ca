@@ -22,4 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  const galleryFilters = document.querySelectorAll('[data-gallery-filter]');
+  const galleryCards = document.querySelectorAll('[data-gallery-category]');
+
+  if (galleryFilters.length && galleryCards.length) {
+    galleryFilters.forEach((filter) => {
+      filter.addEventListener('click', () => {
+        const selected = filter.dataset.galleryFilter;
+
+        galleryFilters.forEach((item) => item.classList.remove('active'));
+        filter.classList.add('active');
+
+        galleryCards.forEach((card) => {
+          const categories = card.dataset.galleryCategory.split(' ');
+          const shouldShow = selected === 'all' || categories.includes(selected);
+          card.classList.toggle('is-hidden', !shouldShow);
+        });
+      });
+    });
+  }
 });
