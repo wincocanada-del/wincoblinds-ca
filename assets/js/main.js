@@ -42,4 +42,42 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  const faqFilters = document.querySelectorAll('.faq-filter');
+
+  if (faqFilters.length) {
+    faqFilters.forEach((filter) => {
+      filter.addEventListener('click', () => {
+        faqFilters.forEach((item) => item.classList.remove('active'));
+        filter.classList.add('active');
+      });
+    });
+  }
+
+  const faqAccordion = document.querySelector('[data-faq-accordion]');
+
+  if (faqAccordion) {
+    const faqItems = faqAccordion.querySelectorAll('.faq-item');
+
+    faqItems.forEach((item) => {
+      const question = item.querySelector('.faq-question');
+
+      if (!question) return;
+
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('is-open');
+
+        faqItems.forEach((otherItem) => {
+          otherItem.classList.remove('is-open');
+          const otherQuestion = otherItem.querySelector('.faq-question');
+          if (otherQuestion) otherQuestion.setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+          item.classList.add('is-open');
+          question.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  }
 });
