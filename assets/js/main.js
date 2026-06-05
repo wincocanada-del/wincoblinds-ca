@@ -80,4 +80,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  const contactForm = document.querySelector('[data-contact-form]');
+
+  if (contactForm) {
+    const message = contactForm.querySelector('[data-contact-form-message]');
+
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      if (message) {
+        message.textContent = 'Form connection will be added later. Thank you for your inquiry.';
+      }
+    });
+  }
 });

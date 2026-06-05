@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Winco Blinds</title>
+  <title>Contact Winco Blinds | Edmonton Custom Blinds</title>
+  <meta name="description" content="Contact Winco Blinds to book a free estimate, visit the Edmonton showroom, or send an inquiry about custom window coverings." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Winco Blinds</span></a>
-    <button class="nav-toggle" aria-label="Open navigation">Menu</button>
-    <nav class="site-nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">W</span>
+      <span class="brand-name">Winco Blinds</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -20,26 +24,106 @@
       <a href="faq.html">FAQ</a>
       <a href="reviews.html">Reviews</a>
       <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
+
   <main>
-    <section class="page-hero">
-      <p class="eyebrow">Winco Blinds</p>
-      <h1>Contact</h1>
-      <p>This is the starter page for Contact. Replace this content with the final page copy, images, and sections.</p>
+    <section class="page-hero inner-page-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Contact Winco Blinds</h1>
+      <p>Book a free estimate, visit our Edmonton showroom, or send us a quick inquiry.</p>
     </section>
-    <section class="section">
-      <div class="placeholder-panel">
-        <h2>Page Content Area</h2>
-        <p>Codex can use this file as the starting point for the Contact page.</p>
+
+    <section class="section contact-info-section">
+      <div class="contact-info-grid">
+        <article class="contact-info-card">
+          <span>Showroom</span>
+          <h3>9790 - 51 Ave NW</h3>
+          <p>Edmonton, AB, Canada</p>
+        </article>
+        <article class="contact-info-card">
+          <span>Service Area</span>
+          <h3>Edmonton And Surrounding Areas</h3>
+          <p>Edmonton, Sherwood Park, St. Albert, Nisku, Leduc, Millet, Stony Plain, Spruce Grove, and surrounding areas.</p>
+        </article>
+        <article class="contact-info-card">
+          <span>Email</span>
+          <h3>Email Information</h3>
+          <p>Email information can be added here.</p>
+        </article>
+        <article class="contact-info-card">
+          <span>Phone</span>
+          <h3>Phone Number</h3>
+          <p>Phone number can be added here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft-section inquiry-section">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Quick Inquiry</p>
+          <h2>Send us a message about your project.</h2>
+        </div>
+        <p>This static form layout is ready for a backend connection later.</p>
+      </div>
+      <form class="inquiry-form contact-inquiry-form" action="#" method="post" data-contact-form>
+        <label>Subject<input type="text" name="subject" placeholder="Free estimate" /></label>
+        <label>First Name<input type="text" name="first-name" placeholder="Your first name" /></label>
+        <label>Last Name<input type="text" name="last-name" placeholder="Your last name" /></label>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" /></label>
+        <label>Organization<input type="text" name="organization" placeholder="Optional" /></label>
+        <label>Contact Number<input type="tel" name="contact-number" placeholder="Phone number" /></label>
+        <label class="form-field-full">Message<textarea name="message" rows="6" placeholder="Tell us what you are looking for"></textarea></label>
+        <div class="form-actions form-field-full">
+          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <p data-contact-form-message>Form connection will be added later.</p>
+        </div>
+      </form>
+    </section>
+
+    <section class="section map-section">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">Showroom</p>
+          <h2>Visit our Edmonton showroom</h2>
+        </div>
+        <p>Map embed can be connected later. For now, this placeholder keeps the layout ready for launch content.</p>
+      </div>
+      <div class="map-placeholder showroom-map-placeholder">
+        <span>Edmonton Showroom Map Placeholder</span>
+      </div>
+    </section>
+
+    <section class="section contact-cta-section">
+      <div class="contact-cta-inner">
+        <p class="eyebrow">Start Your Project</p>
+        <h2>Ready to start your project?</h2>
+        <p>Contact Winco Blinds for custom window coverings made for your space.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="products.html">View Products</a>
+          <a class="btn btn-secondary" href="contact.html">Book Free Estimate</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <div><strong>Winco Blinds</strong><p>Custom blinds and window fashion in Edmonton.</p></div>
-    <div class="footer-links"><a href="app/index.html">Dealer / Staff App</a><a href="contact.html">Contact</a></div>
+    <div class="footer-brand">
+      <strong>Winco Blinds</strong>
+      <p>Custom blinds and window fashion in Edmonton.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="app/index.html">Dealer / Staff App</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
