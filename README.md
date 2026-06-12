@@ -70,6 +70,12 @@ Recommended image naming examples:
 - `gallery-commercial-office-01.jpg`
 - `showroom-edmonton.jpg`
 
+## Contact information note
+
+- Official phone number and email should be confirmed before launch.
+- Contact form is currently static unless connected later.
+- Address and service area are based on the existing Winco website.
+
 ## Vite app config example
 
 ```js
