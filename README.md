@@ -48,6 +48,28 @@ New website starter folder for `wincoblinds.ca`.
 - `sitemap.xml` and `robots.txt` are included for basic SEO.
 - `/app` is excluded from sitemap because it is an internal web app path.
 
+## Image asset guide
+
+Recommended image structure:
+
+- `assets/images/logo/`
+- `assets/images/home/`
+- `assets/images/products/`
+- `assets/images/gallery/`
+- `assets/images/guides/`
+- `assets/images/blog/`
+- `assets/images/showroom/`
+
+Recommended image naming examples:
+
+- `winco-logo.svg`
+- `home-hero-blinds.jpg`
+- `dual-shades-living-room.jpg`
+- `roller-shades-office.jpg`
+- `motorized-blinds-bedroom.jpg`
+- `gallery-commercial-office-01.jpg`
+- `showroom-edmonton.jpg`
+
 ## Vite app config example
 
 ```js
