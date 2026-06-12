@@ -17,7 +17,7 @@ New website starter folder for `wincoblinds.ca`.
 - `reviews.html` - Reviews page
 - `blog.html` - Blog page
 - `contact.html` - Contact page
-- `app/index.html` - Temporary placeholder for future Winco app build output
+- `app/` - Winco web app build output folder for the `/app` path
 - `_redirects` - Netlify route fallback for `/app/*`
 - `assets/css/style.css` - Main styling
 - `assets/js/main.js` - Navigation and small interaction script
@@ -75,6 +75,17 @@ Recommended image naming examples:
 - Official phone number and email should be confirmed before launch.
 - Contact form is currently static unless connected later.
 - Address and service area are based on the existing Winco website.
+
+## Launch QA checklist
+
+- Check `https://wincoblinds.ca`
+- Check `https://www.wincoblinds.ca`
+- Check `https://wincoblinds.ca/app`
+- Check `robots.txt`
+- Check `sitemap.xml`
+- Check mobile layout
+- Confirm official phone/email before launch
+- Confirm real images before final launch
 
 ## Vite app config example
 
