@@ -41,6 +41,13 @@ New website starter folder for `wincoblinds.ca`.
 - After building the app, commit and push the updated `/app` build output from this website repo.
 - Netlify will deploy the updated website and app together from the website repo.
 
+## SEO / deployment notes
+
+- Main domain: `https://wincoblinds.ca`
+- App path: `https://wincoblinds.ca/app`
+- `sitemap.xml` and `robots.txt` are included for basic SEO.
+- `/app` is excluded from sitemap because it is an internal web app path.
+
 ## Vite app config example
 
 ```js
