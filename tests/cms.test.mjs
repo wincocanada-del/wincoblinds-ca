@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync,writeFileSync,mkdtempSync,rmSync} from 'node:fs';
+import {join,resolve,sep} from 'node:path';
+import {tmpdir} from 'node:os';
 import {execFileSync} from 'node:child_process';
 import {parseHTML} from 'linkedom';
 import seed from '../cms/seed.json' with {type:'json'};
@@ -35,6 +37,32 @@ test('store name and contact edits reach shared content without duplicating the 
  html=renderPage(d,d.pages[0]);const {document}=parseHTML(html);
  assert.ok(document.title.includes('A & B <Store>'));assert.ok(document.querySelector('a[href="tel:+17805551234"]'));
  const structured=JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);assert.equal(structured.name,d.settings.name);
+ d.settings.email='office@example.com';d.settings.address='123 New Street';
+ const contact=parseHTML(renderPage(d,d.pages.find(p=>p.slug==='contact'))).document;
+ assert.equal(contact.querySelector('#enquiry-form').getAttribute('data-contact-email'),'office@example.com');
+ assert.equal(contact.querySelector('#enquiry-form').getAttribute('data-contact-phone'),d.settings.phone);
+ assert.ok(new URL([...contact.querySelectorAll('a')].find(a=>a.textContent.includes('Get directions')).href).searchParams.get('query').includes('123 New Street'));
+});
+test('invalid or hidden page anchors and blank buttons are rejected before publishing',()=>{
+ const d=copy();d.navigation[0].children.push(['Broken anchor','guides#not-there']);assert.ok(validateSite(d).some(x=>x.includes('not-there')));
+ const e=copy();e.navigation.push({label:'Empty',url:''});assert.ok(validateSite(e).some(x=>x.includes('연결 주소')));
+ const f=copy();f.pages.find(p=>p.slug==='reviews').blocks[1].values.f7='';assert.ok(validateSite(f).some(x=>x.includes('버튼')));
+ const g=copy();g.pages[0].blocks.push(structuredClone(g.pages[0].blocks[2]));assert.ok(validateSite(g).some(x=>x.includes('중복')));
+});
+test('nested navigation marks the current section and accepts ordinary homepage URLs',()=>{
+ const d=copy();d.navigation[0].children[0]=['Home','/'];assert.deepEqual(validateSite(d),[]);
+ const doc=parseHTML(renderPage(d,d.pages.find(p=>p.slug==='reviews'))).document;
+ assert.ok(doc.querySelector('.nav-group[data-current] a[aria-current="page"][href="reviews.html"]'));
+});
+test('build checks resolve extensionless page links and validate their anchors',()=>{
+ const dir=mkdtempSync(join(tmpdir(),'winco-link-check-'));
+ const page=body=>`<html><head><meta name='description' content='Test'><link rel='canonical' href='https://wincoblinds.ca/'></head><body><h1>Test</h1>${body}</body></html>`;
+ try{
+  writeFileSync(join(dir,'index.html'),page("<a href='/about#details'>About</a><a href='/'>Home</a>"));writeFileSync(join(dir,'about.html'),page("<div id='details'>Details</div>"));
+  assert.match(execFileSync(process.execPath,['scripts/check-site.mjs',dir],{encoding:'utf8'}),/2 pages/);
+  writeFileSync(join(dir,'about.html'),page('Missing section'));
+  assert.throws(()=>execFileSync(process.execPath,['scripts/check-site.mjs',dir],{stdio:'pipe'}),e=>e.stderr.toString().includes('missing anchor'));
+ }finally{assert.ok(resolve(dir).startsWith(resolve(tmpdir())+sep+'winco-link-check-'));rmSync(dir,{recursive:true,force:true});}
 });
 test('new pages, posts and nested menu links become real generated HTML',()=>{
  const d=copy();d.pages.push({slug:'summer-news',title:'Summer news',description:'New collection',visible:true,kind:'post',blocks:[{id:'new',template:'intro',values:{title:'Summer news',eyebrow:'NEWS',body:'Visit our showroom'}}]});d.navigation[0].children.push(['Summer news','summer-news.html']);assert.deepEqual(validateSite(d),[]);assert.match(renderPage(d,d.pages.find(p=>p.slug==='blog')),/summer-news\.html/);

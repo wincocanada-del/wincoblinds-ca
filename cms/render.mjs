@@ -16,6 +16,7 @@ export const templateLabel=block=>registry.templates[block.template]?.label||gen
 export function safeImage(value){return typeof value==='string' && /^(?:\/?assets\/images\/[a-zA-Z0-9_./ -]+\.(?:png|jpe?g|webp|svg)|\/media\/[a-f0-9-]{36}\/[a-f0-9-]{36}\.webp)$/.test(value) && !value.includes('..');}
 export function safeLink(value){
  if(typeof value!=='string'||value.length>1200||/[\x00-\x20\\<>"']/.test(value))return false;
+ if(value==='/')return true;
  if(/^https:\/\//.test(value)){try{return !new URL(value).username&&!new URL(value).password;}catch{return false;}}
  if(/^mailto:[a-zA-Z0-9_.+%-]+@[a-zA-Z0-9.-]+(?:\?[^\s]*)?$/.test(value)||/^tel:\+?[0-9()-]+$/.test(value))return true;
  if(value.startsWith('//')||value.includes('..')||value.includes('%'))return /^contact(?:\.html)?\?product=[a-zA-Z0-9%_-]+$/.test(value);
@@ -48,6 +49,9 @@ function blockHtml(block,data){
   }else el.setAttribute({image:'src',alt:'alt',url:'href'}[field.kind],value);
  }
  for(const el of document.querySelectorAll('[data-cms-text],[data-cms-image],[data-cms-alt],[data-cms-url]'))for(const a of [...el.attributes])if(a.name.startsWith('data-cms-'))el.removeAttribute(a.name);
+ const form=document.querySelector('#enquiry-form');
+ if(form){form.setAttribute('data-contact-email',data.settings.email);form.setAttribute('data-contact-phone',data.settings.phone);}
+ for(const a of document.querySelectorAll('a[href]'))if(a.getAttribute('href')==='https://www.google.com/maps/search/?api=1&query=Winco%20Blinds%209790%2051%20Ave%20NW%20Edmonton')a.setAttribute('href','https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(data.settings.name+' '+data.settings.address+' '+data.settings.city));
  return document.body.innerHTML;
 }
 function shared(html,data){
@@ -59,8 +63,9 @@ function shared(html,data){
 function header(data,slug){
  const {document}=parseHTML(`<html><body>${shared(registry.shell.header,data)}</body></html>`);
  const nav=document.querySelector('#site-nav'),cta=nav.querySelector('.nav-cta').outerHTML;
- const one=(label,url)=>`<a href="${esc(url)}"${url.split(/[.#?]/)[0].replace(/^\//,'')===slug?' aria-current="page"':''}>${esc(label)}</a>`;
- nav.innerHTML=data.navigation.filter(x=>!x.hidden).map(item=>item.children?.length?`<details class="nav-group"><summary>${esc(item.label)}<span aria-hidden="true">⌄</span></summary><div class="nav-dropdown">${item.children.map(([label,url])=>one(label,url)).join('')}</div></details>`:one(item.label,item.url)).join('')+cta;
+ const active=url=>!url.startsWith('https:')&&(url.split(/[?#]/)[0].replace(/^\//,'').replace(/\.html$/,'')||'index')===slug;
+ const one=(label,url)=>`<a href="${esc(url)}"${active(url)?' aria-current="page"':''}>${esc(label)}</a>`;
+ nav.innerHTML=data.navigation.filter(x=>!x.hidden).map(item=>item.children?.length?`<details class="nav-group"${item.children.some(([,url])=>active(url))?' data-current="true"':''}><summary>${esc(item.label)}<span aria-hidden="true">⌄</span></summary><div class="nav-dropdown">${item.children.map(([label,url])=>one(label,url)).join('')}</div></details>`:one(item.label,item.url)).join('')+cta;
  return document.body.innerHTML;
 }
 export function renderPage(data,page,{preview=false,mediaUrls={}}={}){
@@ -101,6 +106,7 @@ export function validateSite(data){
     const value=b.values[f.key]??'';
     if(typeof value!=='string'||value.length>12000)fail('너무 긴 내용이 있습니다.');
     if(f.kind==='url'&&value&&!safeLink(value))fail('올바른 연결 주소를 입력해 주세요: '+f.label);
+    if(f.kind==='url'&&!value&&(registry.templates[b.template]||b.values.button))fail('버튼의 연결 주소를 입력해 주세요: '+f.label);
     if(f.kind==='image'&&!safeImage(value))fail('사진을 선택해 주세요: '+f.label);
    }
   }
@@ -108,18 +114,30 @@ export function validateSite(data){
  for(const slug of builtins)if(!data.pages.some(p=>p.slug===slug&&p.visible))fail('기본 페이지는 유지해야 합니다: '+slug);
  if(!data.pages.find(p=>p.slug==='contact')?.blocks.some(b=>!b.hidden&&registry.templates[b.template]?.html.includes('id="enquiry-form"')))fail('고객 문의 양식은 유지해야 합니다.');
  const checkLink=url=>{
+  if(!url){fail('메뉴의 연결 주소를 입력해 주세요.');return;}
   if(!safeLink(url)){fail('올바르지 않은 메뉴/버튼 주소: '+url);return;}
   if(!/^(https:|mailto:|tel:|#)/.test(url)&&url){const slug=url.replace(/^\//,'').split(/[?#]/)[0].replace(/\.html$/,'')||'index';if(!data.pages.some(p=>p.slug===slug&&p.visible))fail('공개되지 않은 페이지로 연결됩니다: '+url);}
  };
- for(const n of data.navigation){if(!n.label?.trim())fail('메뉴 이름을 입력해 주세요.');if(n.children?.length){if(n.children.length>15)fail('하위 메뉴는 15개 이하로 구성해 주세요.');for(const child of n.children){if(!Array.isArray(child)||!child[0]?.trim())fail('하위 메뉴 이름을 입력해 주세요.');else checkLink(child[1]);}}else checkLink(n.url);}
- for(const p of data.pages)for(const b of p.blocks)for(const f of fieldsFor(b))if(f.kind==='url'&&b.values[f.key])checkLink(b.values[f.key]);
+ for(const n of data.navigation.filter(n=>!n.hidden)){if(!n.label?.trim())fail('메뉴 이름을 입력해 주세요.');if(n.children?.length){if(n.children.length>15)fail('하위 메뉴는 15개 이하로 구성해 주세요.');for(const child of n.children){if(!Array.isArray(child)||!child[0]?.trim())fail('하위 메뉴 이름을 입력해 주세요.');else checkLink(child[1]);}}else checkLink(n.url);}
+ for(const p of data.pages.filter(p=>p.visible))for(const b of p.blocks.filter(b=>!b.hidden))for(const f of fieldsFor(b))if(f.kind==='url'&&b.values[f.key])checkLink(b.values[f.key]);
  for(const x of data.gallery)if(!x.title?.trim()||!x.alt?.trim()||!x.category?.trim()||!safeImage(x.image))fail('갤러리의 사진·설명·분류를 입력해 주세요.');
  for(const key of ['dualShades','rollerShades']){if(!Array.isArray(data.catalog[key])||data.catalog[key].length>150){fail('원단 목록을 확인해 주세요.');continue;}const ids=new Set();for(const x of data.catalog[key]){if(!x.name?.trim()||!x.type?.trim()||!/^[a-z0-9-]+$/.test(x.slug)||ids.has(x.slug))fail('원단 이름·분류·고유 주소를 확인해 주세요.');ids.add(x.slug);if(!safeImage(x.image?.startsWith('/')||x.image?.startsWith('assets/')?x.image:'assets/images/website/'+x.image))fail('원단 사진을 확인해 주세요.');}}
  for(const key of ['name','phone','phoneDigits','email','address','city','weekdayHours','saturdayHours','sundayHours'])if(typeof data.settings[key]!=='string'||!data.settings[key].trim()||data.settings[key].length>200)fail('매장 정보를 확인해 주세요: '+key);
  if(!safeImage(data.settings.logo)||!/^\+[0-9]{8,15}$/.test(data.settings.phoneDigits)||!/^\S+@\S+\.\S+$/.test(data.settings.email)||!safeLink(data.settings.instagram))fail('로고·전화·이메일·SNS 주소를 확인해 주세요.');
- if(!errors.length)for(const p of data.pages.filter(p=>p.visible)){
-  const {document}=parseHTML(renderPage(data,p));
-  if(document.querySelectorAll('h1').length!==1)fail(p.title+': 큰 제목 블록은 1개여야 합니다.');
+ if(!errors.length){
+  const documents=new Map(data.pages.filter(p=>p.visible).map(p=>[p.slug,parseHTML(renderPage(data,p)).document]));
+  for(const [slug,document] of documents){
+   if(document.querySelectorAll('h1').length!==1)fail(slug+': 큰 제목 블록은 1개여야 합니다.');
+   const ids=[...document.querySelectorAll('[id]')].map(el=>el.id);
+   if(new Set(ids).size!==ids.length)fail(slug+': 동일한 내용 블록 또는 위치 이름이 중복되었습니다.');
+   for(const a of document.querySelectorAll('a[href]')){
+    const url=new URL(a.getAttribute('href'),'https://wincoblinds.ca/'+(slug==='index'?'':slug));
+    if(url.origin!=='https://wincoblinds.ca'||url.pathname.startsWith('/app/'))continue;
+    const target=documents.get(url.pathname.replace(/^\//,'').replace(/\.html$/,'')||'index');
+    if(!target)fail(slug+': 연결할 공개 페이지가 없습니다: '+url.pathname);
+    else if(url.hash&&!target.getElementById(decodeURIComponent(url.hash.slice(1))))fail(slug+': 연결된 페이지 위치를 찾을 수 없습니다: '+url.pathname+url.hash);
+   }
+  }
  }
  return [...new Set(errors)];
 }

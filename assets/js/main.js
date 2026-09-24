@@ -91,7 +91,9 @@ if (form) {
       button.textContent = 'Enquiry sent ✓';
       form.reset();
     } catch {
-      status.textContent = 'We could not confirm receipt. Your details are still here. Please try again, or email wincocanada@gmail.com or call (780) 809-2292.';
+      const email = form.dataset.contactEmail || document.querySelector('.contact-email')?.textContent.trim();
+      const phone = form.dataset.contactPhone || document.querySelector('.contact-phone')?.textContent.trim();
+      status.textContent = 'We could not confirm receipt. Your details are still here. Please try again' + (email ? ', or email ' + email : '') + (phone ? ' or call ' + phone : '') + '.';
       button.disabled = false;
       button.textContent = 'Try sending again ↗';
       submitting = false;

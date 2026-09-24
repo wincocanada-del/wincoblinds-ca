@@ -2044,12 +2044,12 @@
       "label": "Notice the light before you choose."
     },
     "blog-2": {
-      "html": "<section class=\"section tinted\"><div class=\"wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">FROM THE WINCO ARCHIVE</p><h2 data-cms-text=\"f1\">More ideas to explore.</h2></div><p data-cms-text=\"f2\">Selected reading from our original website. These links open the full articles there.</p></div><div class=\"choice-grid\"><article><span data-cms-text=\"f3\">PRIVACY / JUNE 2026</span><h3 data-cms-text=\"f4\">Dual shades, day to night.</h3><p data-cms-text=\"f5\">A closer look at layered fabrics and the changing privacy needs of a room.</p><a data-cms-url=\"f15\" data-cms-text=\"f6\" class=\"text-link\" href=\"https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1503920-how-dual-shades-blinds-offer-smart-privacy-for-modern-homes\">Read the original article<span aria-hidden=\"true\">↗</span></a></article><article><span data-cms-text=\"f7\">WORKSPACES / FEBRUARY 2026</span><h3 data-cms-text=\"f8\">A more comfortable office.</h3><p data-cms-text=\"f9\">Consider glare, shared spaces and window coverings at work.</p><a data-cms-url=\"f16\" data-cms-text=\"f10\" class=\"text-link\" href=\"https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1454102-how-commercial-blinds-improve-comfort-and-productivity-in-offices\">Read the original article<span aria-hidden=\"true\">↗</span></a></article><article><span data-cms-text=\"f11\">MOTORIZATION / JANUARY 2026</span><h3 data-cms-text=\"f12\">Light around your routine.</h3><p data-cms-text=\"f13\">Explore how powered shades can fit into everyday life. Available features depend on the chosen system.</p><a data-cms-url=\"f17\" data-cms-text=\"f14\" class=\"text-link\" href=\"https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1442811-how-motorized-blinds-make-daily-living-smarter-in-edmonton-homes\">Read the original article<span aria-hidden=\"true\">↗</span></a></article></div></div></section>",
+      "html": "<section class=\"section tinted\"><div class=\"wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">MORE FROM WINCO</p><h2 data-cms-text=\"f1\">More ideas to explore.</h2></div><p data-cms-text=\"f2\">Explore our guides and collections here on the Winco website.</p></div><div class=\"choice-grid\"><article><span data-cms-text=\"f3\">PRIVACY</span><h3 data-cms-text=\"f4\">Dual shades, day to night.</h3><p data-cms-text=\"f5\">A closer look at layered fabrics and the changing privacy needs of a room.</p><a data-cms-url=\"f15\" data-cms-text=\"f6\" class=\"text-link\" href=\"dual-shades.html\">Explore dual shades<span aria-hidden=\"true\">↗</span></a></article><article><span data-cms-text=\"f7\">WORKSPACES</span><h3 data-cms-text=\"f8\">A more comfortable office.</h3><p data-cms-text=\"f9\">Consider glare, shared spaces and window coverings at work.</p><a data-cms-url=\"f16\" data-cms-text=\"f10\" class=\"text-link\" href=\"services.html\">Explore our services<span aria-hidden=\"true\">↗</span></a></article><article><span data-cms-text=\"f11\">MOTORIZATION</span><h3 data-cms-text=\"f12\">Light around your routine.</h3><p data-cms-text=\"f13\">Explore how powered shades can fit into everyday life. Available features depend on the chosen system.</p><a data-cms-url=\"f17\" data-cms-text=\"f14\" class=\"text-link\" href=\"motorized-blinds.html\">Explore motorized blinds<span aria-hidden=\"true\">↗</span></a></article></div></div></section>",
       "fields": [
         {
           "key": "f0",
           "kind": "text",
-          "label": "설명 문구 · FROM THE WINCO ARCHIVE"
+          "label": "문구 · MORE FROM WINCO"
         },
         {
           "key": "f1",
@@ -2059,12 +2059,12 @@
         {
           "key": "f2",
           "kind": "text",
-          "label": "설명 문구 · Selected reading from our original website. These li"
+          "label": "문구 · Explore our guides and collections here on the Winco website."
         },
         {
           "key": "f3",
           "kind": "text",
-          "label": "보조 문구 · PRIVACY / JUNE 2026"
+          "label": "문구 · PRIVACY"
         },
         {
           "key": "f4",
@@ -2079,12 +2079,12 @@
         {
           "key": "f6",
           "kind": "text",
-          "label": "버튼 문구 · Read the original article"
+          "label": "문구 · Explore dual shades"
         },
         {
           "key": "f7",
           "kind": "text",
-          "label": "보조 문구 · WORKSPACES / FEBRUARY 2026"
+          "label": "문구 · WORKSPACES"
         },
         {
           "key": "f8",
@@ -2099,12 +2099,12 @@
         {
           "key": "f10",
           "kind": "text",
-          "label": "버튼 문구 · Read the original article"
+          "label": "문구 · Explore our services"
         },
         {
           "key": "f11",
           "kind": "text",
-          "label": "보조 문구 · MOTORIZATION / JANUARY 2026"
+          "label": "문구 · MOTORIZATION"
         },
         {
           "key": "f12",
@@ -2119,22 +2119,22 @@
         {
           "key": "f14",
           "kind": "text",
-          "label": "버튼 문구 · Read the original article"
+          "label": "문구 · Explore motorized blinds"
         },
         {
           "key": "f15",
           "kind": "url",
-          "label": "연결 · Read the original article↗"
+          "label": "연결 · dual-shades.html"
         },
         {
           "key": "f16",
           "kind": "url",
-          "label": "연결 · Read the original article↗"
+          "label": "연결 · services.html"
         },
         {
           "key": "f17",
           "kind": "url",
-          "label": "연결 · Read the original article↗"
+          "label": "연결 · motorized-blinds.html"
         }
       ],
       "label": "More ideas to explore."
