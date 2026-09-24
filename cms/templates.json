@@ -1804,7 +1804,7 @@
       "label": "See what othershave to say."
     },
     "reviews-1": {
-      "html": "<section class=\"wrap review-section\"><div class=\"review-panel\"><p data-cms-text=\"f0\" class=\"eyebrow\">CUSTOMER FEEDBACK</p><h2 data-cms-text=\"f1\">Real experiences.<br>In their own words.</h2><p data-cms-text=\"f2\">Read the customer reviews on our original Winco website.</p><a data-cms-url=\"f7\" data-cms-text=\"f3\" class=\"button\" href=\"https://www.wincoblinds.com/pages/review\">Read Winco reviews<span aria-hidden=\"true\">↗</span></a></div><div><h2 data-cms-text=\"f4\">Already part<br>of the Winco family?</h2><p data-cms-text=\"f5\">We’d love to hear how your shades are working for you. Your feedback helps us care for the details that matter.</p><a data-cms-url=\"f8\" data-cms-text=\"f6\" class=\"text-link\" href=\"mailto:wincocanada@gmail.com?subject=My%20Winco%20experience\">Share your experience<span aria-hidden=\"true\">↗</span></a></div></section>",
+      "html": "<section class=\"wrap review-section\"><div class=\"review-panel\"><p data-cms-text=\"f0\" class=\"eyebrow\">CUSTOMER FEEDBACK</p><h2 data-cms-text=\"f1\">Real experiences.<br>In their own words.</h2><p data-cms-text=\"f2\">Read customer feedback on Google for our Edmonton showroom.</p><a data-cms-url=\"f7\" data-cms-text=\"f3\" class=\"button\" href=\"https://search.google.com/local/reviews?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo\">Read Google reviews<span aria-hidden=\"true\">↗</span></a></div><div><h2 data-cms-text=\"f4\">Already part<br>of the Winco family?</h2><p data-cms-text=\"f5\">We’d love to hear how your shades are working for you. Share your honest experience on Google. A Google account is required.</p><a data-cms-url=\"f8\" data-cms-text=\"f6\" class=\"text-link\" href=\"https://search.google.com/local/writereview?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo\">Write a Google review<span aria-hidden=\"true\">↗</span></a></div></section>",
       "fields": [
         {
           "key": "f0",
@@ -1819,12 +1819,12 @@
         {
           "key": "f2",
           "kind": "text",
-          "label": "설명 문구 · Read the customer reviews on our original Winco webs"
+          "label": "설명 문구 · Google 고객 리뷰 안내"
         },
         {
           "key": "f3",
           "kind": "text",
-          "label": "버튼 문구 · Read Winco reviews"
+          "label": "버튼 문구 · Read Google reviews"
         },
         {
           "key": "f4",
@@ -1839,23 +1839,23 @@
         {
           "key": "f6",
           "kind": "text",
-          "label": "버튼 문구 · Share your experience"
+          "label": "버튼 문구 · Write a Google review"
         },
         {
           "key": "f7",
           "kind": "url",
-          "label": "연결 · Read Winco reviews↗"
+          "label": "연결 · Read Google reviews↗"
         },
         {
           "key": "f8",
           "kind": "url",
-          "label": "연결 · Share your experience↗"
+          "label": "연결 · Write a Google review↗"
         }
       ],
       "label": "Real experiences.In their own words."
     },
     "reviews-2": {
-      "html": "<section class=\"section wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">FROM OUR CUSTOMER REVIEWS</p><h2 data-cms-text=\"f1\">A few words from<br>the people we work with.</h2></div></div><div class=\"testimonial-grid\"><figure><blockquote>“Very professional and a pleasure to deal with”</blockquote><figcaption>Lorne Hiscock · August 2026<br><a data-cms-url=\"f5\" data-cms-text=\"f2\" href=\"https://www.wincoblinds.com/pages/review\">Read the full review ↗</a></figcaption></figure><figure><blockquote>“Excellent blinds! Very nice staff.”</blockquote><figcaption>Eric De Haas · June 2026<br><a data-cms-url=\"f6\" data-cms-text=\"f3\" href=\"https://www.wincoblinds.com/pages/review\">Read the full review ↗</a></figcaption></figure></div><p data-cms-text=\"f4\" class=\"fine-print\">Short excerpts from reviews displayed on our original website. Each reflects an individual customer’s experience.</p></section>",
+      "html": "<section class=\"section wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">FROM OUR CUSTOMER REVIEWS</p><h2 data-cms-text=\"f1\">A few words from<br>the people we work with.</h2></div></div><div class=\"testimonial-grid\"><figure><blockquote>“Very professional and a pleasure to deal with”</blockquote><figcaption>Lorne Hiscock · August 2026<br><a data-cms-url=\"f5\" data-cms-text=\"f2\" href=\"https://search.google.com/local/reviews?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo\">View reviews on Google ↗</a></figcaption></figure><figure><blockquote>“Excellent blinds! Very nice staff.”</blockquote><figcaption>Eric De Haas · June 2026<br><a data-cms-url=\"f6\" data-cms-text=\"f3\" href=\"https://search.google.com/local/reviews?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo\">View reviews on Google ↗</a></figcaption></figure></div><p data-cms-text=\"f4\" class=\"fine-print\">Selected customer review excerpts. Visit Google for the full, current review list.</p></section>",
       "fields": [
         {
           "key": "f0",
@@ -1870,12 +1870,12 @@
         {
           "key": "f2",
           "kind": "text",
-          "label": "버튼 문구 · Read the full review ↗"
+          "label": "버튼 문구 · View reviews on Google ↗"
         },
         {
           "key": "f3",
           "kind": "text",
-          "label": "버튼 문구 · Read the full review ↗"
+          "label": "버튼 문구 · View reviews on Google ↗"
         },
         {
           "key": "f4",
@@ -1885,12 +1885,12 @@
         {
           "key": "f5",
           "kind": "url",
-          "label": "연결 · Read the full review ↗"
+          "label": "연결 · View reviews on Google ↗"
         },
         {
           "key": "f6",
           "kind": "url",
-          "label": "연결 · Read the full review ↗"
+          "label": "연결 · View reviews on Google ↗"
         }
       ],
       "label": "A few words fromthe people we work with."

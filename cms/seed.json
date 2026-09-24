@@ -1108,13 +1108,13 @@
           "values": {
             "f0": "CUSTOMER FEEDBACK",
             "f1": "Real experiences.\nIn their own words.",
-            "f2": "Read the customer reviews on our original Winco website.",
-            "f3": "Read Winco reviews",
+            "f2": "Read customer feedback on Google for our Edmonton showroom.",
+            "f3": "Read Google reviews",
             "f4": "Already part\nof the Winco family?",
-            "f5": "We’d love to hear how your shades are working for you. Your feedback helps us care for the details that matter.",
-            "f6": "Share your experience",
-            "f7": "https://www.wincoblinds.com/pages/review",
-            "f8": "mailto:wincocanada@gmail.com?subject=My%20Winco%20experience"
+            "f5": "We’d love to hear how your shades are working for you. Share your honest experience on Google. A Google account is required.",
+            "f6": "Write a Google review",
+            "f7": "https://search.google.com/local/reviews?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo",
+            "f8": "https://search.google.com/local/writereview?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo"
           },
           "hidden": false
         },
@@ -1124,11 +1124,11 @@
           "values": {
             "f0": "FROM OUR CUSTOMER REVIEWS",
             "f1": "A few words from\nthe people we work with.",
-            "f2": "Read the full review ↗",
-            "f3": "Read the full review ↗",
-            "f4": "Short excerpts from reviews displayed on our original website. Each reflects an individual customer’s experience.",
-            "f5": "https://www.wincoblinds.com/pages/review",
-            "f6": "https://www.wincoblinds.com/pages/review"
+            "f2": "View reviews on Google ↗",
+            "f3": "View reviews on Google ↗",
+            "f4": "Selected customer review excerpts. Visit Google for the full, current review list.",
+            "f5": "https://search.google.com/local/reviews?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo",
+            "f6": "https://search.google.com/local/reviews?placeid=ChIJBXsf1LcYoFMR5aU6PyHU-Fo"
           },
           "hidden": false
         },
