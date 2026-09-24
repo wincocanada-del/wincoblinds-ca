@@ -67,7 +67,7 @@ async function showMedia(){
 function move(list,i,delta){const j=i+delta;if(j>=0&&j<list.length)[list[i],list[j]]=[list[j],list[i]];}
 async function action(el){
  const a=el.dataset.action,i=Number(el.dataset.index),j=Number(el.dataset.child),group=el.dataset.group;
- if(a==='logout'){if(dirty&&!confirm('저장하지 않은 변경이 있습니다. 로그아웃할까요?'))return;await api.auth.signOut();location.href='/admin/';return;}
+ if(a==='logout'){if(dirty&&!confirm('저장하지 않은 변경이 있습니다. 로그아웃할까요?'))return;await api.auth.signOut({scope:'local'});location.href='/admin/';return;}
  if(a==='tab'){tab=el.dataset.tab;if(tab==='history')history=demo?[]:await rpc('history');if(tab==='members')members=demo?[{email:user.email,role,active:true}]:await rpc('member_list');render();return;}
  if(a==='select-page'){selected=el.dataset.slug;render();return;}
  if(a==='save'){await save();return;}

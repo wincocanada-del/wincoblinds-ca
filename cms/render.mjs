@@ -53,7 +53,7 @@ function blockHtml(block,data){
 function shared(html,data){
  const defaults={logo:'assets/images/logo/winco-original.png',phone:'(780) 809-2292',phoneDigits:'+17808092292',email:'wincocanada@gmail.com',address:'9790 51 Ave NW',city:'Edmonton, AB T6E 0A6',weekdayHours:'9:00 am – 5:00 pm',saturdayHours:'10:30 am – 2:30 pm',sundayHours:'By appointment',instagram:'https://www.instagram.com/wincoblindsyeg/'};
  for(const [key,old] of Object.entries(defaults))html=html.split(old).join(esc(data.settings[key]));
- html=html.split('Winco Blinds').join(esc(data.settings.name));
+ html=html.replace(/Winco Blinds(?: &amp; Window Fashion| & Window Fashion)?/g,()=>esc(data.settings.name));
  return html;
 }
 function header(data,slug){

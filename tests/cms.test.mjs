@@ -29,6 +29,13 @@ test('reserved/duplicate URLs, hidden linked pages and broken internal menus are
 test('missing enquiry block cannot be published',()=>{
  const d=copy();d.pages.find(p=>p.slug==='contact').blocks=[];assert.ok(validateSite(d).some(x=>x.includes('문의')));
 });
+test('store name and contact edits reach shared content without duplicating the brand name',()=>{
+ const d=copy();let html=renderPage(d,d.pages[0]);assert.ok(!html.includes('Window Fashion &amp; Window Fashion'));assert.ok(!html.includes('Window Fashion & Window Fashion'));
+ d.settings.name='A & B <Store>';d.settings.phone='(780) 555-1234';d.settings.phoneDigits='+17805551234';
+ html=renderPage(d,d.pages[0]);const {document}=parseHTML(html);
+ assert.ok(document.title.includes('A & B <Store>'));assert.ok(document.querySelector('a[href="tel:+17805551234"]'));
+ const structured=JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);assert.equal(structured.name,d.settings.name);
+});
 test('new pages, posts and nested menu links become real generated HTML',()=>{
  const d=copy();d.pages.push({slug:'summer-news',title:'Summer news',description:'New collection',visible:true,kind:'post',blocks:[{id:'new',template:'intro',values:{title:'Summer news',eyebrow:'NEWS',body:'Visit our showroom'}}]});d.navigation[0].children.push(['Summer news','summer-news.html']);assert.deepEqual(validateSite(d),[]);assert.match(renderPage(d,d.pages.find(p=>p.slug==='blog')),/summer-news\.html/);
 });
