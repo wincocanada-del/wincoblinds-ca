@@ -88,9 +88,11 @@ async function action(el){
   if(t.scope==='fabric')data.catalog[t.group][Number(t.index)].image=src;
   document.querySelector('#media-dialog').close();mark();render();return;
  }
- if(a==='publish'){
+ if(a==='cancel-publish'){document.querySelector('#publish-dialog').close();return;}
+ if(a==='publish'){document.querySelector('#publish-dialog').showModal();return;}
+ if(a==='confirm-publish'){
+  document.querySelector('#publish-dialog').close();
   if(demo){toast('로컬 화면 테스트에서는 게시하지 않습니다.');return;}
-  if(!confirm('현재 내용을 공개 홈페이지에 게시할까요? 숨김 페이지는 공개되지 않습니다.'))return;
   if(dirty||!version){if(!await save())return;}
   const{data:session}=await api.auth.getSession();
   const r=await fetch('/.netlify/functions/website-publish',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+session.session.access_token},body:JSON.stringify({version})});const result=await r.json();if(!r.ok)throw Error(result.error);
