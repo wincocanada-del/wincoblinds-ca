@@ -1,11 +1,13 @@
 @charset "UTF-8";
 :root {
   --paper:#f8f6f0;
-  --ink:#263d34;
-  --muted:#60685e;
-  --line:#dcded3;
-  --sage:#e9ede3;
+  --ink:#302b27;
+  --muted:#69605a;
+  --line:#ded8ce;
+  --sage:#eee8df;
   --white:#fffefa;
+  --orange:#f5861f;
+  --orange-dark:#9b420d;
   --serif:Georgia,'Times New Roman',serif;
   --sans:'Segoe UI',Arial,sans-serif;
 }
@@ -108,17 +110,17 @@ p+p {
   justify-content:center;
   gap:30px;
   padding:16px 25px;
-  background:var(--ink);
-  color:var(--white);
+  background:var(--orange);
+  color:#2b2015;
   font-size:13px;
   font-weight:500;
-  border:1px solid var(--ink);
+  border:1px solid var(--orange);
   transition:background .2s,transform .2s;
   line-height:1.4;
   min-height:51px;
 }
 .button:hover {
-  background:#3f5749;
+  background:#e47816;
   transform:translateY(-2px);
 }
 .button span {
@@ -132,7 +134,7 @@ p+p {
   border-color:var(--paper);
 }
 .button.light:hover {
-  background:#e3e8d8;
+  background:#f3e1d0;
 }
 .text-link {
   display:inline-flex;
@@ -140,7 +142,7 @@ p+p {
   gap:22px;
   font-size:13px;
   font-weight:500;
-  border-bottom:1px solid #97a18f;
+  border-bottom:1px solid var(--orange-dark);
   padding-bottom:7px;
   margin-top:23px;
 }
@@ -521,14 +523,14 @@ p+p {
   gap:40px;
 }
 .consultation .eyebrow {
-  color:#bec9ab;
+  color:#ffb268;
   font-size:10px;
 }
 .consultation h2 {
   font-size:clamp(38px,4.3vw,62px);
 }
 .consultation p {
-  color:#d8ded0;
+  color:#e4dbd2;
   font-size:14px;
   margin-bottom:26px;
 }
@@ -1739,3 +1741,39 @@ textarea {
 }
 
 .button:disabled { cursor: default; opacity: .7; transform: none; }
+
+/* Winco brand accents and keyboard/touch-friendly nested navigation. */
+.brand,.brand img { width:174px; }
+.eyebrow { color:var(--orange-dark); }
+.consultation .eyebrow { color:#ffb268; }
+.step-number,.location-mark { color:var(--orange-dark); }
+.site-header nav { gap:25px; }
+.nav-group { position:relative; }
+.nav-group summary { display:flex;align-items:center;gap:7px;cursor:pointer;list-style:none;padding:10px 0; }
+.nav-group summary::-webkit-details-marker { display:none; }
+.nav-group[open] summary>span { transform:rotate(180deg); }
+.nav-group[data-current] summary { text-decoration:underline;text-underline-offset:8px;text-decoration-color:var(--orange-dark); }
+.nav-dropdown { position:absolute;top:100%;left:-18px;width:230px;padding:12px;background:var(--white);border:1px solid var(--line);box-shadow:0 12px 30px #302b2715; }
+.nav-dropdown a { display:block;padding:10px;font-size:13px; }
+.nav-dropdown a:hover,.nav-dropdown a[aria-current] { background:var(--sage);color:var(--orange-dark); }
+.resource-note { padding:32px;margin:42px 0;background:var(--sage);border-left:3px solid var(--orange); }
+.resource-note p { max-width:750px;margin-top:14px; }
+.resource-note .button { margin-top:24px; }
+.testimonial-grid { display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px; }
+.testimonial-grid figure { padding:36px;background:var(--sage);border-top:3px solid var(--orange); }
+.testimonial-grid blockquote { font:32px/1.3 var(--serif);margin:0 0 24px; }
+.testimonial-grid figcaption { font-size:13px;line-height:1.8; }
+.testimonial-grid a { text-decoration:underline;text-underline-offset:4px; }
+.choice-grid h2 { font-size:30px;margin-bottom:18px; }
+:focus-visible { outline:3px solid var(--orange-dark);outline-offset:4px; }
+@media(max-width:1000px) { .site-header nav { gap:14px; }.brand,.brand img { width:145px; }.header-inner { gap:20px; } }
+@media(max-width:800px) and (min-width:721px) { .site-header nav {gap:10px;font-size:11px;}.nav-cta {padding:10px;font-size:10px;gap:5px;}.header-inner {gap:14px;}.brand,.brand img {width:130px;} }
+@media(max-width:720px) {
+ .brand,.brand img { width:145px; }
+ .site-header nav.is-open { max-height:calc(100dvh - 85px);overflow-y:auto; }
+ .nav-group summary { padding:12px 0;justify-content:space-between; }
+ .nav-dropdown { position:static;width:100%;box-shadow:none;border:0;border-left:2px solid var(--orange);padding:0 0 0 10px;margin-bottom:8px;background:transparent; }
+ .nav-dropdown a { font-size:14px; }
+ .testimonial-grid { grid-template-columns:1fr; }
+ .testimonial-grid figure,.resource-note { padding:24px; }
+}

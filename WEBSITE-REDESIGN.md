@@ -6,7 +6,9 @@ The public website was redesigned on the `website-redesign` branch. The staff ap
 
 - `scripts/build-site.mjs`: page content and shared header/footer. Run `npm run build` after changing it. Generated HTML is committed so Netlify's existing static hosting needs no new build setup.
 - `assets/css/style.css`: responsive styling.
-- `assets/js/main.js`: mobile navigation, filters, photo dialog and email preparation.
+- `assets/js/main.js`: mobile/nested navigation, filters, photo dialog and direct enquiry submission.
+- `assets/data/navigation.json`: public navigation and its child links.
+- `assets/data/gallery.json`: project gallery photo list and categories.
 - `assets/data/catalog.json`: fabric catalogue and local photo filenames.
 - `npm run preview`: local-only preview at http://127.0.0.1:5500. It deliberately serves only public marketing files; the staff app is outside this preview.
 - `npm run check`: checks public links, images, anchors and page metadata.
@@ -25,9 +27,11 @@ Company contact details and hours were checked against the original Winco websit
 - https://www.wincoblinds.com/pages/products/roller-shades
 - https://www.wincoblinds.com/
 
-Product swatch images and gallery photos are from the user's existing official website. Product swatches follow that site's displayed catalogue order. Gallery filenames correspond to source IDs 2812557, 2812552, 2812551, 2812550, 2830852 and 2830851. `original-hero.jpg` is source ID 2819794. The logo was copied from the local Winco app's existing logo asset without changing the app.
+Product swatch images and gallery photos are from the user's existing official website. Product swatches follow that site's displayed catalogue order. Gallery filenames 01–20 correspond to source IDs 2812557, 2812552, 2812551, 2812550, 2830852, 2830851, 2812553, 2812556, 2812555, 2812554, 2830850, 2830849, 2830855, 2830857, 2830854, 2830856, 2830862, 2830861, 2830860 and 2830863. Gallery images are WebP conversions with originals preserved. `original-hero.jpg` is source ID 2819794. The orange logo is the original official website asset, saved as `assets/images/logo/winco-original.png`.
 
 `room-inspiration.webp` is AI-generated design imagery, visibly labelled “Design illustration”; it is not presented as a completed Winco installation. The original generated PNG remains in the Codex generated-images folder. No fabricated testimonials, review scores, installation counts, fixed lead times or warranty promises were added.
+
+The second review adds a Care & Service page, on-site measuring information, authentic review excerpts with source links, and selected original journal links. See `HOMEPAGE-REVIEW.md` for findings and source mapping. `WEBSITE-ADMIN-PLAN.md` is a proposal only: no staff CMS authentication, draft storage or publishing endpoints have been implemented or enabled.
 
 ## Scope and deployment
 

@@ -1,0 +1,64 @@
+[
+  {
+    "label": "Products",
+    "children": [
+      [
+        "All collections",
+        "products.html"
+      ],
+      [
+        "Dual shades",
+        "dual-shades.html"
+      ],
+      [
+        "Roller shades",
+        "roller-shades.html"
+      ],
+      [
+        "Motorized blinds",
+        "motorized-blinds.html"
+      ]
+    ]
+  },
+  {
+    "label": "Services",
+    "url": "services.html"
+  },
+  {
+    "label": "Gallery",
+    "url": "gallery.html"
+  },
+  {
+    "label": "About",
+    "url": "about.html"
+  },
+  {
+    "label": "Resources",
+    "children": [
+      [
+        "Choosing your shades",
+        "guides.html"
+      ],
+      [
+        "Measuring & installation",
+        "guides.html#measuring"
+      ],
+      [
+        "Care & service",
+        "care.html"
+      ],
+      [
+        "Common questions",
+        "faq.html"
+      ],
+      [
+        "Customer reviews",
+        "reviews.html"
+      ],
+      [
+        "The window journal",
+        "blog.html"
+      ]
+    ]
+  }
+]

@@ -4,6 +4,7 @@ function closeMenu() {
   menuButton?.setAttribute('aria-expanded', 'false');
   menuButton?.setAttribute('aria-label', 'Open navigation');
   navigation?.classList.remove('is-open');
+  navigation?.querySelectorAll('.nav-group[open]').forEach(group => group.open = false);
 }
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
@@ -101,3 +102,15 @@ if (form) {
     }
   });
 }
+
+// Native details works without JavaScript; these enhancements keep one dropdown open.
+const navGroups = [...document.querySelectorAll('.nav-group')];
+navGroups.forEach(group => group.addEventListener('toggle', () => {
+  if (group.open) navGroups.filter(other => other !== group).forEach(other => other.open = false);
+}));
+document.addEventListener('keydown', event => {
+  if(event.key === 'Escape') {
+    const openGroup = navGroups.find(group => group.open);
+    if(openGroup) { openGroup.open = false; openGroup.querySelector('summary').focus(); }
+  }
+});
