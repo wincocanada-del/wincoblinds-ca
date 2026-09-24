@@ -13,7 +13,7 @@ The public website was redesigned on the `website-redesign` branch. The staff ap
 
 ## Enquiries
 
-The form prepares a message addressed to `wincocanada@gmail.com` and opens the visitor's email app. The visitor must press Send there. It does not claim that an enquiry has been delivered and does not depend on unconfigured Netlify Forms or Supabase. Phone and direct email links are also provided. Automatic web-form delivery can be added once the desired delivery service is configured.
+The contact form posts directly to Netlify Forms under `winco-enquiry`. Enable form detection and configure an email notification to `wincocanada@gmail.com` in the existing Netlify project. Name, email, phone, product and message are included in the saved submission. The frontend displays success only after an HTTP success response, prevents duplicate clicks and retains input on failure. A honeypot supports spam filtering. Email notification delivery is managed by Netlify. Local preview deliberately does not send enquiries.
 
 ## Sources and images
 
@@ -42,4 +42,4 @@ The existing `_redirects` and app assets are preserved. The website repo already
 - Mobile menu open/Escape close, fabric filtering, product selection carried into the enquiry form, gallery filtering, photo dialog open/Escape close, and required form fields checked in the browser.
 - Homepage browser error/warning log was empty during the final check.
 - All 15 files under `/app` have the same SHA-256 hashes as the pre-redesign manifest. `_redirects` is unchanged.
-- Enquiry email delivery itself was not sent/tested against an external mailbox.
+- The former email-app handoff was replaced by direct Netlify Forms submission on 2026-09-24.

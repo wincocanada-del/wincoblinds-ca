@@ -54,15 +54,50 @@ if (form) {
     if (![...select.options].some(option => option.value === product)) select.add(new Option(product.slice(0,150), product.slice(0,150)));
     select.value = product.slice(0,150);
   }
-  form.addEventListener('submit', event => {
+  let submitting = false;
+  form.addEventListener('submit', async event => {
     event.preventDefault();
-    const data = new FormData(form);
-    const body = `Hello Winco,\r\n\r\nI would like to discuss a window covering project.\r\n\r\nName: ${data.get('name')}\r\nEmail: ${data.get('email')}\r\nPhone: ${data.get('phone') || 'Not provided'}\r\nInterested in: ${data.get('product')}\r\n\r\n${data.get('message') || ''}`;
-    const mailto = `mailto:wincocanada@gmail.com?subject=${encodeURIComponent('Window covering enquiry - '+data.get('product'))}&body=${encodeURIComponent(body)}`;
+    if (submitting) return;
     const status = document.querySelector('#enquiry-status');
-    status.textContent = 'Your message is ready. Send it from your email app. If it did not open, ';
-    const retry = document.createElement('a'); retry.href = mailto; retry.textContent = 'open your prepared email';
-    status.append(retry, ' or contact wincocanada@gmail.com directly.');
-    window.location.href = mailto;
+    const button = form.querySelector('button[type="submit"]');
+    if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+      status.textContent = 'This is a local preview. Please use wincoblinds.ca/contact to send your enquiry.';
+      status.focus();
+      return;
+    }
+    const data = new FormData(form);
+    if (!String(data.get('name') || '').trim()) {
+      status.textContent = 'Please enter your name.';
+      form.elements.name.focus();
+      return;
+    }
+    submitting = true;
+    button.disabled = true;
+    button.textContent = 'Sending…';
+    form.setAttribute('aria-busy', 'true');
+    status.textContent = 'Sending your enquiry…';
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 20000);
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString(),
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error('Enquiry submission failed');
+      status.textContent = 'Thank you. Your enquiry has been received. Our team will get back to you.';
+      button.textContent = 'Enquiry sent ✓';
+      form.reset();
+    } catch {
+      status.textContent = 'We could not confirm receipt. Your details are still here. Please try again, or email wincocanada@gmail.com or call (780) 809-2292.';
+      button.disabled = false;
+      button.textContent = 'Try sending again ↗';
+      submitting = false;
+    } finally {
+      clearTimeout(timeout);
+      form.removeAttribute('aria-busy');
+      status.focus();
+    }
   });
 }

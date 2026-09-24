@@ -1737,3 +1737,5 @@ textarea {
     animation:none!important;
   }
 }
+
+.button:disabled { cursor: default; opacity: .7; transform: none; }
