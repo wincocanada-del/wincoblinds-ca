@@ -1,0 +1,2480 @@
+{
+  "templates": {
+    "index-0": {
+      "html": "<section class=\"hero wrap\"><div class=\"hero-copy\"><p data-cms-text=\"f0\" class=\"eyebrow\">MADE FOR YOUR WINDOWS. MADE FOR YOU.</p><h1 data-cms-text=\"f1\">A softer light.<br>A warmer home.</h1><p data-cms-text=\"f2\">Beautiful custom blinds, thoughtfully chosen.<br class=\"desktop-only\"> Find the balance of light, privacy and style<br class=\"desktop-only\"> that feels just right for your space.</p><div class=\"hero-actions\"><a data-cms-url=\"f12\" data-cms-text=\"f3\" class=\"button\" href=\"products.html\">Find your shades<span aria-hidden=\"true\">↗</span></a><a data-cms-url=\"f13\" data-cms-text=\"f4\" class=\"text-link\" href=\"contact.html#showroom\">Visit our showroom<span aria-hidden=\"true\">↗</span></a></div><div class=\"hero-location\"><span class=\"location-mark\" aria-hidden=\"true\">⌖</span><span>YOUR LOCAL WINDOW SPECIALISTS<br><strong data-cms-text=\"f5\">Edmonton, Alberta</strong></span></div></div><figure class=\"hero-photo\"><img data-cms-alt=\"f11\" data-cms-image=\"f10\" src=\"assets/images/website/room-inspiration.webp\" alt=\"Warm living room concept with softly filtered daylight through roller shades\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\"><figcaption><span data-cms-text=\"f6\">LIGHT CHANGES EVERYTHING.</span><span data-cms-text=\"f7\">Design illustration</span></figcaption><div class=\"photo-label\"><span data-cms-text=\"f8\">Thoughtfully framed.</span><span data-cms-text=\"f9\">Beautifully yours.</span></div></figure></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · MADE FOR YOUR WINDOWS. MADE FOR YOU."
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · A softer light.\nA warmer home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Beautiful custom blinds, thoughtfully chosen.\n Find "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Find your shades"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "버튼 문구 · Visit our showroom"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "강조 문구 · Edmonton, Alberta"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · LIGHT CHANGES EVERYTHING."
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "보조 문구 · Design illustration"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "보조 문구 · Thoughtfully framed."
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "보조 문구 · Beautifully yours."
+        },
+        {
+          "key": "f10",
+          "kind": "image",
+          "label": "사진 · Warm living room concept with softly filtered daylight through roller shades"
+        },
+        {
+          "key": "f11",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f12",
+          "kind": "url",
+          "label": "연결 · Find your shades↗"
+        },
+        {
+          "key": "f13",
+          "kind": "url",
+          "label": "연결 · Visit our showroom↗"
+        }
+      ],
+      "label": "A softer light.A warmer home."
+    },
+    "index-1": {
+      "html": "<div class=\"benefit-bar wrap\"><span data-cms-text=\"f0\">Made &amp; assembled in Edmonton</span><span data-cms-text=\"f1\">Free on-site measurements &amp; estimates</span><span data-cms-text=\"f2\">Professional installation</span></div>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "보조 문구 · Made & assembled in Edmonton"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "보조 문구 · Free on-site measurements & estimates"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "보조 문구 · Professional installation"
+        }
+      ],
+      "label": "서비스 강점"
+    },
+    "index-2": {
+      "html": "<section class=\"section wrap\" id=\"collections\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">THE COLLECTIONS</p><h2 data-cms-text=\"f1\">Your windows. Your way.</h2></div><p data-cms-text=\"f2\">Three ways to shape the light. One simple place to start.</p></div><div class=\"collection-grid\"><a data-cms-url=\"f18\" class=\"collection-card\" href=\"dual-shades.html\"><div class=\"collection-image\"><img data-cms-alt=\"f13\" data-cms-image=\"f12\" src=\"assets/images/website/original-hero.jpg\" alt=\"Alternating sheer and opaque bands on dual shades\" loading=\"lazy\" decoding=\"async\"><span data-cms-text=\"f3\" class=\"image-number\">01</span></div><div class=\"collection-title\"><h3 data-cms-text=\"f4\">Dual shades</h3><span aria-hidden=\"true\">↗</span></div><p data-cms-text=\"f5\">A little light. A little privacy. Find your balance with alternating sheer and solid fabric.</p></a><a data-cms-url=\"f19\" class=\"collection-card\" href=\"roller-shades.html\"><div class=\"collection-image\"><img data-cms-alt=\"f15\" data-cms-image=\"f14\" src=\"assets/images/website/gallery-17.webp\" alt=\"Roller shades fitted to an office window\" loading=\"lazy\" decoding=\"async\"><span data-cms-text=\"f6\" class=\"image-number\">02</span></div><div class=\"collection-title\"><h3 data-cms-text=\"f7\">Roller shades</h3><span aria-hidden=\"true\">↗</span></div><p data-cms-text=\"f8\">One clean silhouette, with fabrics that soften daylight or help darken your room.</p></a><a data-cms-url=\"f20\" class=\"collection-card\" href=\"motorized-blinds.html\"><div class=\"collection-image\"><img data-cms-alt=\"f17\" data-cms-image=\"f16\" src=\"assets/images/website/gallery-06.webp\" alt=\"Dual shades fitted to a corner living room window\" loading=\"lazy\" decoding=\"async\"><span data-cms-text=\"f9\" class=\"image-number\">03</span></div><div class=\"collection-title\"><h3 data-cms-text=\"f10\">Motorized blinds</h3><span aria-hidden=\"true\">↗</span></div><p data-cms-text=\"f11\">Explore motor options for effortless everyday control, even in hard-to-reach places.</p><small>Shade style shown; motor options vary.</small></a></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · THE COLLECTIONS"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Your windows. Your way."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Three ways to shape the light. One simple place to s"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · 01"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Dual shades"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · A little light. A little privacy. Find your balance "
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · 02"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "항목 제목 · Roller shades"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · One clean silhouette, with fabrics that soften dayli"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "보조 문구 · 03"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "항목 제목 · Motorized blinds"
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "설명 문구 · Explore motor options for effortless everyday contro"
+        },
+        {
+          "key": "f12",
+          "kind": "image",
+          "label": "사진 · Alternating sheer and opaque bands on dual shades"
+        },
+        {
+          "key": "f13",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f14",
+          "kind": "image",
+          "label": "사진 · Roller shades fitted to an office window"
+        },
+        {
+          "key": "f15",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f16",
+          "kind": "image",
+          "label": "사진 · Dual shades fitted to a corner living room window"
+        },
+        {
+          "key": "f17",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f18",
+          "kind": "url",
+          "label": "연결 · 01Dual shades↗A little light. A little privac"
+        },
+        {
+          "key": "f19",
+          "kind": "url",
+          "label": "연결 · 02Roller shades↗One clean silhouette, with fa"
+        },
+        {
+          "key": "f20",
+          "kind": "url",
+          "label": "연결 · 03Motorized blinds↗Explore motor options for "
+        }
+      ],
+      "label": "Your windows. Your way."
+    },
+    "index-3": {
+      "html": "<section class=\"story-section\"><div class=\"wrap story-grid\"><figure><img data-cms-alt=\"f7\" data-cms-image=\"f6\" src=\"assets/images/website/original-hero.jpg\" alt=\"Cream dual shades fitted around a bright seating area\" loading=\"lazy\" decoding=\"async\"><figcaption data-cms-text=\"f0\">From the Winco project gallery</figcaption></figure><div><p data-cms-text=\"f1\" class=\"eyebrow\">A LOCAL TOUCH</p><h2 data-cms-text=\"f2\">Big on the details.<br>Close to home.</h2><p data-cms-text=\"f3\">Choosing blinds should feel as comfortable as coming home. At our Edmonton showroom, you can take your time, compare materials and talk through what your rooms really need.</p><p data-cms-text=\"f4\">We manufacture and assemble custom shades in Edmonton, bringing fabric selection, fitting and local service together.</p><a data-cms-url=\"f8\" data-cms-text=\"f5\" class=\"text-link\" href=\"about.html\">Get to know Winco<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "사진 설명 · From the Winco project gallery"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "설명 문구 · A LOCAL TOUCH"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "섹션 제목 · Big on the details.\nClose to home."
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · Choosing blinds should feel as comfortable as coming"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "설명 문구 · We manufacture and assemble custom shades in Edmonto"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "버튼 문구 · Get to know Winco"
+        },
+        {
+          "key": "f6",
+          "kind": "image",
+          "label": "사진 · Cream dual shades fitted around a bright seating area"
+        },
+        {
+          "key": "f7",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f8",
+          "kind": "url",
+          "label": "연결 · Get to know Winco↗"
+        }
+      ],
+      "label": "Big on the details.Close to home."
+    },
+    "index-4": {
+      "html": "<section class=\"section wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">FROM IDEA TO EVERYDAY</p><h2 data-cms-text=\"f1\">A little guidance.<br>A lovely result.</h2></div><p data-cms-text=\"f2\">You don’t need to have it all figured out. That’s what we’re here for.</p></div><div class=\"steps\"><article><span data-cms-text=\"f3\" class=\"step-number\">01</span><h3 data-cms-text=\"f4\">Meet &amp; measure.</h3><p data-cms-text=\"f5\">Book a free on-site measurement and estimate. We’ll talk through your windows, your routines and the light you want.</p></article><article><span data-cms-text=\"f6\" class=\"step-number\">02</span><h3 data-cms-text=\"f7\">Choose &amp; create.</h3><p data-cms-text=\"f8\">Compare real samples and confirm your quote. Your shades are made to measure by our Edmonton team.</p></article><article><span data-cms-text=\"f9\" class=\"step-number\">03</span><h3 data-cms-text=\"f10\">Fit &amp; finish.</h3><p data-cms-text=\"f11\">Your shades are installed within 7 business days of placing your order. We’ll walk you through their operation and help with aftercare.</p></article></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · FROM IDEA TO EVERYDAY"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · A little guidance.\nA lovely result."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · You don’t need to have it all figured out. That’s wh"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · 01"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Meet & measure."
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Book a free on-site measurement and estimate. We’ll "
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · 02"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "항목 제목 · Choose & create."
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · Compare real samples and confirm your quote. Your sh"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "보조 문구 · 03"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "항목 제목 · Fit & finish."
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "설명 문구 · Your shades are installed within 7 business days of "
+        }
+      ],
+      "label": "A little guidance.A lovely result."
+    },
+    "index-5": {
+      "html": "<section class=\"gallery-teaser wrap\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">REAL SPACES, REAL POSSIBILITIES</p><h2 data-cms-text=\"f1\">Picture the<br>possibilities.</h2><p data-cms-text=\"f2\">See window coverings from our existing project gallery.</p><a data-cms-url=\"f8\" data-cms-text=\"f3\" class=\"text-link\" href=\"gallery.html\">Explore the gallery<span aria-hidden=\"true\">↗</span></a></div><a data-cms-url=\"f9\" href=\"gallery.html\"><img data-cms-alt=\"f5\" data-cms-image=\"f4\" src=\"assets/images/website/gallery-04.webp\" alt=\"Dark dual shades in a seating area\" loading=\"lazy\" decoding=\"async\"></a><a data-cms-url=\"f10\" href=\"gallery.html\"><img data-cms-alt=\"f7\" data-cms-image=\"f6\" src=\"assets/images/website/gallery-05.webp\" alt=\"Light dual shades in a bright shared space\" loading=\"lazy\" decoding=\"async\"></a></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · REAL SPACES, REAL POSSIBILITIES"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Picture the\npossibilities."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · See window coverings from our existing project galle"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Explore the gallery"
+        },
+        {
+          "key": "f4",
+          "kind": "image",
+          "label": "사진 · Dark dual shades in a seating area"
+        },
+        {
+          "key": "f5",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f6",
+          "kind": "image",
+          "label": "사진 · Light dual shades in a bright shared space"
+        },
+        {
+          "key": "f7",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f8",
+          "kind": "url",
+          "label": "연결 · Explore the gallery↗"
+        },
+        {
+          "key": "f9",
+          "kind": "url",
+          "label": "연결 · "
+        },
+        {
+          "key": "f10",
+          "kind": "url",
+          "label": "연결 · "
+        }
+      ],
+      "label": "Picture thepossibilities."
+    },
+    "index-6": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "products-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">THE WINCO COLLECTIONS</p><h1 data-cms-text=\"f1\">A beautiful fit.<br>For every kind of day.</h1><p data-cms-text=\"f2\" class=\"lead\">Soft morning light. An afternoon without glare. A little more privacy when the day is done. Start with the way you want your room to feel.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · THE WINCO COLLECTIONS"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · A beautiful fit.\nFor every kind of day."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Soft morning light. An afternoon without glare. A li"
+        }
+      ],
+      "label": "A beautiful fit.For every kind of day."
+    },
+    "products-1": {
+      "html": "<section class=\"wrap section collection-page\"><div class=\"collection-grid\"><a data-cms-url=\"f15\" class=\"collection-card\" href=\"dual-shades.html\"><div class=\"collection-image\"><img data-cms-alt=\"f10\" data-cms-image=\"f9\" src=\"assets/images/website/original-hero.jpg\" alt=\"Alternating sheer and opaque bands on dual shades\" loading=\"lazy\" decoding=\"async\"><span data-cms-text=\"f0\" class=\"image-number\">01</span></div><div class=\"collection-title\"><h3 data-cms-text=\"f1\">Dual shades</h3><span aria-hidden=\"true\">↗</span></div><p data-cms-text=\"f2\">A little light. A little privacy. Find your balance with alternating sheer and solid fabric.</p></a><a data-cms-url=\"f16\" class=\"collection-card\" href=\"roller-shades.html\"><div class=\"collection-image\"><img data-cms-alt=\"f12\" data-cms-image=\"f11\" src=\"assets/images/website/gallery-17.webp\" alt=\"Roller shades fitted to an office window\" loading=\"lazy\" decoding=\"async\"><span data-cms-text=\"f3\" class=\"image-number\">02</span></div><div class=\"collection-title\"><h3 data-cms-text=\"f4\">Roller shades</h3><span aria-hidden=\"true\">↗</span></div><p data-cms-text=\"f5\">One clean silhouette, with fabrics that soften daylight or help darken your room.</p></a><a data-cms-url=\"f17\" class=\"collection-card\" href=\"motorized-blinds.html\"><div class=\"collection-image\"><img data-cms-alt=\"f14\" data-cms-image=\"f13\" src=\"assets/images/website/gallery-06.webp\" alt=\"Dual shades fitted to a corner living room window\" loading=\"lazy\" decoding=\"async\"><span data-cms-text=\"f6\" class=\"image-number\">03</span></div><div class=\"collection-title\"><h3 data-cms-text=\"f7\">Motorized blinds</h3><span aria-hidden=\"true\">↗</span></div><p data-cms-text=\"f8\">Explore motor options for effortless everyday control, even in hard-to-reach places.</p><small>Shade style shown; motor options vary.</small></a></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "보조 문구 · 01"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "항목 제목 · Dual shades"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · A little light. A little privacy. Find your balance "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · 02"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Roller shades"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · One clean silhouette, with fabrics that soften dayli"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · 03"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "항목 제목 · Motorized blinds"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · Explore motor options for effortless everyday contro"
+        },
+        {
+          "key": "f9",
+          "kind": "image",
+          "label": "사진 · Alternating sheer and opaque bands on dual shades"
+        },
+        {
+          "key": "f10",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f11",
+          "kind": "image",
+          "label": "사진 · Roller shades fitted to an office window"
+        },
+        {
+          "key": "f12",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f13",
+          "kind": "image",
+          "label": "사진 · Dual shades fitted to a corner living room window"
+        },
+        {
+          "key": "f14",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f15",
+          "kind": "url",
+          "label": "연결 · 01Dual shades↗A little light. A little privac"
+        },
+        {
+          "key": "f16",
+          "kind": "url",
+          "label": "연결 · 02Roller shades↗One clean silhouette, with fa"
+        },
+        {
+          "key": "f17",
+          "kind": "url",
+          "label": "연결 · 03Motorized blinds↗Explore motor options for "
+        }
+      ],
+      "label": "Dual shades"
+    },
+    "products-2": {
+      "html": "<section class=\"section tinted\"><div class=\"wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">FIND YOUR STARTING POINT</p><h2 data-cms-text=\"f1\">What matters to you?</h2></div></div><div class=\"choice-grid\"><article><span data-cms-text=\"f2\">01 / THE LOOK</span><h3 data-cms-text=\"f3\">Layered or minimal?</h3><p data-cms-text=\"f4\">Dual shades add a distinctive horizontal rhythm. Roller shades keep the window simple with a continuous piece of fabric.</p></article><article><span data-cms-text=\"f5\">02 / THE LIGHT</span><h3 data-cms-text=\"f6\">Bright or restful?</h3><p data-cms-text=\"f7\">Explore light filtering, room darkening and blackout fabrics. Your mounting choice also affects light around the edges.</p></article><article><span data-cms-text=\"f8\">03 / THE EVERYDAY</span><h3 data-cms-text=\"f9\">A little more ease?</h3><p data-cms-text=\"f10\">Ask about motorization, control options and compatibility for the shades you choose.</p></article></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · FIND YOUR STARTING POINT"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · What matters to you?"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "보조 문구 · 01 / THE LOOK"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "항목 제목 · Layered or minimal?"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "설명 문구 · Dual shades add a distinctive horizontal rhythm. Rol"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "보조 문구 · 02 / THE LIGHT"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "항목 제목 · Bright or restful?"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "설명 문구 · Explore light filtering, room darkening and blackout"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "보조 문구 · 03 / THE EVERYDAY"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "항목 제목 · A little more ease?"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "설명 문구 · Ask about motorization, control options and compatib"
+        }
+      ],
+      "label": "What matters to you?"
+    },
+    "products-3": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "dual-shades-0": {
+      "html": "<section class=\"product-hero wrap\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">LAYERS OF POSSIBILITY</p><h1 data-cms-text=\"f1\">Light, on<br>your terms.</h1><p data-cms-text=\"f2\" class=\"lead\">Also known as zebra blinds, dual shades combine sheer and solid bands for a distinctive look and flexible light control.</p><a data-cms-url=\"f10\" data-cms-text=\"f3\" class=\"button\" href=\"contact.html?product=Dual%20shades\">Ask about dual shades<span aria-hidden=\"true\">↗</span></a><ul class=\"feature-list\"><li data-cms-text=\"f4\">A distinctive layered design</li><li data-cms-text=\"f5\">Light filtering and room darkening choices</li><li data-cms-text=\"f6\">Custom sizing for your windows</li></ul></div><figure><img data-cms-alt=\"f9\" data-cms-image=\"f8\" src=\"assets/images/website/original-hero.jpg\" alt=\"Cream dual shades across large windows\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\"><figcaption data-cms-text=\"f7\">From the Winco project gallery</figcaption></figure></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · LAYERS OF POSSIBILITY"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Light, on\nyour terms."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Also known as zebra blinds, dual shades combine shee"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Ask about dual shades"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "목록 내용 · A distinctive layered design"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "목록 내용 · Light filtering and room darkening choices"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "목록 내용 · Custom sizing for your windows"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "사진 설명 · From the Winco project gallery"
+        },
+        {
+          "key": "f8",
+          "kind": "image",
+          "label": "사진 · Cream dual shades across large windows"
+        },
+        {
+          "key": "f9",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f10",
+          "kind": "url",
+          "label": "연결 · Ask about dual shades↗"
+        }
+      ],
+      "label": "Light, onyour terms."
+    },
+    "dual-shades-2": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "roller-shades-0": {
+      "html": "<section class=\"product-hero wrap\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">SIMPLY BEAUTIFUL</p><h1 data-cms-text=\"f1\">Less fuss.<br>More feeling.</h1><p data-cms-text=\"f2\" class=\"lead\">Clean lines. Beautiful texture. A straightforward shade that sits quietly in your space and works around your day.</p><a data-cms-url=\"f10\" data-cms-text=\"f3\" class=\"button\" href=\"contact.html?product=Roller%20shades\">Ask about roller shades<span aria-hidden=\"true\">↗</span></a><ul class=\"feature-list\"><li data-cms-text=\"f4\">Light filtering, blackout and sunscreen fabrics</li><li data-cms-text=\"f5\">A clean, continuous silhouette</li><li data-cms-text=\"f6\">Ask about compatible motor options</li></ul></div><figure><img data-cms-alt=\"f9\" data-cms-image=\"f8\" src=\"assets/images/website/gallery-09.webp\" alt=\"Roller shades fitted along windows in a fitness space\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\"><figcaption data-cms-text=\"f7\">From the Winco project gallery</figcaption></figure></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · SIMPLY BEAUTIFUL"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Less fuss.\nMore feeling."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Clean lines. Beautiful texture. A straightforward sh"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Ask about roller shades"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "목록 내용 · Light filtering, blackout and sunscreen fabrics"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "목록 내용 · A clean, continuous silhouette"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "목록 내용 · Ask about compatible motor options"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "사진 설명 · From the Winco project gallery"
+        },
+        {
+          "key": "f8",
+          "kind": "image",
+          "label": "사진 · Roller shades fitted along windows in a fitness space"
+        },
+        {
+          "key": "f9",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f10",
+          "kind": "url",
+          "label": "연결 · Ask about roller shades↗"
+        }
+      ],
+      "label": "Less fuss.More feeling."
+    },
+    "roller-shades-2": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "motorized-blinds-0": {
+      "html": "<section class=\"product-hero wrap\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">EVERYDAY, MADE EASIER</p><h1 data-cms-text=\"f1\">Good mornings.<br>At your command.</h1><p data-cms-text=\"f2\" class=\"lead\">Make light control part of your routine. Talk with us about motor options for the shades, windows and controls that work for you.</p><a data-cms-url=\"f8\" data-cms-text=\"f3\" class=\"button\" href=\"contact.html?product=Motorized%20blinds\">Explore motor options<span aria-hidden=\"true\">↗</span></a><p data-cms-text=\"f4\" class=\"fine-print\">Motor, power and smart-home compatibility depend on the selected system. Our team will confirm the details before you order.</p></div><figure><img data-cms-alt=\"f7\" data-cms-image=\"f6\" src=\"assets/images/website/room-inspiration.webp\" alt=\"Living room concept illustrating roller shades\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\"><figcaption data-cms-text=\"f5\">Design illustration · Motorization is an optional configuration</figcaption></figure></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · EVERYDAY, MADE EASIER"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Good mornings.\nAt your command."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Make light control part of your routine. Talk with u"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Explore motor options"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "설명 문구 · Motor, power and smart-home compatibility depend on "
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "사진 설명 · Design illustration · Motorization is an optional co"
+        },
+        {
+          "key": "f6",
+          "kind": "image",
+          "label": "사진 · Living room concept illustrating roller shades"
+        },
+        {
+          "key": "f7",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f8",
+          "kind": "url",
+          "label": "연결 · Explore motor options↗"
+        }
+      ],
+      "label": "Good mornings.At your command."
+    },
+    "motorized-blinds-1": {
+      "html": "<section class=\"section wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A THOUGHTFUL UPGRADE</p><h2 data-cms-text=\"f1\">Let’s make it work for you.</h2></div></div><div class=\"choice-grid\"><article><span data-cms-text=\"f2\">CONTROL</span><h3 data-cms-text=\"f3\">Within easy reach.</h3><p data-cms-text=\"f4\">Ask about remote operation for tall windows, wide rooms and the places that are harder to reach.</p></article><article><span data-cms-text=\"f5\">POWER</span><h3 data-cms-text=\"f6\">Plan the practical details.</h3><p data-cms-text=\"f7\">We’ll discuss suitable power options and access for charging or wiring, depending on your selected motor.</p></article><article><span data-cms-text=\"f8\">COMPATIBILITY</span><h3 data-cms-text=\"f9\">Consider the whole system.</h3><p data-cms-text=\"f10\">If connected-home control matters to you, bring the details of your existing setup so we can check compatibility.</p></article></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A THOUGHTFUL UPGRADE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s make it work for you."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "보조 문구 · CONTROL"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "항목 제목 · Within easy reach."
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "설명 문구 · Ask about remote operation for tall windows, wide ro"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "보조 문구 · POWER"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "항목 제목 · Plan the practical details."
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "설명 문구 · We’ll discuss suitable power options and access for "
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "보조 문구 · COMPATIBILITY"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "항목 제목 · Consider the whole system."
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "설명 문구 · If connected-home control matters to you, bring the "
+        }
+      ],
+      "label": "Let’s make it work for you."
+    },
+    "motorized-blinds-2": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "about-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">HELLO, WE’RE WINCO</p><h1 data-cms-text=\"f1\">A local perspective.<br>A personal approach.</h1><p data-cms-text=\"f2\" class=\"lead\">Your windows are part of how you live. We believe choosing what goes on them deserves time, care and a real conversation.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · HELLO, WE’RE WINCO"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · A local perspective.\nA personal approach."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Your windows are part of how you live. We believe ch"
+        }
+      ],
+      "label": "A local perspective.A personal approach."
+    },
+    "about-1": {
+      "html": "<section class=\"wrap story-grid about-story\"><figure><img data-cms-alt=\"f7\" data-cms-image=\"f6\" src=\"assets/images/website/original-hero.jpg\" alt=\"Dual shades in a light-filled shared space\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\"><figcaption data-cms-text=\"f0\">From the Winco project gallery</figcaption></figure><div><p data-cms-text=\"f1\" class=\"eyebrow\">ROOTED IN EDMONTON</p><h2 data-cms-text=\"f2\">Come in.<br>Look a little closer.</h2><p data-cms-text=\"f3\">At Winco Blinds &amp; Window Fashion, we help you explore custom window coverings in person. Hold a sample up to the light. Compare a texture. Ask the question you didn’t know you had.</p><p data-cms-text=\"f4\">Our showroom is at 9790 51 Ave NW in Edmonton. Whether your project is a home, an office or a single room, we’d love to help you think it through.</p><a data-cms-url=\"f8\" data-cms-text=\"f5\" class=\"text-link\" href=\"contact.html#showroom\">Plan your visit<span aria-hidden=\"true\">↗</span></a></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "사진 설명 · From the Winco project gallery"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "설명 문구 · ROOTED IN EDMONTON"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "섹션 제목 · Come in.\nLook a little closer."
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · At Winco Blinds & Window Fashion, we help you explor"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "설명 문구 · Our showroom is at 9790 51 Ave NW in Edmonton. Wheth"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "버튼 문구 · Plan your visit"
+        },
+        {
+          "key": "f6",
+          "kind": "image",
+          "label": "사진 · Dual shades in a light-filled shared space"
+        },
+        {
+          "key": "f7",
+          "kind": "alt",
+          "label": "사진 설명"
+        },
+        {
+          "key": "f8",
+          "kind": "url",
+          "label": "연결 · Plan your visit↗"
+        }
+      ],
+      "label": "Come in.Look a little closer."
+    },
+    "about-2": {
+      "html": "<section class=\"section wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">WHAT YOU CAN EXPECT</p><h2 data-cms-text=\"f1\">Room for your ideas.</h2></div></div><div class=\"choice-grid\"><article><h3 data-cms-text=\"f2\">Advice with context.</h3><p data-cms-text=\"f3\">We start with your space: how you use it, how the light falls and what you want to change.</p></article><article><h3 data-cms-text=\"f4\">Details you can see.</h3><p data-cms-text=\"f5\">Explore real materials and discuss sizing, controls and fitting before making your decision.</p></article><article><h3 data-cms-text=\"f6\">Made close to home.</h3><p data-cms-text=\"f7\">Our Edmonton workshop manufactures and assembles custom shades in-house. Speak directly with a local team, from fabric selection through installation.</p></article></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · WHAT YOU CAN EXPECT"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Room for your ideas."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "항목 제목 · Advice with context."
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · We start with your space: how you use it, how the li"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Details you can see."
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Explore real materials and discuss sizing, controls "
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "항목 제목 · Made close to home."
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "설명 문구 · Our Edmonton workshop manufactures and assembles cus"
+        }
+      ],
+      "label": "Room for your ideas."
+    },
+    "about-3": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "services-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">OUR APPROACH</p><h1 data-cms-text=\"f1\">From your first idea<br>to your favourite room.</h1><p data-cms-text=\"f2\" class=\"lead\">Every space is different. We help you work through the choices one step at a time, so your finished shades feel right at home.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · OUR APPROACH"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · From your first idea\nto your favourite room."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Every space is different. We help you work through t"
+        }
+      ],
+      "label": "From your first ideato your favourite room."
+    },
+    "services-1": {
+      "html": "<section class=\"section wrap service-steps\"><div class=\"steps\"><article><span data-cms-text=\"f0\" class=\"step-number\">01</span><h3 data-cms-text=\"f1\">Meet &amp; measure.</h3><p data-cms-text=\"f2\">Book a free on-site measurement and estimate. We’ll talk through your windows, your routines and the light you want.</p></article><article><span data-cms-text=\"f3\" class=\"step-number\">02</span><h3 data-cms-text=\"f4\">Choose &amp; create.</h3><p data-cms-text=\"f5\">Compare real samples and confirm your quote. Your shades are made to measure by our Edmonton team.</p></article><article><span data-cms-text=\"f6\" class=\"step-number\">03</span><h3 data-cms-text=\"f7\">Fit &amp; finish.</h3><p data-cms-text=\"f8\">Your shades are installed within 7 business days of placing your order. We’ll walk you through their operation and help with aftercare.</p></article></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "보조 문구 · 01"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "항목 제목 · Meet & measure."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Book a free on-site measurement and estimate. We’ll "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · 02"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Choose & create."
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Compare real samples and confirm your quote. Your sh"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · 03"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "항목 제목 · Fit & finish."
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · Your shades are installed within 7 business days of "
+        }
+      ],
+      "label": "Meet & measure."
+    },
+    "services-2": {
+      "html": "<section class=\"tinted section\"><div class=\"wrap split-copy\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">HOMES &amp; WORKSPACES</p><h2 data-cms-text=\"f1\">A considered choice.<br>At any scale.</h2></div><div><h3 data-cms-text=\"f2\">For the spaces you live in</h3><p data-cms-text=\"f3\">Think through bedroom privacy, bright living rooms and the little details that make a house feel like yours.</p><h3 data-cms-text=\"f4\">For the spaces you work in</h3><p data-cms-text=\"f5\">Explore shade options for offices and shared spaces, with a focus on glare, privacy and a consistent finish.</p><h3 data-cms-text=\"f6\">Clear next steps</h3><p data-cms-text=\"f7\">Your quote confirms the chosen products, measurements and installation scope. Installation is completed within 7 business days of placing your order; our team will coordinate the appointment with you.</p></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · HOMES & WORKSPACES"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · A considered choice.\nAt any scale."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "항목 제목 · For the spaces you live in"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · Think through bedroom privacy, bright living rooms a"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · For the spaces you work in"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Explore shade options for offices and shared spaces,"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "항목 제목 · Clear next steps"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "설명 문구 · Your quote confirms the chosen products, measurement"
+        }
+      ],
+      "label": "A considered choice.At any scale."
+    },
+    "services-3": {
+      "html": "<section class=\"section wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">HERE FOR THE WHOLE PROJECT</p><h2 data-cms-text=\"f1\">Measure. Make. Install.</h2></div></div><div class=\"choice-grid\"><article><h3 data-cms-text=\"f2\">Free on-site measuring</h3><p data-cms-text=\"f3\">We visit your space, discuss suitable fabrics and provide an estimate. Contact us to arrange a visit and confirm service in your area.</p></article><article><h3 data-cms-text=\"f4\">Local, custom production</h3><p data-cms-text=\"f5\">Shades are manufactured and assembled in our Edmonton workshop, with installation within 7 business days of placing your order.</p></article><article><h3 data-cms-text=\"f6\">Installation &amp; aftercare</h3><p data-cms-text=\"f7\">Our installers fit your shades and explain their operation. We offer a 5-year warranty; ask our team for coverage details and keep your order information for future service enquiries.</p><a data-cms-url=\"f9\" data-cms-text=\"f8\" class=\"text-link\" href=\"care.html\">Care &amp; service<span aria-hidden=\"true\">↗</span></a></article></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · HERE FOR THE WHOLE PROJECT"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Measure. Make. Install."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "항목 제목 · Free on-site measuring"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · We visit your space, discuss suitable fabrics and pr"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Local, custom production"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Shades are manufactured and assembled in our Edmonto"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "항목 제목 · Installation & aftercare"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "설명 문구 · Our installers fit your shades and explain their ope"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "버튼 문구 · Care & service"
+        },
+        {
+          "key": "f9",
+          "kind": "url",
+          "label": "연결 · Care & service↗"
+        }
+      ],
+      "label": "Measure. Make. Install."
+    },
+    "services-4": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "gallery-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">THE WINCO GALLERY</p><h1 data-cms-text=\"f1\">Good light.<br>Real possibilities.</h1><p data-cms-text=\"f2\" class=\"lead\">A selection from our existing project gallery. Take a closer look at the textures, contrasts and little details that bring a room together.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · THE WINCO GALLERY"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Good light.\nReal possibilities."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · A selection from our existing project gallery. Take "
+        }
+      ],
+      "label": "Good light.Real possibilities."
+    },
+    "gallery-2": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "guides-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">THE SHADE GUIDE</p><h1 data-cms-text=\"f1\">Start with the room.<br>Then find the shade.</h1><p data-cms-text=\"f2\" class=\"lead\">You don’t have to know the product names yet. These four simple questions will help you find a direction.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · THE SHADE GUIDE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Start with the room.\nThen find the shade."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · You don’t have to know the product names yet. These "
+        }
+      ],
+      "label": "Start with the room.Then find the shade."
+    },
+    "guides-1": {
+      "html": "<section class=\"wrap guide-list\"><article><span data-cms-text=\"f0\">01</span><div><h2 data-cms-text=\"f1\">How do you use the room?</h2><p data-cms-text=\"f2\">A bedroom, a busy kitchen and a sunny office each ask something different of a window covering. Start with what you do in the space and when you spend time there.</p></div></article><article><span data-cms-text=\"f3\">02</span><div><h2 data-cms-text=\"f4\">What should the light feel like?</h2><p data-cms-text=\"f5\">Do you want a soft glow or a more restful setting? Compare light filtering, sunscreen and blackout fabrics in person. Remember that the fit around the window matters too.</p></div></article><article><span data-cms-text=\"f6\">03</span><div><h2 data-cms-text=\"f7\">What does privacy mean here?</h2><p data-cms-text=\"f8\">Think about the view from outside, both during the day and when your lights are on at night. Talk through those conditions when choosing a fabric.</p></div></article><article><span data-cms-text=\"f9\">04</span><div><h2 data-cms-text=\"f10\">How do you want it to work?</h2><p data-cms-text=\"f11\">Consider access to the window, who uses the room and whether motorized control would make the everyday easier. Ask us to confirm suitable options for your window sizes.</p></div></article></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "보조 문구 · 01"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · How do you use the room?"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · A bedroom, a busy kitchen and a sunny office each as"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · 02"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "섹션 제목 · What should the light feel like?"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Do you want a soft glow or a more restful setting? C"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · 03"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "섹션 제목 · What does privacy mean here?"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · Think about the view from outside, both during the d"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "보조 문구 · 04"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "섹션 제목 · How do you want it to work?"
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "설명 문구 · Consider access to the window, who uses the room and"
+        }
+      ],
+      "label": "How do you use the room?"
+    },
+    "guides-2": {
+      "html": "<section class=\"section tinted\"><div class=\"wrap split-copy\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">BEFORE YOUR VISIT</p><h2 data-cms-text=\"f1\">A little preparation.<br>A useful conversation.</h2></div><div><ul class=\"feature-list\"><li data-cms-text=\"f2\">Bring photos of the room and windows.</li><li data-cms-text=\"f3\">Note approximate sizes and the number of windows.</li><li data-cms-text=\"f4\">Collect a few colours or finishes you love.</li><li data-cms-text=\"f5\">Think about privacy, glare and daily routines.</li></ul><p data-cms-text=\"f6\">No measurements yet? You can still get in touch.</p><a data-cms-url=\"f8\" data-cms-text=\"f7\" class=\"text-link\" href=\"products.html\">Explore the collections<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · BEFORE YOUR VISIT"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · A little preparation.\nA useful conversation."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "목록 내용 · Bring photos of the room and windows."
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "목록 내용 · Note approximate sizes and the number of windows."
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "목록 내용 · Collect a few colours or finishes you love."
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "목록 내용 · Think about privacy, glare and daily routines."
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "설명 문구 · No measurements yet? You can still get in touch."
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "버튼 문구 · Explore the collections"
+        },
+        {
+          "key": "f8",
+          "kind": "url",
+          "label": "연결 · Explore the collections↗"
+        }
+      ],
+      "label": "A little preparation.A useful conversation."
+    },
+    "guides-3": {
+      "html": "<section class=\"section wrap\" id=\"measuring\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">MEASURING &amp; INSTALLATION</p><h2 data-cms-text=\"f1\">A good fit starts<br>with good information.</h2></div><p data-cms-text=\"f2\">A few details help us prepare your consultation. Final order measurements should be confirmed with our team.</p></div><div class=\"choice-grid\"><article><span data-cms-text=\"f3\">01 / PHOTOGRAPH</span><h3 data-cms-text=\"f4\">Show the whole window.</h3><p data-cms-text=\"f5\">Take a straight-on photo including the frame. Note handles, trim or anything that might affect how a shade fits.</p></article><article><span data-cms-text=\"f6\">02 / MAKE A NOTE</span><h3 data-cms-text=\"f7\">Label each room.</h3><p data-cms-text=\"f8\">Record the window count and approximate width and height, including the units. These are a starting point for a discussion, not final manufacturing sizes.</p></article><article><span data-cms-text=\"f9\">03 / CONFIRM THE FIT</span><h3 data-cms-text=\"f10\">Let us measure.</h3><p data-cms-text=\"f11\">Book a free measurement visit. Ask us to confirm the mounting position, light gaps, controls and installation arrangements before ordering.</p><a data-cms-url=\"f16\" data-cms-text=\"f12\" class=\"text-link\" href=\"contact.html?product=Measurement%20consultation\">Book a measurement visit<span aria-hidden=\"true\">↗</span></a></article></div><div class=\"resource-note\"><h3 data-cms-text=\"f13\">Installing an existing Winco shade?</h3><p data-cms-text=\"f14\">Ask our team for the instructions that match your exact bracket and shade model. Send a photo of the hardware so we can identify the right guide.</p><a data-cms-url=\"f17\" data-cms-text=\"f15\" class=\"text-link\" href=\"contact.html?product=Service%20or%20repair\">Request installation help<span aria-hidden=\"true\">↗</span></a></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · MEASURING & INSTALLATION"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · A good fit starts\nwith good information."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · A few details help us prepare your consultation. Fin"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · 01 / PHOTOGRAPH"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Show the whole window."
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Take a straight-on photo including the frame. Note h"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · 02 / MAKE A NOTE"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "항목 제목 · Label each room."
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · Record the window count and approximate width and he"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "보조 문구 · 03 / CONFIRM THE FIT"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "항목 제목 · Let us measure."
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "설명 문구 · Book a free measurement visit. Ask us to confirm the"
+        },
+        {
+          "key": "f12",
+          "kind": "text",
+          "label": "버튼 문구 · Book a measurement visit"
+        },
+        {
+          "key": "f13",
+          "kind": "text",
+          "label": "항목 제목 · Installing an existing Winco shade?"
+        },
+        {
+          "key": "f14",
+          "kind": "text",
+          "label": "설명 문구 · Ask our team for the instructions that match your ex"
+        },
+        {
+          "key": "f15",
+          "kind": "text",
+          "label": "버튼 문구 · Request installation help"
+        },
+        {
+          "key": "f16",
+          "kind": "url",
+          "label": "연결 · Book a measurement visit↗"
+        },
+        {
+          "key": "f17",
+          "kind": "url",
+          "label": "연결 · Request installation help↗"
+        }
+      ],
+      "label": "A good fit startswith good information."
+    },
+    "guides-4": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "faq-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">A LITTLE CLARITY</p><h1 data-cms-text=\"f1\">Good questions.<br>Thoughtful answers.</h1><p data-cms-text=\"f2\" class=\"lead\">A few useful things to know before you choose your window coverings.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A LITTLE CLARITY"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Good questions.\nThoughtful answers."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · A few useful things to know before you choose your w"
+        }
+      ],
+      "label": "Good questions.Thoughtful answers."
+    },
+    "faq-1": {
+      "html": "<section class=\"wrap narrow section-topless\"><div class=\"faq-list\"><details><summary data-cms-text=\"f0\">Where can I see fabric samples?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f1\">Visit our Edmonton showroom at 9790 51 Ave NW. Seeing samples in person is the best way to compare colour, texture and the way a fabric filters light.</p></details><details><summary data-cms-text=\"f2\">What is the difference between dual and roller shades?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f3\">Dual shades use alternating sheer and solid bands that shift against each other. Roller shades use one continuous fabric that raises or lowers. Your preferred appearance and the amount of light you want are good starting points.</p></details><details><summary data-cms-text=\"f4\">Will blackout fabric make my room completely dark?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f5\">Blackout describes the fabric. Light can still enter around the sides or top of a shade. Discuss the window, mounting position and your room-darkening expectations with us before choosing.</p></details><details><summary data-cms-text=\"f6\">Can my shades be motorized?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f7\">Motor options depend on the product, dimensions and chosen system. Tell us which windows you have in mind and how you want to control them so we can confirm a suitable option.</p></details><details><summary data-cms-text=\"f8\">Do I need exact measurements before getting in touch?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f9\">No. A window count and photos help us get started. We offer free on-site measuring and estimates; contact us to arrange a visit and confirm service in your area.</p></details><details><summary data-cms-text=\"f10\">How much do custom blinds cost?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f11\">Your quote depends on the window sizes, fabric, controls and installation requirements. Contact us for a free consultation and a quote based on your project.</p></details><details><summary data-cms-text=\"f12\">How long will my order take?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f13\">Your blinds will be installed within 7 business days of placing your order. Our team will coordinate the installation appointment with you.</p></details><details><summary data-cms-text=\"f14\">Which areas do you serve?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f15\">We welcome enquiries from Edmonton, St. Albert, Sherwood Park, Spruce Grove, Leduc and surrounding communities. Contact us to check arrangements for your location.</p></details><details><summary data-cms-text=\"f16\">Can you help with a repair or resizing?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f17\">Contact our team with photos of the shade, a description of the issue and your original order details if available. We’ll check the available service options and confirm any charges before work begins.</p></details><details><summary data-cms-text=\"f18\">What warranty applies to my order?<span aria-hidden=\"true\">+</span></summary><p data-cms-text=\"f19\">Our warranty period is 5 years. Contact our team for the coverage details and service arrangements that apply to your order.</p></details></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "질문 · Where can I see fabric samples?"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "설명 문구 · Visit our Edmonton showroom at 9790 51 Ave NW. Seein"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "질문 · What is the difference between dual and roller shade"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · Dual shades use alternating sheer and solid bands th"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "질문 · Will blackout fabric make my room completely dark?"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · Blackout describes the fabric. Light can still enter"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "질문 · Can my shades be motorized?"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "설명 문구 · Motor options depend on the product, dimensions and "
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "질문 · Do I need exact measurements before getting in touch"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "설명 문구 · No. A window count and photos help us get started. W"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "질문 · How much do custom blinds cost?"
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "설명 문구 · Your quote depends on the window sizes, fabric, cont"
+        },
+        {
+          "key": "f12",
+          "kind": "text",
+          "label": "질문 · How long will my order take?"
+        },
+        {
+          "key": "f13",
+          "kind": "text",
+          "label": "설명 문구 · Your blinds will be installed within 7 business days"
+        },
+        {
+          "key": "f14",
+          "kind": "text",
+          "label": "질문 · Which areas do you serve?"
+        },
+        {
+          "key": "f15",
+          "kind": "text",
+          "label": "설명 문구 · We welcome enquiries from Edmonton, St. Albert, Sher"
+        },
+        {
+          "key": "f16",
+          "kind": "text",
+          "label": "질문 · Can you help with a repair or resizing?"
+        },
+        {
+          "key": "f17",
+          "kind": "text",
+          "label": "설명 문구 · Contact our team with photos of the shade, a descrip"
+        },
+        {
+          "key": "f18",
+          "kind": "text",
+          "label": "질문 · What warranty applies to my order?"
+        },
+        {
+          "key": "f19",
+          "kind": "text",
+          "label": "설명 문구 · Our warranty period is 5 years. Contact our team for"
+        }
+      ],
+      "label": "wrap narrow section-topless"
+    },
+    "faq-2": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "reviews-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">THE CUSTOMER PERSPECTIVE</p><h1 data-cms-text=\"f1\">See what others<br>have to say.</h1><p data-cms-text=\"f2\" class=\"lead\">Choosing a local team is personal. Take a moment to explore customer feedback before you begin your own project.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · THE CUSTOMER PERSPECTIVE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · See what others\nhave to say."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Choosing a local team is personal. Take a moment to "
+        }
+      ],
+      "label": "See what othershave to say."
+    },
+    "reviews-1": {
+      "html": "<section class=\"wrap review-section\"><div class=\"review-panel\"><p data-cms-text=\"f0\" class=\"eyebrow\">CUSTOMER FEEDBACK</p><h2 data-cms-text=\"f1\">Real experiences.<br>In their own words.</h2><p data-cms-text=\"f2\">Read the customer reviews on our original Winco website.</p><a data-cms-url=\"f7\" data-cms-text=\"f3\" class=\"button\" href=\"https://www.wincoblinds.com/pages/review\">Read Winco reviews<span aria-hidden=\"true\">↗</span></a></div><div><h2 data-cms-text=\"f4\">Already part<br>of the Winco family?</h2><p data-cms-text=\"f5\">We’d love to hear how your shades are working for you. Your feedback helps us care for the details that matter.</p><a data-cms-url=\"f8\" data-cms-text=\"f6\" class=\"text-link\" href=\"mailto:wincocanada@gmail.com?subject=My%20Winco%20experience\">Share your experience<span aria-hidden=\"true\">↗</span></a></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · CUSTOMER FEEDBACK"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Real experiences.\nIn their own words."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Read the customer reviews on our original Winco webs"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Read Winco reviews"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "섹션 제목 · Already part\nof the Winco family?"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · We’d love to hear how your shades are working for yo"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "버튼 문구 · Share your experience"
+        },
+        {
+          "key": "f7",
+          "kind": "url",
+          "label": "연결 · Read Winco reviews↗"
+        },
+        {
+          "key": "f8",
+          "kind": "url",
+          "label": "연결 · Share your experience↗"
+        }
+      ],
+      "label": "Real experiences.In their own words."
+    },
+    "reviews-2": {
+      "html": "<section class=\"section wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">FROM OUR CUSTOMER REVIEWS</p><h2 data-cms-text=\"f1\">A few words from<br>the people we work with.</h2></div></div><div class=\"testimonial-grid\"><figure><blockquote>“Very professional and a pleasure to deal with”</blockquote><figcaption>Lorne Hiscock · August 2026<br><a data-cms-url=\"f5\" data-cms-text=\"f2\" href=\"https://www.wincoblinds.com/pages/review\">Read the full review ↗</a></figcaption></figure><figure><blockquote>“Excellent blinds! Very nice staff.”</blockquote><figcaption>Eric De Haas · June 2026<br><a data-cms-url=\"f6\" data-cms-text=\"f3\" href=\"https://www.wincoblinds.com/pages/review\">Read the full review ↗</a></figcaption></figure></div><p data-cms-text=\"f4\" class=\"fine-print\">Short excerpts from reviews displayed on our original website. Each reflects an individual customer’s experience.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · FROM OUR CUSTOMER REVIEWS"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · A few words from\nthe people we work with."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "버튼 문구 · Read the full review ↗"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Read the full review ↗"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "설명 문구 · Short excerpts from reviews displayed on our origina"
+        },
+        {
+          "key": "f5",
+          "kind": "url",
+          "label": "연결 · Read the full review ↗"
+        },
+        {
+          "key": "f6",
+          "kind": "url",
+          "label": "연결 · Read the full review ↗"
+        }
+      ],
+      "label": "A few words fromthe people we work with."
+    },
+    "reviews-3": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "blog-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">THE WINDOW JOURNAL</p><h1 data-cms-text=\"f1\">Small details.<br>A different feeling.</h1><p data-cms-text=\"f2\" class=\"lead\">A few thoughtful ideas for living with light.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · THE WINDOW JOURNAL"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Small details.\nA different feeling."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · A few thoughtful ideas for living with light."
+        }
+      ],
+      "label": "Small details.A different feeling."
+    },
+    "blog-1": {
+      "html": "<section class=\"wrap journal\"><article id=\"morning-light\"><p data-cms-text=\"f0\" class=\"eyebrow\">01 / LIVING WITH LIGHT</p><h2 data-cms-text=\"f1\">Notice the light before you choose.</h2><p data-cms-text=\"f2\">Spend a day watching your room. A window that feels gentle at breakfast might catch strong afternoon light. Make a note of the moments when you reach for shade, move your chair or switch on a lamp.</p><p data-cms-text=\"f3\">Those small observations are a useful starting point for a conversation about fabric. Bring them along when you visit the showroom.</p><a data-cms-url=\"f15\" data-cms-text=\"f4\" class=\"text-link\" href=\"roller-shades.html#fabrics\">Explore light filtering fabrics<span aria-hidden=\"true\">↗</span></a></article><article id=\"whole-home\"><p data-cms-text=\"f5\" class=\"eyebrow\">02 / A COHESIVE HOME</p><h2 data-cms-text=\"f6\">Related, without being identical.</h2><p data-cms-text=\"f7\">Your rooms can feel connected without every window wearing exactly the same shade. Try a consistent colour family while choosing different levels of light control for the way each room is used.</p><p data-cms-text=\"f8\">Lay samples beside flooring, paint and furniture finishes. Look at them together in daylight before deciding.</p><a data-cms-url=\"f16\" data-cms-text=\"f9\" class=\"text-link\" href=\"products.html\">Compare the collections<span aria-hidden=\"true\">↗</span></a></article><article id=\"showroom-visit\"><p data-cms-text=\"f10\" class=\"eyebrow\">03 / MAKING A CHOICE</p><h2 data-cms-text=\"f11\">The value of seeing it in person.</h2><p data-cms-text=\"f12\">A photo is a starting point. A real sample shows you the weave, texture and small shifts in colour that a screen can miss.</p><p data-cms-text=\"f13\">At the showroom, compare a few options side by side. Ask to see how the fabric changes when light passes through it, and talk about how it will sit in your window.</p><a data-cms-url=\"f17\" data-cms-text=\"f14\" class=\"text-link\" href=\"contact.html#showroom\">Visit our Edmonton showroom<span aria-hidden=\"true\">↗</span></a></article></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · 01 / LIVING WITH LIGHT"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Notice the light before you choose."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Spend a day watching your room. A window that feels "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · Those small observations are a useful starting point"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "버튼 문구 · Explore light filtering fabrics"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · 02 / A COHESIVE HOME"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "섹션 제목 · Related, without being identical."
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "설명 문구 · Your rooms can feel connected without every window w"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · Lay samples beside flooring, paint and furniture fin"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "버튼 문구 · Compare the collections"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "설명 문구 · 03 / MAKING A CHOICE"
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "섹션 제목 · The value of seeing it in person."
+        },
+        {
+          "key": "f12",
+          "kind": "text",
+          "label": "설명 문구 · A photo is a starting point. A real sample shows you"
+        },
+        {
+          "key": "f13",
+          "kind": "text",
+          "label": "설명 문구 · At the showroom, compare a few options side by side."
+        },
+        {
+          "key": "f14",
+          "kind": "text",
+          "label": "버튼 문구 · Visit our Edmonton showroom"
+        },
+        {
+          "key": "f15",
+          "kind": "url",
+          "label": "연결 · Explore light filtering fabrics↗"
+        },
+        {
+          "key": "f16",
+          "kind": "url",
+          "label": "연결 · Compare the collections↗"
+        },
+        {
+          "key": "f17",
+          "kind": "url",
+          "label": "연결 · Visit our Edmonton showroom↗"
+        }
+      ],
+      "label": "Notice the light before you choose."
+    },
+    "blog-2": {
+      "html": "<section class=\"section tinted\"><div class=\"wrap\"><div class=\"section-heading\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">FROM THE WINCO ARCHIVE</p><h2 data-cms-text=\"f1\">More ideas to explore.</h2></div><p data-cms-text=\"f2\">Selected reading from our original website. These links open the full articles there.</p></div><div class=\"choice-grid\"><article><span data-cms-text=\"f3\">PRIVACY / JUNE 2026</span><h3 data-cms-text=\"f4\">Dual shades, day to night.</h3><p data-cms-text=\"f5\">A closer look at layered fabrics and the changing privacy needs of a room.</p><a data-cms-url=\"f15\" data-cms-text=\"f6\" class=\"text-link\" href=\"https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1503920-how-dual-shades-blinds-offer-smart-privacy-for-modern-homes\">Read the original article<span aria-hidden=\"true\">↗</span></a></article><article><span data-cms-text=\"f7\">WORKSPACES / FEBRUARY 2026</span><h3 data-cms-text=\"f8\">A more comfortable office.</h3><p data-cms-text=\"f9\">Consider glare, shared spaces and window coverings at work.</p><a data-cms-url=\"f16\" data-cms-text=\"f10\" class=\"text-link\" href=\"https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1454102-how-commercial-blinds-improve-comfort-and-productivity-in-offices\">Read the original article<span aria-hidden=\"true\">↗</span></a></article><article><span data-cms-text=\"f11\">MOTORIZATION / JANUARY 2026</span><h3 data-cms-text=\"f12\">Light around your routine.</h3><p data-cms-text=\"f13\">Explore how powered shades can fit into everyday life. Available features depend on the chosen system.</p><a data-cms-url=\"f17\" data-cms-text=\"f14\" class=\"text-link\" href=\"https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1442811-how-motorized-blinds-make-daily-living-smarter-in-edmonton-homes\">Read the original article<span aria-hidden=\"true\">↗</span></a></article></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · FROM THE WINCO ARCHIVE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · More ideas to explore."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Selected reading from our original website. These li"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · PRIVACY / JUNE 2026"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Dual shades, day to night."
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · A closer look at layered fabrics and the changing pr"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "버튼 문구 · Read the original article"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "보조 문구 · WORKSPACES / FEBRUARY 2026"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "항목 제목 · A more comfortable office."
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "설명 문구 · Consider glare, shared spaces and window coverings a"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "버튼 문구 · Read the original article"
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "보조 문구 · MOTORIZATION / JANUARY 2026"
+        },
+        {
+          "key": "f12",
+          "kind": "text",
+          "label": "항목 제목 · Light around your routine."
+        },
+        {
+          "key": "f13",
+          "kind": "text",
+          "label": "설명 문구 · Explore how powered shades can fit into everyday lif"
+        },
+        {
+          "key": "f14",
+          "kind": "text",
+          "label": "버튼 문구 · Read the original article"
+        },
+        {
+          "key": "f15",
+          "kind": "url",
+          "label": "연결 · Read the original article↗"
+        },
+        {
+          "key": "f16",
+          "kind": "url",
+          "label": "연결 · Read the original article↗"
+        },
+        {
+          "key": "f17",
+          "kind": "url",
+          "label": "연결 · Read the original article↗"
+        }
+      ],
+      "label": "More ideas to explore."
+    },
+    "blog-3": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "care-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">CARE &amp; SERVICE</p><h1 data-cms-text=\"f1\">A little care.<br>A team to turn to.</h1><p data-cms-text=\"f2\" class=\"lead\">Already have Winco shades? We’re here to help with care questions, operation and service.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · CARE & SERVICE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · A little care.\nA team to turn to."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Already have Winco shades? We’re here to help with c"
+        }
+      ],
+      "label": "A little care.A team to turn to."
+    },
+    "care-1": {
+      "html": "<section class=\"section-topless wrap\"><div class=\"choice-grid\"><article><span data-cms-text=\"f0\">EVERYDAY CARE</span><h2 data-cms-text=\"f1\">Know your fabric.</h2><p data-cms-text=\"f2\">Cleaning methods depend on the material and finish. Check the care instructions for your shade before applying water, cleaners or steam. If you’re unsure, ask us to identify the fabric first.</p></article><article><span data-cms-text=\"f3\">OPERATION</span><h2 data-cms-text=\"f4\">Something feels different?</h2><p data-cms-text=\"f5\">If a shade catches, sits unevenly or stops responding, avoid forcing it. Note what happens and send us a photo or short description so we can advise on the next step.</p></article><article><span data-cms-text=\"f6\">REPAIRS &amp; RESIZING</span><h2 data-cms-text=\"f7\">Start with the details.</h2><p data-cms-text=\"f8\">Have your original order information handy if possible. Our warranty period is 5 years. We’ll review your shade, the applicable coverage and available service options, then confirm any cost before proceeding.</p></article></div><div class=\"resource-note\"><h3 data-cms-text=\"f9\">What to include in your message</h3><p data-cms-text=\"f10\">Your name, contact number, installation address or order reference, and a description of the issue. We can arrange how to share photos when we reply.</p><a data-cms-url=\"f12\" data-cms-text=\"f11\" class=\"button\" href=\"contact.html?product=Service%20or%20repair\">Request service<span aria-hidden=\"true\">↗</span></a></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "보조 문구 · EVERYDAY CARE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Know your fabric."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Cleaning methods depend on the material and finish. "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "보조 문구 · OPERATION"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "섹션 제목 · Something feels different?"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "설명 문구 · If a shade catches, sits unevenly or stops respondin"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "보조 문구 · REPAIRS & RESIZING"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "섹션 제목 · Start with the details."
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "설명 문구 · Have your original order information handy if possib"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "항목 제목 · What to include in your message"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "설명 문구 · Your name, contact number, installation address or o"
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "버튼 문구 · Request service"
+        },
+        {
+          "key": "f12",
+          "kind": "url",
+          "label": "연결 · Request service↗"
+        }
+      ],
+      "label": "Know your fabric."
+    },
+    "care-2": {
+      "html": "<section class=\"consultation\"><div class=\"wrap consultation-inner\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">A BETTER VIEW STARTS HERE</p><h2 data-cms-text=\"f1\">Let’s find the right<br>light for your home.</h2></div><div><p data-cms-text=\"f2\">Bring your ideas. We’ll bring the samples<br class=\"desktop-only\"> and help you make them your own.</p><a data-cms-url=\"f4\" data-cms-text=\"f3\" class=\"button light\" href=\"contact.html\">Start with a free consultation<span aria-hidden=\"true\">↗</span></a></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · A BETTER VIEW STARTS HERE"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · Let’s find the right\nlight for your home."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · Bring your ideas. We’ll bring the samples\n and help "
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Start with a free consultation"
+        },
+        {
+          "key": "f4",
+          "kind": "url",
+          "label": "연결 · Start with a free consultation↗"
+        }
+      ],
+      "label": "Let’s find the rightlight for your home."
+    },
+    "contact-0": {
+      "html": "<section class=\"page-intro wrap\"><p data-cms-text=\"f0\" class=\"eyebrow\">LET’S TALK WINDOWS</p><h1 data-cms-text=\"f1\">Your next chapter.<br>A beautiful view.</h1><p data-cms-text=\"f2\" class=\"lead\">A new home, a room refresh or just an idea. Tell us what you have in mind and we’ll help you find a place to start.</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · LET’S TALK WINDOWS"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "큰 제목 · Your next chapter.\nA beautiful view."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · A new home, a room refresh or just an idea. Tell us "
+        }
+      ],
+      "label": "Your next chapter.A beautiful view."
+    },
+    "contact-1": {
+      "html": "<section class=\"wrap contact-grid\"><div class=\"contact-direct\"><p data-cms-text=\"f0\" class=\"eyebrow\">SAY HELLO</p><a data-cms-url=\"f8\" data-cms-text=\"f1\" class=\"contact-phone\" href=\"tel:+17808092292\">(780) 809-2292 <span aria-hidden=\"true\">↗</span></a><a data-cms-url=\"f9\" data-cms-text=\"f2\" class=\"contact-email\" href=\"mailto:wincocanada@gmail.com\">wincocanada@gmail.com <span aria-hidden=\"true\">↗</span></a><p data-cms-text=\"f3\">Prefer a conversation? Give our Edmonton team a call during showroom hours.</p><div class=\"contact-note\"><span aria-hidden=\"true\">↗</span><p data-cms-text=\"f4\">Not sure which shade is right?<br>That’s a good place to start.</p></div></div><div class=\"enquiry-panel\"><h2 data-cms-text=\"f5\">Tell us about your space.</h2><p data-cms-text=\"f6\">Tell us about your project. Send your enquiry directly to our Edmonton team.</p><form id=\"enquiry-form\" name=\"winco-enquiry\" method=\"POST\" data-netlify=\"true\" netlify-honeypot=\"bot-field\"><input type=\"hidden\" name=\"form-name\" value=\"winco-enquiry\"><p hidden><label>Leave this field empty<input name=\"bot-field\" tabindex=\"-1\" autocomplete=\"off\"></label></p><div class=\"form-row\"><label>Your name <span>(required)</span><input name=\"name\" autocomplete=\"name\" required maxlength=\"100\" placeholder=\"First and last name\"></label><label>Email <span>(required)</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required maxlength=\"160\" placeholder=\"you@example.com\"></label></div><div class=\"form-row\"><label>Phone <span>(optional)</span><input name=\"phone\" type=\"tel\" autocomplete=\"tel\" maxlength=\"40\" placeholder=\"Your phone number\"></label><label>I’m interested in<select name=\"product\"><option>Not sure yet</option><option>Dual shades</option><option>Roller shades</option><option>Motorized blinds</option><option>Whole-home project</option><option>Commercial project</option><option>Measurement consultation</option><option>Service or repair</option></select></label></div><label>Tell us a little more<textarea name=\"message\" rows=\"4\" maxlength=\"1500\" placeholder=\"Your rooms, approximate window count, or a question…\"></textarea></label><button class=\"button\" type=\"submit\">Send enquiry <span aria-hidden=\"true\">↗</span></button><p class=\"fine-print\">Your details are sent to our team so we can respond to your enquiry. You can also call (780) 809-2292.</p><p id=\"enquiry-status\" role=\"status\" aria-live=\"polite\" tabindex=\"-1\"></p></form><noscript><p>You can submit this form without JavaScript, or email <a data-cms-url=\"f10\" data-cms-text=\"f7\" href=\"mailto:wincocanada@gmail.com\">wincocanada@gmail.com</a> or call (780) 809-2292.</p></noscript></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · SAY HELLO"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "버튼 문구 · (780) 809-2292"
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "버튼 문구 · wincocanada@gmail.com"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "설명 문구 · Prefer a conversation? Give our Edmonton team a call"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "설명 문구 · Not sure which shade is right?\nThat’s a good place t"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "섹션 제목 · Tell us about your space."
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "설명 문구 · Tell us about your project. Send your enquiry direct"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "버튼 문구 · wincocanada@gmail.com"
+        },
+        {
+          "key": "f8",
+          "kind": "url",
+          "label": "연결 · (780) 809-2292 ↗"
+        },
+        {
+          "key": "f9",
+          "kind": "url",
+          "label": "연결 · wincocanada@gmail.com ↗"
+        },
+        {
+          "key": "f10",
+          "kind": "url",
+          "label": "연결 · wincocanada@gmail.com"
+        }
+      ],
+      "label": "Tell us about your space."
+    },
+    "contact-2": {
+      "html": "<section class=\"showroom-section tinted\" id=\"showroom\"><div class=\"wrap showroom-grid\"><div><p data-cms-text=\"f0\" class=\"eyebrow\">COME SEE US</p><h2 data-cms-text=\"f1\">A little inspiration.<br>In person.</h2><p data-cms-text=\"f2\">9790 51 Ave NW<br>Edmonton, AB T6E 0A6</p><a data-cms-url=\"f13\" data-cms-text=\"f3\" class=\"text-link\" href=\"https://www.google.com/maps/search/?api=1&query=Winco%20Blinds%209790%2051%20Ave%20NW%20Edmonton\">Get directions<span aria-hidden=\"true\">↗</span></a></div><div class=\"hours\"><h3 data-cms-text=\"f4\">Showroom hours</h3><dl><div><dt data-cms-text=\"f5\">Monday – Friday</dt><dd data-cms-text=\"f6\">9:00 am – 5:00 pm</dd></div><div><dt data-cms-text=\"f7\">Saturday</dt><dd data-cms-text=\"f8\">10:30 am – 2:30 pm</dd></div><div><dt data-cms-text=\"f9\">Sunday</dt><dd data-cms-text=\"f10\">By appointment</dd></div></dl><p data-cms-text=\"f11\" class=\"fine-print\">Planning a special trip? Call ahead to confirm holiday hours.</p><p>Calgary enquiries: <a data-cms-url=\"f14\" data-cms-text=\"f12\" href=\"tel:+14038998056\">(403) 899-8056</a></p></div></div></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "설명 문구 · COME SEE US"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "섹션 제목 · A little inspiration.\nIn person."
+        },
+        {
+          "key": "f2",
+          "kind": "text",
+          "label": "설명 문구 · 9790 51 Ave NW\nEdmonton, AB T6E 0A6"
+        },
+        {
+          "key": "f3",
+          "kind": "text",
+          "label": "버튼 문구 · Get directions"
+        },
+        {
+          "key": "f4",
+          "kind": "text",
+          "label": "항목 제목 · Showroom hours"
+        },
+        {
+          "key": "f5",
+          "kind": "text",
+          "label": "안내 항목 · Monday – Friday"
+        },
+        {
+          "key": "f6",
+          "kind": "text",
+          "label": "안내 내용 · 9:00 am – 5:00 pm"
+        },
+        {
+          "key": "f7",
+          "kind": "text",
+          "label": "안내 항목 · Saturday"
+        },
+        {
+          "key": "f8",
+          "kind": "text",
+          "label": "안내 내용 · 10:30 am – 2:30 pm"
+        },
+        {
+          "key": "f9",
+          "kind": "text",
+          "label": "안내 항목 · Sunday"
+        },
+        {
+          "key": "f10",
+          "kind": "text",
+          "label": "안내 내용 · By appointment"
+        },
+        {
+          "key": "f11",
+          "kind": "text",
+          "label": "설명 문구 · Planning a special trip? Call ahead to confirm holid"
+        },
+        {
+          "key": "f12",
+          "kind": "text",
+          "label": "버튼 문구 · (403) 899-8056"
+        },
+        {
+          "key": "f13",
+          "kind": "url",
+          "label": "연결 · Get directions↗"
+        },
+        {
+          "key": "f14",
+          "kind": "url",
+          "label": "연결 · (403) 899-8056"
+        }
+      ],
+      "label": "A little inspiration.In person."
+    },
+    "contact-3": {
+      "html": "<section class=\"wrap service-area\"><span data-cms-text=\"f0\" class=\"eyebrow\">NEAR YOU</span><p data-cms-text=\"f1\">Edmonton · St. Albert · Sherwood Park · Spruce Grove · Leduc &amp; surrounding communities</p></section>",
+      "fields": [
+        {
+          "key": "f0",
+          "kind": "text",
+          "label": "보조 문구 · NEAR YOU"
+        },
+        {
+          "key": "f1",
+          "kind": "text",
+          "label": "설명 문구 · Edmonton · St. Albert · Sherwood Park · Spruce Grove"
+        }
+      ],
+      "label": "wrap service-area"
+    }
+  },
+  "shell": {
+    "header": "<a class=\"skip-link\" href=\"#main\">Skip to content</a><div class=\"announcement\"><span>Custom window coverings. Local Edmonton care.</span><a href=\"tel:+17808092292\">Let’s talk · (780) 809-2292</a></div><header class=\"site-header\"><div class=\"wrap header-inner\"><a class=\"brand\" href=\"index.html\" aria-label=\"Winco Blinds home\"><img src=\"assets/images/logo/winco-original.png\" alt=\"Winco\" width=\"288\" height=\"61\"><span>BLINDS &amp; WINDOW FASHION</span></a><button class=\"menu-toggle\" aria-expanded=\"false\" aria-controls=\"site-nav\" aria-label=\"Open navigation\"><span></span><span></span></button><nav id=\"site-nav\" aria-label=\"Main navigation\"><details class=\"nav-group\"><summary>Products<span aria-hidden=\"true\">⌄</span></summary><div class=\"nav-dropdown\"><a href=\"products.html\">All collections</a><a href=\"dual-shades.html\">Dual shades</a><a href=\"roller-shades.html\">Roller shades</a><a href=\"motorized-blinds.html\">Motorized blinds</a></div></details><a href=\"services.html\">Services</a><a href=\"gallery.html\">Gallery</a><a href=\"about.html\">About</a><details class=\"nav-group\"><summary>Resources<span aria-hidden=\"true\">⌄</span></summary><div class=\"nav-dropdown\"><a href=\"guides.html\">Choosing your shades</a><a href=\"guides.html#measuring\">Measuring &amp; installation</a><a href=\"care.html\">Care &amp; service</a><a href=\"faq.html\">Common questions</a><a href=\"reviews.html\">Customer reviews</a><a href=\"blog.html\">The window journal</a></div></details><a class=\"button nav-cta\" href=\"contact.html\">Free consultation<span aria-hidden=\"true\">↗</span></a></nav></div></header>",
+    "footer": "<footer class=\"site-footer\"><div class=\"wrap footer-grid\"><div><a class=\"brand footer-brand\" href=\"index.html\"><img src=\"assets/images/logo/winco-original.png\" alt=\"Winco\" width=\"288\" height=\"61\"><span>BLINDS &amp; WINDOW FASHION</span></a><p>Thoughtful window coverings.<br>Made for the way you live.</p></div><div><h2>Explore</h2><a href=\"products.html\">Our collections</a><a href=\"gallery.html\">Project gallery</a><a href=\"about.html\">Meet Winco</a><a href=\"reviews.html\">Customer reviews</a><a href=\"https://www.instagram.com/wincoblindsyeg/\">Instagram ↗</a></div><div><h2>Good to know</h2><a href=\"guides.html\">Choosing your shades</a><a href=\"faq.html\">Common questions</a><a href=\"care.html\">Care &amp; service</a><a href=\"blog.html\">The window journal</a><a href=\"contact.html\">Get in touch</a></div><div><h2>Visit our showroom</h2><p>9790 51 Ave NW<br>Edmonton, AB T6E 0A6</p><a href=\"tel:+17808092292\">(780) 809-2292</a><a href=\"mailto:wincocanada@gmail.com\">wincocanada@gmail.com</a></div></div><div class=\"wrap footer-bottom\"><span>© 2026 Winco Blinds &amp; Window Fashion</span><span>Edmonton &amp; surrounding communities</span><a href=\"/app/\">Staff access <span aria-hidden=\"true\">↗</span></a></div></footer>"
+  }
+}

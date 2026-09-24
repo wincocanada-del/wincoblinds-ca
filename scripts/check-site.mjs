@@ -1,9 +1,10 @@
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..',process.argv[2]||'.');
 const pages=readdirSync(root).filter(f=>f.endsWith('.html'));
 const errors=[];
+if(!pages.length) errors.push("No generated HTML pages found");
 let checked=0;
 for(const file of pages){
   const html=readFileSync(resolve(root,file),'utf8');

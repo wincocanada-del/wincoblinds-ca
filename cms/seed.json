@@ -1,0 +1,1351 @@
+{
+  "schema": 1,
+  "settings": {
+    "name": "Winco Blinds & Window Fashion",
+    "logo": "assets/images/logo/winco-original.png",
+    "phone": "(780) 809-2292",
+    "phoneDigits": "+17808092292",
+    "email": "wincocanada@gmail.com",
+    "address": "9790 51 Ave NW",
+    "city": "Edmonton, AB T6E 0A6",
+    "weekdayHours": "9:00 am – 5:00 pm",
+    "saturdayHours": "10:30 am – 2:30 pm",
+    "sundayHours": "By appointment",
+    "instagram": "https://www.instagram.com/wincoblindsyeg/"
+  },
+  "navigation": [
+    {
+      "label": "Products",
+      "children": [
+        [
+          "All collections",
+          "products.html"
+        ],
+        [
+          "Dual shades",
+          "dual-shades.html"
+        ],
+        [
+          "Roller shades",
+          "roller-shades.html"
+        ],
+        [
+          "Motorized blinds",
+          "motorized-blinds.html"
+        ]
+      ]
+    },
+    {
+      "label": "Services",
+      "url": "services.html"
+    },
+    {
+      "label": "Gallery",
+      "url": "gallery.html"
+    },
+    {
+      "label": "About",
+      "url": "about.html"
+    },
+    {
+      "label": "Resources",
+      "children": [
+        [
+          "Choosing your shades",
+          "guides.html"
+        ],
+        [
+          "Measuring & installation",
+          "guides.html#measuring"
+        ],
+        [
+          "Care & service",
+          "care.html"
+        ],
+        [
+          "Common questions",
+          "faq.html"
+        ],
+        [
+          "Customer reviews",
+          "reviews.html"
+        ],
+        [
+          "The window journal",
+          "blog.html"
+        ]
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "image": "assets/images/website/gallery-01.webp",
+      "category": "Shared spaces",
+      "title": "Light-filled gathering space",
+      "alt": "Cream dual shades around a seating area"
+    },
+    {
+      "image": "assets/images/website/gallery-06.webp",
+      "category": "Living spaces",
+      "title": "A softer corner",
+      "alt": "Dual shades on corner windows above a sofa"
+    },
+    {
+      "image": "assets/images/website/gallery-04.webp",
+      "category": "Living spaces",
+      "title": "Contrast & calm",
+      "alt": "Dark dual shades behind a sitting area"
+    },
+    {
+      "image": "assets/images/website/gallery-05.webp",
+      "category": "Shared spaces",
+      "title": "Light from every angle",
+      "alt": "Cream dual shades on adjoining windows"
+    },
+    {
+      "image": "assets/images/website/gallery-02.webp",
+      "category": "Workspaces",
+      "title": "A little more privacy",
+      "alt": "Dual shades on glazed office doors"
+    },
+    {
+      "image": "assets/images/website/gallery-03.webp",
+      "category": "Workspaces",
+      "title": "Focus, beautifully framed",
+      "alt": "Dark dual shades in a meeting room"
+    },
+    {
+      "image": "assets/images/website/gallery-07.webp",
+      "category": "Workspaces",
+      "title": "A calmer clinic",
+      "alt": "Roller shades beside a dental treatment chair"
+    },
+    {
+      "image": "assets/images/website/gallery-08.webp",
+      "category": "Workspaces",
+      "title": "Light at your desk",
+      "alt": "Roller shade behind an office desk"
+    },
+    {
+      "image": "assets/images/website/gallery-09.webp",
+      "category": "Shared spaces",
+      "title": "Room to move",
+      "alt": "Roller shades along fitness room windows"
+    },
+    {
+      "image": "assets/images/website/gallery-10.webp",
+      "category": "Living spaces",
+      "title": "Warmth at the table",
+      "alt": "Brown dual shades around a dining area"
+    },
+    {
+      "image": "assets/images/website/gallery-11.webp",
+      "category": "Shared spaces",
+      "title": "A quiet pause",
+      "alt": "Dual shades in a waiting area"
+    },
+    {
+      "image": "assets/images/website/gallery-12.webp",
+      "category": "Living spaces",
+      "title": "Layers of light",
+      "alt": "Warm brown dual shades beside a sofa"
+    },
+    {
+      "image": "assets/images/website/gallery-13.webp",
+      "category": "Workspaces",
+      "title": "A meeting of light & shade",
+      "alt": "Dual shades along a conference room"
+    },
+    {
+      "image": "assets/images/website/gallery-14.webp",
+      "category": "Workspaces",
+      "title": "Privacy in place",
+      "alt": "Conference room dual shades in a closed position"
+    },
+    {
+      "image": "assets/images/website/gallery-15.webp",
+      "category": "Living spaces",
+      "title": "A home, considered",
+      "alt": "Dual shade beside a dining room"
+    },
+    {
+      "image": "assets/images/website/gallery-16.webp",
+      "category": "Living spaces",
+      "title": "Two ways to welcome light",
+      "alt": "Living room dual shades shown open and closed"
+    },
+    {
+      "image": "assets/images/website/gallery-17.webp",
+      "category": "Workspaces",
+      "title": "Simply framed",
+      "alt": "Roller shades beside an office entrance"
+    },
+    {
+      "image": "assets/images/website/gallery-18.webp",
+      "category": "Living spaces",
+      "title": "A closer look",
+      "alt": "Close-up of alternating sheer and solid bands"
+    },
+    {
+      "image": "assets/images/website/gallery-19.webp",
+      "category": "Workspaces",
+      "title": "A bright welcome",
+      "alt": "Light roller shades in a commercial entrance"
+    },
+    {
+      "image": "assets/images/website/gallery-20.webp",
+      "category": "Living spaces",
+      "title": "A restful setting",
+      "alt": "Dual shades fitted to bedroom windows"
+    }
+  ],
+  "catalog": {
+    "dualShades": [
+      {
+        "category": "Dual Shades",
+        "name": "Pluto Room Darkening",
+        "type": "Room Darkening",
+        "slug": "pluto-room-darkening",
+        "description": "A dual shade fabric option designed for privacy, softened daylight, and a refined modern finish.",
+        "image": "pluto-room-darkening.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Signature Room Darkening",
+        "type": "Room Darkening",
+        "slug": "signature-room-darkening",
+        "description": "A room darkening dual shade collection for comfortable light control in everyday spaces.",
+        "image": "signature-room-darkening.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Libra Room Darkening",
+        "type": "Room Darkening",
+        "slug": "libra-room-darkening",
+        "description": "A balanced room darkening option with a clean look for bedrooms, living rooms, and offices.",
+        "image": "libra-room-darkening.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Sun Flare Room Darkening",
+        "type": "Room Darkening",
+        "slug": "sun-flare-room-darkening",
+        "description": "A warm room darkening fabric family for privacy and reduced glare.",
+        "image": "sun-flare-room-darkening.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Somnia Light Filtering",
+        "type": "Light Filtering",
+        "slug": "somnia-light-filtering",
+        "description": "A light filtering dual shade option that softens daylight while keeping rooms bright.",
+        "image": "somnia-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Luna Light Filtering",
+        "type": "Light Filtering",
+        "slug": "luna-light-filtering",
+        "description": "A soft light filtering fabric for calm interiors and flexible daytime privacy.",
+        "image": "luna-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Miele Light Filtering",
+        "type": "Light Filtering",
+        "slug": "miele-light-filtering",
+        "description": "A versatile light filtering selection for warm, understated window styling.",
+        "image": "miele-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Le Pearl Light Filtering",
+        "type": "Light Filtering",
+        "slug": "le-pearl-light-filtering",
+        "description": "A bright light filtering fabric family with a clean, premium appearance.",
+        "image": "le-pearl-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Esparros Light Filtering",
+        "type": "Light Filtering",
+        "slug": "esparros-light-filtering",
+        "description": "A refined light filtering dual shade option for homes and commercial interiors.",
+        "image": "esparros-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Comet Light Filtering",
+        "type": "Light Filtering",
+        "slug": "comet-light-filtering",
+        "description": "A simple light filtering fabric for gentle daylight and a minimal profile.",
+        "image": "comet-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "1 Linear Light Filtering",
+        "type": "Light Filtering",
+        "slug": "1-linear-light-filtering",
+        "description": "A linear light filtering style for crisp horizontal detail and soft light control.",
+        "image": "1-linear-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "7 Linear Light Filtering",
+        "type": "Light Filtering",
+        "slug": "7-linear-light-filtering",
+        "description": "A structured light filtering fabric with a subtle linear appearance.",
+        "image": "7-linear-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Aries Light Filtering",
+        "type": "Light Filtering",
+        "slug": "aries-light-filtering",
+        "description": "A light filtering fabric family suited to everyday residential and office windows.",
+        "image": "aries-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Luxury Light Filtering",
+        "type": "Light Filtering",
+        "slug": "luxury-light-filtering",
+        "description": "A premium light filtering option for elegant interiors and softly controlled daylight.",
+        "image": "luxury-light-filtering.jpg"
+      },
+      {
+        "category": "Dual Shades",
+        "name": "Zio Light Filtering",
+        "type": "Light Filtering",
+        "slug": "zio-light-filtering",
+        "description": "A clean light filtering fabric collection for a polished modern finish.",
+        "image": "zio-light-filtering.jpg"
+      }
+    ],
+    "rollerShades": [
+      {
+        "category": "Roller Shades",
+        "name": "Miami Blackout",
+        "type": "Blackout",
+        "slug": "miami-blackout",
+        "description": "A blackout roller shade fabric for privacy, room darkening, and simple modern styling.",
+        "image": "miami-blackout.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "Field Blackout",
+        "type": "Blackout",
+        "slug": "field-blackout",
+        "description": "A practical blackout fabric option for bedrooms, media rooms, and glare control.",
+        "image": "field-blackout.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "Sky Blackout",
+        "type": "Blackout",
+        "slug": "sky-blackout",
+        "description": "A blackout roller shade collection with a clean look and dependable coverage.",
+        "image": "sky-blackout.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "NF Blackout",
+        "type": "Blackout",
+        "slug": "nf-blackout",
+        "description": "A minimal blackout fabric family for privacy-focused window covering projects.",
+        "image": "nf-blackout.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "JA Blackout",
+        "type": "Blackout",
+        "slug": "ja-blackout",
+        "description": "A blackout roller shade option for crisp interiors and controlled light.",
+        "image": "ja-blackout.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "Field Light Filtering",
+        "type": "Light Filtering",
+        "slug": "field-light-filtering",
+        "description": "A light filtering roller fabric for softened daylight and comfortable privacy.",
+        "image": "field-light-filtering.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "Sky Light Filtering",
+        "type": "Light Filtering",
+        "slug": "sky-light-filtering",
+        "description": "A bright light filtering selection for open, calm, and functional rooms.",
+        "image": "sky-light-filtering.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "Sunscreen 1%",
+        "type": "Sunscreen",
+        "slug": "sunscreen-1",
+        "description": "A low openness sunscreen fabric for stronger glare reduction and daytime view control.",
+        "image": "sunscreen-1.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "Sunscreen 3%",
+        "type": "Sunscreen",
+        "slug": "sunscreen-3",
+        "description": "A sunscreen roller shade fabric that balances glare control with outward visibility.",
+        "image": "sunscreen-3.jpg"
+      },
+      {
+        "category": "Roller Shades",
+        "name": "TC Light Filtering",
+        "type": "Light Filtering",
+        "slug": "tc-light-filtering",
+        "description": "A versatile light filtering fabric for simple, durable roller shade projects.",
+        "image": "tc-light-filtering.jpg"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "title": "Custom Blinds & Shades in Edmonton",
+      "description": "Find your light with Winco. Explore custom dual shades, roller shades and motorized blinds at our Edmonton showroom.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "index-0",
+          "template": "index-0",
+          "values": {
+            "f0": "MADE FOR YOUR WINDOWS. MADE FOR YOU.",
+            "f1": "A softer light.\nA warmer home.",
+            "f2": "Beautiful custom blinds, thoughtfully chosen.\n Find the balance of light, privacy and style\n that feels just right for your space.",
+            "f3": "Find your shades",
+            "f4": "Visit our showroom",
+            "f5": "Edmonton, Alberta",
+            "f6": "LIGHT CHANGES EVERYTHING.",
+            "f7": "Design illustration",
+            "f8": "Thoughtfully framed.",
+            "f9": "Beautifully yours.",
+            "f10": "assets/images/website/room-inspiration.webp",
+            "f11": "Warm living room concept with softly filtered daylight through roller shades",
+            "f12": "products.html",
+            "f13": "contact.html#showroom"
+          },
+          "hidden": false
+        },
+        {
+          "id": "index-1",
+          "template": "index-1",
+          "values": {
+            "f0": "Made & assembled in Edmonton",
+            "f1": "Free on-site measurements & estimates",
+            "f2": "Professional installation"
+          },
+          "hidden": false
+        },
+        {
+          "id": "index-2",
+          "template": "index-2",
+          "values": {
+            "f0": "THE COLLECTIONS",
+            "f1": "Your windows. Your way.",
+            "f2": "Three ways to shape the light. One simple place to start.",
+            "f3": "01",
+            "f4": "Dual shades",
+            "f5": "A little light. A little privacy. Find your balance with alternating sheer and solid fabric.",
+            "f6": "02",
+            "f7": "Roller shades",
+            "f8": "One clean silhouette, with fabrics that soften daylight or help darken your room.",
+            "f9": "03",
+            "f10": "Motorized blinds",
+            "f11": "Explore motor options for effortless everyday control, even in hard-to-reach places.",
+            "f12": "assets/images/website/original-hero.jpg",
+            "f13": "Alternating sheer and opaque bands on dual shades",
+            "f14": "assets/images/website/gallery-17.webp",
+            "f15": "Roller shades fitted to an office window",
+            "f16": "assets/images/website/gallery-06.webp",
+            "f17": "Dual shades fitted to a corner living room window",
+            "f18": "dual-shades.html",
+            "f19": "roller-shades.html",
+            "f20": "motorized-blinds.html"
+          },
+          "hidden": false
+        },
+        {
+          "id": "index-3",
+          "template": "index-3",
+          "values": {
+            "f0": "From the Winco project gallery",
+            "f1": "A LOCAL TOUCH",
+            "f2": "Big on the details.\nClose to home.",
+            "f3": "Choosing blinds should feel as comfortable as coming home. At our Edmonton showroom, you can take your time, compare materials and talk through what your rooms really need.",
+            "f4": "We manufacture and assemble custom shades in Edmonton, bringing fabric selection, fitting and local service together.",
+            "f5": "Get to know Winco",
+            "f6": "assets/images/website/original-hero.jpg",
+            "f7": "Cream dual shades fitted around a bright seating area",
+            "f8": "about.html"
+          },
+          "hidden": false
+        },
+        {
+          "id": "index-4",
+          "template": "index-4",
+          "values": {
+            "f0": "FROM IDEA TO EVERYDAY",
+            "f1": "A little guidance.\nA lovely result.",
+            "f2": "You don’t need to have it all figured out. That’s what we’re here for.",
+            "f3": "01",
+            "f4": "Meet & measure.",
+            "f5": "Book a free on-site measurement and estimate. We’ll talk through your windows, your routines and the light you want.",
+            "f6": "02",
+            "f7": "Choose & create.",
+            "f8": "Compare real samples and confirm your quote. Your shades are made to measure by our Edmonton team.",
+            "f9": "03",
+            "f10": "Fit & finish.",
+            "f11": "Your shades are installed within 7 business days of placing your order. We’ll walk you through their operation and help with aftercare."
+          },
+          "hidden": false
+        },
+        {
+          "id": "index-5",
+          "template": "index-5",
+          "values": {
+            "f0": "REAL SPACES, REAL POSSIBILITIES",
+            "f1": "Picture the\npossibilities.",
+            "f2": "See window coverings from our existing project gallery.",
+            "f3": "Explore the gallery",
+            "f4": "assets/images/website/gallery-04.webp",
+            "f5": "Dark dual shades in a seating area",
+            "f6": "assets/images/website/gallery-05.webp",
+            "f7": "Light dual shades in a bright shared space",
+            "f8": "gallery.html",
+            "f9": "gallery.html",
+            "f10": "gallery.html"
+          },
+          "hidden": false
+        },
+        {
+          "id": "index-6",
+          "template": "index-6",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "products",
+      "title": "Our Collections",
+      "description": "Explore Winco dual shades, roller shades and motorized window coverings in Edmonton.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "products-0",
+          "template": "products-0",
+          "values": {
+            "f0": "THE WINCO COLLECTIONS",
+            "f1": "A beautiful fit.\nFor every kind of day.",
+            "f2": "Soft morning light. An afternoon without glare. A little more privacy when the day is done. Start with the way you want your room to feel."
+          },
+          "hidden": false
+        },
+        {
+          "id": "products-1",
+          "template": "products-1",
+          "values": {
+            "f0": "01",
+            "f1": "Dual shades",
+            "f2": "A little light. A little privacy. Find your balance with alternating sheer and solid fabric.",
+            "f3": "02",
+            "f4": "Roller shades",
+            "f5": "One clean silhouette, with fabrics that soften daylight or help darken your room.",
+            "f6": "03",
+            "f7": "Motorized blinds",
+            "f8": "Explore motor options for effortless everyday control, even in hard-to-reach places.",
+            "f9": "assets/images/website/original-hero.jpg",
+            "f10": "Alternating sheer and opaque bands on dual shades",
+            "f11": "assets/images/website/gallery-17.webp",
+            "f12": "Roller shades fitted to an office window",
+            "f13": "assets/images/website/gallery-06.webp",
+            "f14": "Dual shades fitted to a corner living room window",
+            "f15": "dual-shades.html",
+            "f16": "roller-shades.html",
+            "f17": "motorized-blinds.html"
+          },
+          "hidden": false
+        },
+        {
+          "id": "products-2",
+          "template": "products-2",
+          "values": {
+            "f0": "FIND YOUR STARTING POINT",
+            "f1": "What matters to you?",
+            "f2": "01 / THE LOOK",
+            "f3": "Layered or minimal?",
+            "f4": "Dual shades add a distinctive horizontal rhythm. Roller shades keep the window simple with a continuous piece of fabric.",
+            "f5": "02 / THE LIGHT",
+            "f6": "Bright or restful?",
+            "f7": "Explore light filtering, room darkening and blackout fabrics. Your mounting choice also affects light around the edges.",
+            "f8": "03 / THE EVERYDAY",
+            "f9": "A little more ease?",
+            "f10": "Ask about motorization, control options and compatibility for the shades you choose."
+          },
+          "hidden": false
+        },
+        {
+          "id": "products-3",
+          "template": "products-3",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "dual-shades",
+      "title": "Dual Shades",
+      "description": "Explore Winco dual shade fabrics and find a custom balance of daylight and privacy.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "dual-shades-0",
+          "template": "dual-shades-0",
+          "values": {
+            "f0": "LAYERS OF POSSIBILITY",
+            "f1": "Light, on\nyour terms.",
+            "f2": "Also known as zebra blinds, dual shades combine sheer and solid bands for a distinctive look and flexible light control.",
+            "f3": "Ask about dual shades",
+            "f4": "A distinctive layered design",
+            "f5": "Light filtering and room darkening choices",
+            "f6": "Custom sizing for your windows",
+            "f7": "From the Winco project gallery",
+            "f8": "assets/images/website/original-hero.jpg",
+            "f9": "Cream dual shades across large windows",
+            "f10": "contact.html?product=Dual%20shades"
+          },
+          "hidden": false
+        },
+        {
+          "id": "dual-shades-1",
+          "template": "catalog-dual",
+          "values": {},
+          "hidden": false
+        },
+        {
+          "id": "dual-shades-2",
+          "template": "dual-shades-2",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "roller-shades",
+      "title": "Roller Shades",
+      "description": "Explore light filtering, blackout and sunscreen roller shade fabrics with Winco Edmonton.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "roller-shades-0",
+          "template": "roller-shades-0",
+          "values": {
+            "f0": "SIMPLY BEAUTIFUL",
+            "f1": "Less fuss.\nMore feeling.",
+            "f2": "Clean lines. Beautiful texture. A straightforward shade that sits quietly in your space and works around your day.",
+            "f3": "Ask about roller shades",
+            "f4": "Light filtering, blackout and sunscreen fabrics",
+            "f5": "A clean, continuous silhouette",
+            "f6": "Ask about compatible motor options",
+            "f7": "From the Winco project gallery",
+            "f8": "assets/images/website/gallery-09.webp",
+            "f9": "Roller shades fitted along windows in a fitness space",
+            "f10": "contact.html?product=Roller%20shades"
+          },
+          "hidden": false
+        },
+        {
+          "id": "roller-shades-1",
+          "template": "catalog-roller",
+          "values": {},
+          "hidden": false
+        },
+        {
+          "id": "roller-shades-2",
+          "template": "roller-shades-2",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "motorized-blinds",
+      "title": "Motorized Blinds",
+      "description": "Discuss motorized blinds and compatible control options with Winco in Edmonton.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "motorized-blinds-0",
+          "template": "motorized-blinds-0",
+          "values": {
+            "f0": "EVERYDAY, MADE EASIER",
+            "f1": "Good mornings.\nAt your command.",
+            "f2": "Make light control part of your routine. Talk with us about motor options for the shades, windows and controls that work for you.",
+            "f3": "Explore motor options",
+            "f4": "Motor, power and smart-home compatibility depend on the selected system. Our team will confirm the details before you order.",
+            "f5": "Design illustration · Motorization is an optional configuration",
+            "f6": "assets/images/website/room-inspiration.webp",
+            "f7": "Living room concept illustrating roller shades",
+            "f8": "contact.html?product=Motorized%20blinds"
+          },
+          "hidden": false
+        },
+        {
+          "id": "motorized-blinds-1",
+          "template": "motorized-blinds-1",
+          "values": {
+            "f0": "A THOUGHTFUL UPGRADE",
+            "f1": "Let’s make it work for you.",
+            "f2": "CONTROL",
+            "f3": "Within easy reach.",
+            "f4": "Ask about remote operation for tall windows, wide rooms and the places that are harder to reach.",
+            "f5": "POWER",
+            "f6": "Plan the practical details.",
+            "f7": "We’ll discuss suitable power options and access for charging or wiring, depending on your selected motor.",
+            "f8": "COMPATIBILITY",
+            "f9": "Consider the whole system.",
+            "f10": "If connected-home control matters to you, bring the details of your existing setup so we can check compatibility."
+          },
+          "hidden": false
+        },
+        {
+          "id": "motorized-blinds-2",
+          "template": "motorized-blinds-2",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "about",
+      "title": "About Winco",
+      "description": "Meet Winco Blinds & Window Fashion, your local Edmonton window covering team.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "about-0",
+          "template": "about-0",
+          "values": {
+            "f0": "HELLO, WE’RE WINCO",
+            "f1": "A local perspective.\nA personal approach.",
+            "f2": "Your windows are part of how you live. We believe choosing what goes on them deserves time, care and a real conversation."
+          },
+          "hidden": false
+        },
+        {
+          "id": "about-1",
+          "template": "about-1",
+          "values": {
+            "f0": "From the Winco project gallery",
+            "f1": "ROOTED IN EDMONTON",
+            "f2": "Come in.\nLook a little closer.",
+            "f3": "At Winco Blinds & Window Fashion, we help you explore custom window coverings in person. Hold a sample up to the light. Compare a texture. Ask the question you didn’t know you had.",
+            "f4": "Our showroom is at 9790 51 Ave NW in Edmonton. Whether your project is a home, an office or a single room, we’d love to help you think it through.",
+            "f5": "Plan your visit",
+            "f6": "assets/images/website/original-hero.jpg",
+            "f7": "Dual shades in a light-filled shared space",
+            "f8": "contact.html#showroom"
+          },
+          "hidden": false
+        },
+        {
+          "id": "about-2",
+          "template": "about-2",
+          "values": {
+            "f0": "WHAT YOU CAN EXPECT",
+            "f1": "Room for your ideas.",
+            "f2": "Advice with context.",
+            "f3": "We start with your space: how you use it, how the light falls and what you want to change.",
+            "f4": "Details you can see.",
+            "f5": "Explore real materials and discuss sizing, controls and fitting before making your decision.",
+            "f6": "Made close to home.",
+            "f7": "Our Edmonton workshop manufactures and assembles custom shades in-house. Speak directly with a local team, from fabric selection through installation."
+          },
+          "hidden": false
+        },
+        {
+          "id": "about-3",
+          "template": "about-3",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "title": "Our Approach",
+      "description": "Plan your custom blinds project with personal guidance from Winco in Edmonton.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "services-0",
+          "template": "services-0",
+          "values": {
+            "f0": "OUR APPROACH",
+            "f1": "From your first idea\nto your favourite room.",
+            "f2": "Every space is different. We help you work through the choices one step at a time, so your finished shades feel right at home."
+          },
+          "hidden": false
+        },
+        {
+          "id": "services-1",
+          "template": "services-1",
+          "values": {
+            "f0": "01",
+            "f1": "Meet & measure.",
+            "f2": "Book a free on-site measurement and estimate. We’ll talk through your windows, your routines and the light you want.",
+            "f3": "02",
+            "f4": "Choose & create.",
+            "f5": "Compare real samples and confirm your quote. Your shades are made to measure by our Edmonton team.",
+            "f6": "03",
+            "f7": "Fit & finish.",
+            "f8": "Your shades are installed within 7 business days of placing your order. We’ll walk you through their operation and help with aftercare."
+          },
+          "hidden": false
+        },
+        {
+          "id": "services-2",
+          "template": "services-2",
+          "values": {
+            "f0": "HOMES & WORKSPACES",
+            "f1": "A considered choice.\nAt any scale.",
+            "f2": "For the spaces you live in",
+            "f3": "Think through bedroom privacy, bright living rooms and the little details that make a house feel like yours.",
+            "f4": "For the spaces you work in",
+            "f5": "Explore shade options for offices and shared spaces, with a focus on glare, privacy and a consistent finish.",
+            "f6": "Clear next steps",
+            "f7": "Your quote confirms the chosen products, measurements and installation scope. Installation is completed within 7 business days of placing your order; our team will coordinate the appointment with you."
+          },
+          "hidden": false
+        },
+        {
+          "id": "services-3",
+          "template": "services-3",
+          "values": {
+            "f0": "HERE FOR THE WHOLE PROJECT",
+            "f1": "Measure. Make. Install.",
+            "f2": "Free on-site measuring",
+            "f3": "We visit your space, discuss suitable fabrics and provide an estimate. Contact us to arrange a visit and confirm service in your area.",
+            "f4": "Local, custom production",
+            "f5": "Shades are manufactured and assembled in our Edmonton workshop, with installation within 7 business days of placing your order.",
+            "f6": "Installation & aftercare",
+            "f7": "Our installers fit your shades and explain their operation. We offer a 5-year warranty; ask our team for coverage details and keep your order information for future service enquiries.",
+            "f8": "Care & service",
+            "f9": "care.html"
+          },
+          "hidden": false
+        },
+        {
+          "id": "services-4",
+          "template": "services-4",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "gallery",
+      "title": "Project Gallery",
+      "description": "See window covering photos from the Winco project gallery.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "gallery-0",
+          "template": "gallery-0",
+          "values": {
+            "f0": "THE WINCO GALLERY",
+            "f1": "Good light.\nReal possibilities.",
+            "f2": "A selection from our existing project gallery. Take a closer look at the textures, contrasts and little details that bring a room together."
+          },
+          "hidden": false
+        },
+        {
+          "id": "gallery-1",
+          "template": "gallery",
+          "values": {},
+          "hidden": false
+        },
+        {
+          "id": "gallery-2",
+          "template": "gallery-2",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "guides",
+      "title": "Choosing Your Shades",
+      "description": "A practical starting guide to choosing window shades, fabrics and controls.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "guides-0",
+          "template": "guides-0",
+          "values": {
+            "f0": "THE SHADE GUIDE",
+            "f1": "Start with the room.\nThen find the shade.",
+            "f2": "You don’t have to know the product names yet. These four simple questions will help you find a direction."
+          },
+          "hidden": false
+        },
+        {
+          "id": "guides-1",
+          "template": "guides-1",
+          "values": {
+            "f0": "01",
+            "f1": "How do you use the room?",
+            "f2": "A bedroom, a busy kitchen and a sunny office each ask something different of a window covering. Start with what you do in the space and when you spend time there.",
+            "f3": "02",
+            "f4": "What should the light feel like?",
+            "f5": "Do you want a soft glow or a more restful setting? Compare light filtering, sunscreen and blackout fabrics in person. Remember that the fit around the window matters too.",
+            "f6": "03",
+            "f7": "What does privacy mean here?",
+            "f8": "Think about the view from outside, both during the day and when your lights are on at night. Talk through those conditions when choosing a fabric.",
+            "f9": "04",
+            "f10": "How do you want it to work?",
+            "f11": "Consider access to the window, who uses the room and whether motorized control would make the everyday easier. Ask us to confirm suitable options for your window sizes."
+          },
+          "hidden": false
+        },
+        {
+          "id": "guides-2",
+          "template": "guides-2",
+          "values": {
+            "f0": "BEFORE YOUR VISIT",
+            "f1": "A little preparation.\nA useful conversation.",
+            "f2": "Bring photos of the room and windows.",
+            "f3": "Note approximate sizes and the number of windows.",
+            "f4": "Collect a few colours or finishes you love.",
+            "f5": "Think about privacy, glare and daily routines.",
+            "f6": "No measurements yet? You can still get in touch.",
+            "f7": "Explore the collections",
+            "f8": "products.html"
+          },
+          "hidden": false
+        },
+        {
+          "id": "guides-3",
+          "template": "guides-3",
+          "values": {
+            "f0": "MEASURING & INSTALLATION",
+            "f1": "A good fit starts\nwith good information.",
+            "f2": "A few details help us prepare your consultation. Final order measurements should be confirmed with our team.",
+            "f3": "01 / PHOTOGRAPH",
+            "f4": "Show the whole window.",
+            "f5": "Take a straight-on photo including the frame. Note handles, trim or anything that might affect how a shade fits.",
+            "f6": "02 / MAKE A NOTE",
+            "f7": "Label each room.",
+            "f8": "Record the window count and approximate width and height, including the units. These are a starting point for a discussion, not final manufacturing sizes.",
+            "f9": "03 / CONFIRM THE FIT",
+            "f10": "Let us measure.",
+            "f11": "Book a free measurement visit. Ask us to confirm the mounting position, light gaps, controls and installation arrangements before ordering.",
+            "f12": "Book a measurement visit",
+            "f13": "Installing an existing Winco shade?",
+            "f14": "Ask our team for the instructions that match your exact bracket and shade model. Send a photo of the hardware so we can identify the right guide.",
+            "f15": "Request installation help",
+            "f16": "contact.html?product=Measurement%20consultation",
+            "f17": "contact.html?product=Service%20or%20repair"
+          },
+          "hidden": false
+        },
+        {
+          "id": "guides-4",
+          "template": "guides-4",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "title": "Common Questions",
+      "description": "Answers to common questions about Winco blinds, fabric choices, measuring and consultations.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "faq-0",
+          "template": "faq-0",
+          "values": {
+            "f0": "A LITTLE CLARITY",
+            "f1": "Good questions.\nThoughtful answers.",
+            "f2": "A few useful things to know before you choose your window coverings."
+          },
+          "hidden": false
+        },
+        {
+          "id": "faq-1",
+          "template": "faq-1",
+          "values": {
+            "f0": "Where can I see fabric samples?",
+            "f1": "Visit our Edmonton showroom at 9790 51 Ave NW. Seeing samples in person is the best way to compare colour, texture and the way a fabric filters light.",
+            "f2": "What is the difference between dual and roller shades?",
+            "f3": "Dual shades use alternating sheer and solid bands that shift against each other. Roller shades use one continuous fabric that raises or lowers. Your preferred appearance and the amount of light you want are good starting points.",
+            "f4": "Will blackout fabric make my room completely dark?",
+            "f5": "Blackout describes the fabric. Light can still enter around the sides or top of a shade. Discuss the window, mounting position and your room-darkening expectations with us before choosing.",
+            "f6": "Can my shades be motorized?",
+            "f7": "Motor options depend on the product, dimensions and chosen system. Tell us which windows you have in mind and how you want to control them so we can confirm a suitable option.",
+            "f8": "Do I need exact measurements before getting in touch?",
+            "f9": "No. A window count and photos help us get started. We offer free on-site measuring and estimates; contact us to arrange a visit and confirm service in your area.",
+            "f10": "How much do custom blinds cost?",
+            "f11": "Your quote depends on the window sizes, fabric, controls and installation requirements. Contact us for a free consultation and a quote based on your project.",
+            "f12": "How long will my order take?",
+            "f13": "Your blinds will be installed within 7 business days of placing your order. Our team will coordinate the installation appointment with you.",
+            "f14": "Which areas do you serve?",
+            "f15": "We welcome enquiries from Edmonton, St. Albert, Sherwood Park, Spruce Grove, Leduc and surrounding communities. Contact us to check arrangements for your location.",
+            "f16": "Can you help with a repair or resizing?",
+            "f17": "Contact our team with photos of the shade, a description of the issue and your original order details if available. We’ll check the available service options and confirm any charges before work begins.",
+            "f18": "What warranty applies to my order?",
+            "f19": "Our warranty period is 5 years. Contact our team for the coverage details and service arrangements that apply to your order."
+          },
+          "hidden": false
+        },
+        {
+          "id": "faq-2",
+          "template": "faq-2",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "reviews",
+      "title": "Customer Reviews",
+      "description": "Find customer feedback and share your experience with Winco Blinds & Window Fashion.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "reviews-0",
+          "template": "reviews-0",
+          "values": {
+            "f0": "THE CUSTOMER PERSPECTIVE",
+            "f1": "See what others\nhave to say.",
+            "f2": "Choosing a local team is personal. Take a moment to explore customer feedback before you begin your own project."
+          },
+          "hidden": false
+        },
+        {
+          "id": "reviews-1",
+          "template": "reviews-1",
+          "values": {
+            "f0": "CUSTOMER FEEDBACK",
+            "f1": "Real experiences.\nIn their own words.",
+            "f2": "Read the customer reviews on our original Winco website.",
+            "f3": "Read Winco reviews",
+            "f4": "Already part\nof the Winco family?",
+            "f5": "We’d love to hear how your shades are working for you. Your feedback helps us care for the details that matter.",
+            "f6": "Share your experience",
+            "f7": "https://www.wincoblinds.com/pages/review",
+            "f8": "mailto:wincocanada@gmail.com?subject=My%20Winco%20experience"
+          },
+          "hidden": false
+        },
+        {
+          "id": "reviews-2",
+          "template": "reviews-2",
+          "values": {
+            "f0": "FROM OUR CUSTOMER REVIEWS",
+            "f1": "A few words from\nthe people we work with.",
+            "f2": "Read the full review ↗",
+            "f3": "Read the full review ↗",
+            "f4": "Short excerpts from reviews displayed on our original website. Each reflects an individual customer’s experience.",
+            "f5": "https://www.wincoblinds.com/pages/review",
+            "f6": "https://www.wincoblinds.com/pages/review"
+          },
+          "hidden": false
+        },
+        {
+          "id": "reviews-3",
+          "template": "reviews-3",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "blog",
+      "title": "The Window Journal",
+      "description": "Simple ideas for making your windows work beautifully in everyday life.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "blog-0",
+          "template": "blog-0",
+          "values": {
+            "f0": "THE WINDOW JOURNAL",
+            "f1": "Small details.\nA different feeling.",
+            "f2": "A few thoughtful ideas for living with light."
+          },
+          "hidden": false
+        },
+        {
+          "id": "blog-1",
+          "template": "blog-1",
+          "values": {
+            "f0": "01 / LIVING WITH LIGHT",
+            "f1": "Notice the light before you choose.",
+            "f2": "Spend a day watching your room. A window that feels gentle at breakfast might catch strong afternoon light. Make a note of the moments when you reach for shade, move your chair or switch on a lamp.",
+            "f3": "Those small observations are a useful starting point for a conversation about fabric. Bring them along when you visit the showroom.",
+            "f4": "Explore light filtering fabrics",
+            "f5": "02 / A COHESIVE HOME",
+            "f6": "Related, without being identical.",
+            "f7": "Your rooms can feel connected without every window wearing exactly the same shade. Try a consistent colour family while choosing different levels of light control for the way each room is used.",
+            "f8": "Lay samples beside flooring, paint and furniture finishes. Look at them together in daylight before deciding.",
+            "f9": "Compare the collections",
+            "f10": "03 / MAKING A CHOICE",
+            "f11": "The value of seeing it in person.",
+            "f12": "A photo is a starting point. A real sample shows you the weave, texture and small shifts in colour that a screen can miss.",
+            "f13": "At the showroom, compare a few options side by side. Ask to see how the fabric changes when light passes through it, and talk about how it will sit in your window.",
+            "f14": "Visit our Edmonton showroom",
+            "f15": "roller-shades.html#fabrics",
+            "f16": "products.html",
+            "f17": "contact.html#showroom"
+          },
+          "hidden": false
+        },
+        {
+          "id": "blog-2",
+          "template": "blog-2",
+          "values": {
+            "f0": "FROM THE WINCO ARCHIVE",
+            "f1": "More ideas to explore.",
+            "f2": "Selected reading from our original website. These links open the full articles there.",
+            "f3": "PRIVACY / JUNE 2026",
+            "f4": "Dual shades, day to night.",
+            "f5": "A closer look at layered fabrics and the changing privacy needs of a room.",
+            "f6": "Read the original article",
+            "f7": "WORKSPACES / FEBRUARY 2026",
+            "f8": "A more comfortable office.",
+            "f9": "Consider glare, shared spaces and window coverings at work.",
+            "f10": "Read the original article",
+            "f11": "MOTORIZATION / JANUARY 2026",
+            "f12": "Light around your routine.",
+            "f13": "Explore how powered shades can fit into everyday life. Available features depend on the chosen system.",
+            "f14": "Read the original article",
+            "f15": "https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1503920-how-dual-shades-blinds-offer-smart-privacy-for-modern-homes",
+            "f16": "https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1454102-how-commercial-blinds-improve-comfort-and-productivity-in-offices",
+            "f17": "https://www.wincoblinds.com/blogs/edmonton-window-covering-shop-blog/1442811-how-motorized-blinds-make-daily-living-smarter-in-edmonton-homes"
+          },
+          "hidden": false
+        },
+        {
+          "id": "blog-3",
+          "template": "blog-3",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "care",
+      "title": "Care & Service",
+      "description": "Get help with Winco shade care, repairs, resizing and installation instructions.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "care-0",
+          "template": "care-0",
+          "values": {
+            "f0": "CARE & SERVICE",
+            "f1": "A little care.\nA team to turn to.",
+            "f2": "Already have Winco shades? We’re here to help with care questions, operation and service."
+          },
+          "hidden": false
+        },
+        {
+          "id": "care-1",
+          "template": "care-1",
+          "values": {
+            "f0": "EVERYDAY CARE",
+            "f1": "Know your fabric.",
+            "f2": "Cleaning methods depend on the material and finish. Check the care instructions for your shade before applying water, cleaners or steam. If you’re unsure, ask us to identify the fabric first.",
+            "f3": "OPERATION",
+            "f4": "Something feels different?",
+            "f5": "If a shade catches, sits unevenly or stops responding, avoid forcing it. Note what happens and send us a photo or short description so we can advise on the next step.",
+            "f6": "REPAIRS & RESIZING",
+            "f7": "Start with the details.",
+            "f8": "Have your original order information handy if possible. Our warranty period is 5 years. We’ll review your shade, the applicable coverage and available service options, then confirm any cost before proceeding.",
+            "f9": "What to include in your message",
+            "f10": "Your name, contact number, installation address or order reference, and a description of the issue. We can arrange how to share photos when we reply.",
+            "f11": "Request service",
+            "f12": "contact.html?product=Service%20or%20repair"
+          },
+          "hidden": false
+        },
+        {
+          "id": "care-2",
+          "template": "care-2",
+          "values": {
+            "f0": "A BETTER VIEW STARTS HERE",
+            "f1": "Let’s find the right\nlight for your home.",
+            "f2": "Bring your ideas. We’ll bring the samples\n and help you make them your own.",
+            "f3": "Start with a free consultation",
+            "f4": "contact.html"
+          },
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "title": "Contact & Free Consultation",
+      "description": "Visit Winco at 9790 51 Ave NW, Edmonton. Call (780) 809-2292 or email wincocanada@gmail.com for a free consultation.",
+      "visible": true,
+      "kind": "page",
+      "blocks": [
+        {
+          "id": "contact-0",
+          "template": "contact-0",
+          "values": {
+            "f0": "LET’S TALK WINDOWS",
+            "f1": "Your next chapter.\nA beautiful view.",
+            "f2": "A new home, a room refresh or just an idea. Tell us what you have in mind and we’ll help you find a place to start."
+          },
+          "hidden": false
+        },
+        {
+          "id": "contact-1",
+          "template": "contact-1",
+          "values": {
+            "f0": "SAY HELLO",
+            "f1": "(780) 809-2292",
+            "f2": "wincocanada@gmail.com",
+            "f3": "Prefer a conversation? Give our Edmonton team a call during showroom hours.",
+            "f4": "Not sure which shade is right?\nThat’s a good place to start.",
+            "f5": "Tell us about your space.",
+            "f6": "Tell us about your project. Send your enquiry directly to our Edmonton team.",
+            "f7": "wincocanada@gmail.com",
+            "f8": "tel:+17808092292",
+            "f9": "mailto:wincocanada@gmail.com",
+            "f10": "mailto:wincocanada@gmail.com"
+          },
+          "hidden": false
+        },
+        {
+          "id": "contact-2",
+          "template": "contact-2",
+          "values": {
+            "f0": "COME SEE US",
+            "f1": "A little inspiration.\nIn person.",
+            "f2": "9790 51 Ave NW\nEdmonton, AB T6E 0A6",
+            "f3": "Get directions",
+            "f4": "Showroom hours",
+            "f5": "Monday – Friday",
+            "f6": "9:00 am – 5:00 pm",
+            "f7": "Saturday",
+            "f8": "10:30 am – 2:30 pm",
+            "f9": "Sunday",
+            "f10": "By appointment",
+            "f11": "Planning a special trip? Call ahead to confirm holiday hours.",
+            "f12": "(403) 899-8056",
+            "f13": "https://www.google.com/maps/search/?api=1&query=Winco%20Blinds%209790%2051%20Ave%20NW%20Edmonton",
+            "f14": "tel:+14038998056"
+          },
+          "hidden": false
+        },
+        {
+          "id": "contact-3",
+          "template": "contact-3",
+          "values": {
+            "f0": "NEAR YOU",
+            "f1": "Edmonton · St. Albert · Sherwood Park · Spruce Grove · Leduc & surrounding communities"
+          },
+          "hidden": false
+        }
+      ]
+    }
+  ],
+  "media": []
+}
