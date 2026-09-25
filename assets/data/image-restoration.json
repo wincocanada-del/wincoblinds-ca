@@ -1,0 +1,502 @@
+[
+  {
+    "image": "gallery-01.webp",
+    "source": "211-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      477
+    ],
+    "box": [
+      426,
+      14,
+      1429,
+      1011
+    ],
+    "score": 0.9877,
+    "output": [
+      1003,
+      997
+    ],
+    "bytes": 100752,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/211-01.jpg"
+  },
+  {
+    "image": "gallery-02.webp",
+    "source": "292-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      230
+    ],
+    "box": [
+      869,
+      3,
+      1871,
+      1011
+    ],
+    "score": 0.9744,
+    "output": [
+      1002,
+      1008
+    ],
+    "bytes": 107728,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/292-01.jpg"
+  },
+  {
+    "image": "gallery-03.webp",
+    "source": "241-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      229
+    ],
+    "box": [
+      749,
+      26,
+      1774,
+      1051
+    ],
+    "score": 0.9835,
+    "output": [
+      1025,
+      1025
+    ],
+    "bytes": 114420,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/241-01.jpg"
+  },
+  {
+    "image": "gallery-04.webp",
+    "source": "282-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      229
+    ],
+    "box": [
+      506,
+      311,
+      1920,
+      986
+    ],
+    "score": 0.9842,
+    "output": [
+      1414,
+      675
+    ],
+    "bytes": 91816,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/282-01.jpg"
+  },
+  {
+    "image": "gallery-05.webp",
+    "source": "212-01.jpg",
+    "original": [
+      2667,
+      1500
+    ],
+    "old": [
+      480,
+      477
+    ],
+    "box": [
+      366,
+      243,
+      1386,
+      1257
+    ],
+    "score": 0.9908,
+    "output": [
+      1020,
+      1014
+    ],
+    "bytes": 113628,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/212-01.jpg"
+  },
+  {
+    "image": "gallery-06.webp",
+    "source": "221-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      229
+    ],
+    "box": [
+      314,
+      9,
+      1374,
+      1069
+    ],
+    "score": 0.9861,
+    "output": [
+      1060,
+      1060
+    ],
+    "bytes": 216436,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/221-01.jpg"
+  },
+  {
+    "image": "gallery-07.webp",
+    "source": "273-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      477
+    ],
+    "box": [
+      903,
+      31,
+      1854,
+      977
+    ],
+    "score": 0.9901,
+    "output": [
+      1000,
+      995
+    ],
+    "bytes": 51626,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/273-01.jpg"
+  },
+  {
+    "image": "gallery-08.webp",
+    "source": "273-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      230
+    ],
+    "box": [
+      174,
+      360,
+      709,
+      897
+    ],
+    "score": 0.9884,
+    "output": [
+      996,
+      1000
+    ],
+    "bytes": 59728,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/273-01.jpg"
+  },
+  {
+    "image": "gallery-09.webp",
+    "source": "262-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      229
+    ],
+    "box": [
+      0,
+      197,
+      769,
+      966
+    ],
+    "score": 0.9926,
+    "output": [
+      1000,
+      1000
+    ],
+    "bytes": 63448,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/262-01.jpg"
+  },
+  {
+    "image": "gallery-10.webp",
+    "source": "223-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      229
+    ],
+    "box": [
+      0,
+      31,
+      1889,
+      931
+    ],
+    "score": 0.9908,
+    "output": [
+      1600,
+      762
+    ],
+    "bytes": 138804,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/223-01.jpg"
+  },
+  {
+    "image": "gallery-11.webp",
+    "source": "212-01.jpg",
+    "original": [
+      2667,
+      1500
+    ],
+    "old": [
+      229,
+      230
+    ],
+    "box": [
+      1594,
+      340,
+      2643,
+      1394
+    ],
+    "score": 0.9886,
+    "output": [
+      1049,
+      1054
+    ],
+    "bytes": 109470,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/212-01.jpg"
+  },
+  {
+    "image": "gallery-12.webp",
+    "source": "222-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      229
+    ],
+    "box": [
+      474,
+      317,
+      1906,
+      1000
+    ],
+    "score": 0.9931,
+    "output": [
+      1432,
+      683
+    ],
+    "bytes": 232884,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/222-01.jpg"
+  },
+  {
+    "image": "gallery-13.webp",
+    "source": "242-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      477
+    ],
+    "box": [
+      269,
+      260,
+      831,
+      820
+    ],
+    "score": 0.9896,
+    "output": [
+      1000,
+      996
+    ],
+    "bytes": 67324,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/242-01.jpg"
+  },
+  {
+    "image": "gallery-14.webp",
+    "source": "242-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      230
+    ],
+    "box": [
+      929,
+      9,
+      1914,
+      1000
+    ],
+    "score": 0.9912,
+    "output": [
+      994,
+      1000
+    ],
+    "bytes": 66024,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/242-01.jpg"
+  },
+  {
+    "image": "gallery-15.webp",
+    "source": "251-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      229
+    ],
+    "box": [
+      831,
+      9,
+      1891,
+      1069
+    ],
+    "score": 0.9833,
+    "output": [
+      1060,
+      1060
+    ],
+    "bytes": 149648,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/251-01.jpg"
+  },
+  {
+    "image": "gallery-16.webp",
+    "source": "252-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      229
+    ],
+    "box": [
+      200,
+      177,
+      1723,
+      903
+    ],
+    "score": 0.9929,
+    "output": [
+      1523,
+      726
+    ],
+    "bytes": 84480,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/252-01.jpg"
+  },
+  {
+    "image": "gallery-17.webp",
+    "source": "271-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      477
+    ],
+    "box": [
+      429,
+      11,
+      1489,
+      1066
+    ],
+    "score": 0.9924,
+    "output": [
+      1060,
+      1055
+    ],
+    "bytes": 82262,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/271-01.jpg"
+  },
+  {
+    "image": "gallery-18.webp",
+    "source": "281-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      229
+    ],
+    "box": [
+      657,
+      6,
+      1723,
+      1071
+    ],
+    "score": 0.9943,
+    "output": [
+      1066,
+      1065
+    ],
+    "bytes": 41688,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/281-01.jpg"
+  },
+  {
+    "image": "gallery-19.webp",
+    "source": "272-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      229,
+      230
+    ],
+    "box": [
+      346,
+      3,
+      1406,
+      1069
+    ],
+    "score": 0.9845,
+    "output": [
+      1060,
+      1066
+    ],
+    "bytes": 85642,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/272-01.jpg"
+  },
+  {
+    "image": "gallery-20.webp",
+    "source": "283-01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "old": [
+      480,
+      229
+    ],
+    "box": [
+      474,
+      166,
+      1917,
+      854
+    ],
+    "score": 0.9881,
+    "output": [
+      1443,
+      688
+    ],
+    "bytes": 144698,
+    "sourceUrl": "https://d14ty28lkqz1hw.cloudfront.net/data/org/21157/theme/32986/img/283-01.jpg"
+  }
+]
