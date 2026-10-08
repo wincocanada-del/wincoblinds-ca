@@ -8,3 +8,22 @@
 
 [functions]
   node_bundler = "esbuild"
+
+# Recheck the staff-app entry point on every navigation, including iPad web apps.
+# Hashed assets keep their normal caching; open forms update only on request.
+[[headers]]
+  for = "/app"
+  [headers.values]
+    Cache-Control = "no-store"
+[[headers]]
+  for = "/app/"
+  [headers.values]
+    Cache-Control = "no-store"
+[[headers]]
+  for = "/app/index.html"
+  [headers.values]
+    Cache-Control = "no-store"
+[[headers]]
+  for = "/app/version.json"
+  [headers.values]
+    Cache-Control = "no-store"
