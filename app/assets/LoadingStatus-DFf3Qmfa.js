@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DrYbZxX9.js";/* empty css                       */var t=e();function n({children:e=`Loading…`,className:n=``}){return(0,t.jsx)(`div`,{className:`${n} winco-loading-status`,role:`status`,children:(0,t.jsx)(`span`,{className:`winco-loading-message`,children:e})})}export{n as t};

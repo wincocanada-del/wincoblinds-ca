@@ -1,0 +1,1 @@
+var e=`Your account changed. Reopen this page before trying again.`;async function t(t,n,r,i){if(!n)throw Error(`Please log in again before making this change.`);let a=await t.rpc(`winco_account_quote_action`,{p_account_id:n,p_action:r,p_args:i});if(a.error?.message===`Your account changed. Reopen this page before trying again.`)throw Error(e);return a}export{t};
