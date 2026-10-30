@@ -15,15 +15,25 @@
   for = "/app"
   [headers.values]
     Cache-Control = "no-store"
+    Content-Security-Policy = "script-src-elem 'unsafe-inline' https://wincoblinds.ca/app/assets/ https://www.wincoblinds.ca/app/assets/ https://*.netlify.app/app/assets/"
 [[headers]]
   for = "/app/"
   [headers.values]
     Cache-Control = "no-store"
+    Content-Security-Policy = "script-src-elem 'unsafe-inline' https://wincoblinds.ca/app/assets/ https://www.wincoblinds.ca/app/assets/ https://*.netlify.app/app/assets/"
 [[headers]]
   for = "/app/index.html"
   [headers.values]
     Cache-Control = "no-store"
+    Content-Security-Policy = "script-src-elem 'unsafe-inline' https://wincoblinds.ca/app/assets/ https://www.wincoblinds.ca/app/assets/ https://*.netlify.app/app/assets/"
 [[headers]]
   for = "/app/version.json"
   [headers.values]
     Cache-Control = "no-store"
+    Content-Security-Policy = "script-src-elem 'unsafe-inline' https://wincoblinds.ca/app/assets/ https://www.wincoblinds.ca/app/assets/ https://*.netlify.app/app/assets/"
+
+# Preserve legacy Measure inline behavior while allowing only the app's script assets.
+[[headers]]
+  for = "/app/*"
+  [headers.values]
+    Content-Security-Policy = "script-src-elem 'unsafe-inline' https://wincoblinds.ca/app/assets/ https://www.wincoblinds.ca/app/assets/ https://*.netlify.app/app/assets/"
