@@ -37,3 +37,14 @@
   for = "/app/*"
   [headers.values]
     Content-Security-Policy = "script-src-elem 'unsafe-inline' https://wincoblinds.ca/app/assets/ https://www.wincoblinds.ca/app/assets/ https://*.netlify.app/app/assets/"
+
+# Generated content-hashed JS/CSS are immutable; app entry/version remain no-store.
+[[headers]]
+  for = "/app/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/app/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

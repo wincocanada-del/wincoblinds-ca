@@ -1,0 +1,1 @@
+var e=e=>e?.role===`Admin`;export{e as t};
