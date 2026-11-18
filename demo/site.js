@@ -27,20 +27,21 @@ document.body.append(searchPanel);
 const searchField = searchPanel.querySelector("input");
 const searchResults = searchPanel.querySelector("ul");
 const keywords = {
-  "index.html": "home edmonton window coverings",
-  "products.html": "dual shades roller shades motorized blinds collection remote fabric",
-  "services.html": "consultation measurement installation ordering",
-  "about.html": "winco showroom company edmonton",
-  "gallery.html": "installations photos projects rooms inspiration",
-  "guides.html": "choosing fabric light privacy blackout windows",
-  "faq.html": "care warranty five years delivery questions business days",
-  "contact.html": "quote enquiry appointment address directions phone opening hours"
+  home: "home edmonton window coverings",
+  products: "dual shades roller shades motorized blinds collection remote fabric",
+  services: "consultation measurement installation ordering",
+  about: "winco showroom company edmonton",
+  gallery: "installations photos projects rooms inspiration",
+  guides: "choosing fabric light privacy blackout windows",
+  faq: "care warranty five years delivery questions business days",
+  contact: "quote enquiry appointment address directions phone opening hours"
 };
 const pages = [...navigation.querySelectorAll("a")];
 function filterPages() {
   const terms = searchField.value.trim().toLowerCase().split(/\s+/);
   const matches = pages.filter(link => {
-    const text = (link.textContent + " " + (keywords[link.getAttribute("href")] || "")).toLowerCase();
+    const label = link.textContent.trim().toLowerCase();
+    const text = label + " " + (keywords[label] || "");
     return terms.every(term => text.includes(term));
   });
   searchResults.replaceChildren(...matches.map(link => {
