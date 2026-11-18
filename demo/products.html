@@ -2,105 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <base href="/demo/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Window Coverings | Winco Blinds</title>
+  <base href="/demo/">
+  <title>Products | WINCO</title>
   <link rel="icon" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=4">
-  <link rel="stylesheet" href="products-reference.css?v=2">
-  <script src="site.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=preview1">
+  <script src="site.js?v=preview1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="products.html#main">Skip to content</a>
-  <header class="site-header">
-    <div class="page-width header-inner">
-      <a class="brand" href="index.html" aria-label="Winco Blinds home">
-        <span class="brand-placeholder" aria-hidden="true"><span>OFFICIAL</span><span>WINCO LOGO</span></span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span class="menu-icon" aria-hidden="true"></span></button>
-      <nav class="site-nav" id="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="products.html" aria-current="page">Products</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="guides.html">Guides</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-        <button type="button" class="search-opener" aria-label="Search the site"><span class="search-mark" aria-hidden="true"></span></button>
-      </nav>
-    </div>
+  <div class="preview-note">WINCO website design preview — official logo and product photography to be added</div>
+  <header class="header inner">
+    <a class="logo" href="index.html" aria-label="Winco Blinds home"><span>OFFICIAL<br>WINCO LOGO</span></a>
+    <nav class="nav" id="demo-nav" aria-label="Main navigation">
+      <a href="products.html" class="active" aria-current="page">Products</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="mobile" type="button" aria-label="Toggle menu" aria-controls="demo-nav" aria-expanded="false">☰</button>
   </header>
-  <main id="main" class="catalogue">
-    <section class="catalogue-intro" aria-labelledby="catalogue-title">
-      <div class="catalogue-heading">
-        <p class="catalogue-label">Products</p>
-        <h1 id="catalogue-title">Window Coverings<br>for Every Space</h1>
-        <p class="catalogue-intro-copy">A curated selection of shades and blinds, custom-made to<br class="catalogue-line-break"> fit your style, needs, and everyday life.</p>
+  <main class="inner" id="main">
+    <section class="page-top">
+      <div class="eyebrow">PRODUCTS</div>
+      <div class="rule" style="margin:17px 0 10px" aria-hidden="true"></div>
+      <h1 class="serif">Window Coverings<br>for Every Space</h1>
+      <p>A curated selection of shades and blinds, custom-made to fit your style, needs, and everyday life.</p>
+    </section>
+    <section class="main">
+      <div class="products">
+        <a class="product" href="dual-shades.html">
+          <img alt="Alternating sheer and opaque bands on a dual shade" src="assets/preview-dual.jpg">
+          <h2>Dual Shades <span>→</span>
+          </h2>
+          <p>Versatile light control with a modern look.</p>
+        </a>
+        <a class="product" href="roller-shades.html">
+          <img alt="Woven roller shade with daylight coming through the window below" src="assets/preview-roller.jpg">
+          <h2>Roller Shades <span>→</span>
+          </h2>
+          <p>A clean, timeless solution for any room.</p>
+        </a>
+        <a class="product" href="motorized.html">
+          <img alt="White shade remote resting on woven upholstery" src="assets/preview-motorized.jpg">
+          <h2>Motorized <span>→</span>
+          </h2>
+          <p>Effortless control and everyday convenience.</p>
+        </a>
       </div>
     </section>
-    <div class="product-grid">
-      <a class="product-card" href="contact.html?product=dual"
-        data-product="Dual Shades"
-        data-detail-src="assets/dual-shades.webp"
-        data-detail-alt="Alternating light and dark bands on a dual shade"
-        data-summary="Alternating sheer and opaque bands let you adjust daylight and privacy.">
-        <div class="card-image">
-          <img src="assets/reference-dual.jpg" alt="Alternating sheer and opaque bands on a dual shade" width="227" height="149">
-        </div>
-        <div class="product-name">
-          <h2>Dual Shades</h2>
-          <span aria-hidden="true">→</span>
-        </div>
-        <p class="product-caption">Versatile light control with a modern look.</p>
-      </a>
-      <a class="product-card" href="contact.html?product=roller"
-        data-product="Roller Shades"
-        data-detail-src="assets/roller-shades.webp"
-        data-detail-alt="Light roller shades fitted to tall windows"
-        data-summary="A single panel of fabric rolls up neatly. Choose a fabric for filtered light or room darkening.">
-        <div class="card-image roller-image">
-          <img src="assets/reference-roller.jpg" alt="A woven roller shade with daylight coming through the window below" width="227" height="149">
-        </div>
-        <div class="product-name">
-          <h2>Roller Shades</h2>
-          <span aria-hidden="true">→</span>
-        </div>
-        <p class="product-caption">A clean, timeless solution for any room.</p>
-      </a>
-      <a class="product-card" href="contact.html?product=motorized"
-        data-product="Motorized Blinds"
-        data-detail-src="assets/motorized-concept.png"
-        data-detail-alt="Illustrative remote control for motorized shades"
-        data-summary="Raise or lower compatible shades with a remote, including on hard-to-reach windows.">
-        <div class="card-image">
-          <img src="assets/reference-motorized.jpg" alt="A slim white shade remote resting on woven fabric" width="227" height="149">
-        </div>
-        <div class="product-name">
-          <h2>Motorized</h2>
-          <span aria-hidden="true">→</span>
-        </div>
-        <p class="product-caption">Effortless control and everyday convenience.</p>
-      </a>
-    </div>
   </main>
-  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-title" aria-describedby="product-summary">
-    <form method="dialog" class="dialog-toolbar">
-      <button class="close-button" aria-label="Close product details">Close <span aria-hidden="true">×</span></button>
-    </form>
-    <img class="product-detail-photo" alt="">
-    <div class="product-detail-copy">
-      <h2 id="product-title"></h2>
-      <p id="product-summary"></p>
-      <a class="button" href="contact.html">Ask About This Product <span aria-hidden="true">→</span></a>
-    </div>
-  </dialog>
-  <footer class="site-footer">
-    <div class="page-width footer-inner">
-      <span>Winco Blinds &amp; Window Fashion</span>
-      <a href="contact.html#showroom">9790 51 Ave NW, Edmonton</a>
-      <a href="tel:+17808092292">(780) 809-2292</a>
+  <footer class="footer">
+    <div style="max-width:1350px;margin:auto">
+      <div style="font:28px Georgia,serif;margin-bottom:22px">Window coverings, considered.</div>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="small">© 2026 WINCO Blinds &amp; Window Fashion. Design preview.</div>
     </div>
   </footer>
 </body>
