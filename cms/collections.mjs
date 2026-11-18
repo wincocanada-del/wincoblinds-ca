@@ -1,4 +1,5 @@
 import legacySeed from './seed.json' with {type:'json'};
+import restoredPhotos from '../assets/data/image-restoration.json' with {type:'json'};
 
 export const installationProducts = {
   'dual-shades': 'Dual Shades',
@@ -84,6 +85,21 @@ export function setInstallationImage(item, image) {
   item.product = '';
 }
 
+const galleryWidths = new Map(restoredPhotos.map(photo => [
+  'assets/images/website/' + photo.image, photo.output[0],
+]));
+
+export function galleryTileImage(item, escape) {
+  const fullWidth = galleryWidths.get(item.image?.replace(/^\//, ''));
+  let source = item.image;
+  let responsive = '';
+  if (fullWidth) {
+    source = item.image.replace(/\/([^/]+)$/, '/gallery-preview/$1');
+    responsive = ` srcset="${escape(source)} 896w, ${escape(item.image)} ${fullWidth}w" sizes="auto, (max-width: 760px) 50vw, (max-width: 1344px) 33vw, 448px"`;
+  }
+  return `<img src="${escape(source)}"${responsive} alt="${escape(item.alt)}" loading="lazy" decoding="async">`;
+}
+
 export function renderInstallationGallery(block,data,escape) {
   const product=block.values.product;
   const overview=product==='all';
@@ -91,7 +107,7 @@ export function renderInstallationGallery(block,data,escape) {
   if(!photos.length)return '';
   const categories=Object.entries(installationProducts).filter(([key])=>photos.some(photo=>photo.product===key));
   const filter=overview&&categories.length ? `<div class="filter-bar" role="group" aria-label="Filter installations"><button class="filter-button" data-filter="all" aria-pressed="true">All</button>${categories.map(([key,label])=>`<button class="filter-button" data-filter="${key}" aria-pressed="false">${label}</button>`).join('')}</div><p class="filter-status" role="status">${photos.length} photos</p>` : '';
-  const photoMarkup=photo=>`<button type="button" class="installation-photo gallery-open" data-category="${escape(photo.product||'')}" data-photo="${escape(photo.image)}" data-caption="${escape(photo.title)}" aria-label="Enlarge photo: ${escape(photo.alt)}"><img src="${escape(photo.image)}" alt="${escape(photo.alt)}" loading="lazy" decoding="async"></button>`;
+  const photoMarkup=photo=>`<button type="button" class="installation-photo gallery-open" data-category="${escape(photo.product||'')}" data-photo="${escape(photo.image)}" data-caption="${escape(photo.title)}" aria-label="Enlarge photo: ${escape(photo.alt)}">${galleryTileImage(photo,escape)}</button>`;
   const grid=items=>`<div class="installation-grid">${items.map(photoMarkup).join('')}</div>`;
   const showMore=!overview&&photos.length>3;
   return `<section id="installations" class="wrap installation-section"><h2>${escape(block.values.title)}</h2>${filter}${grid(showMore?photos.slice(0,3):photos)}${showMore?`<details class="installation-more"><summary>More photos (${photos.length-3})</summary>${grid(photos.slice(3))}</details>`:''}<dialog class="photo-dialog" aria-label="Installation photo"><button class="dialog-close" aria-label="Close photo">Close ×</button><img alt=""><p class="installation-caption"></p></dialog></section>`;

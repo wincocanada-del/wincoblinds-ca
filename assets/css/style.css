@@ -218,7 +218,9 @@ p+p {
   width:151px;
   height:auto;
   mix-blend-mode:multiply;
+  filter:grayscale(1);
 }
+.brand img[src$="/winco-original.png"] { filter:brightness(0); }
 .brand>span {
   font-size:7px;
   letter-spacing:.19em;

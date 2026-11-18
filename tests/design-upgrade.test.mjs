@@ -25,6 +25,7 @@ test('published and restored stock documents upgrade to four links and fourteen 
   }
   const home=output(data,'index');
   assert.equal(home.querySelector('.cover-image img').getAttribute('src'),page(seed,'index').blocks[0].values.f10);
+  assert.match(home.querySelector('.cover-image img').getAttribute('srcset'),/room-inspiration-2496\.webp 2496w/);
   assert.equal(home.querySelector('.cover-eyebrow').textContent,'WINDOW COVERINGS · EDMONTON');
   assert.equal(home.querySelector('.cover-copy h1').innerHTML,'A quieter kind<br>of beautiful.');
   assert.equal(home.querySelector('.cover-intro').innerHTML,'Custom shades and blinds,<br>thoughtfully made for your space.');
@@ -51,6 +52,7 @@ test('editor-authored drafts preserve mapped photos, custom copy, unpublished bl
   const customHero=page(data,'index').blocks[0];
   customHero.values.f2='Staff have written a new introduction.';
   const customPhoto='assets/images/website/gallery-10.webp';
+  customHero.values.f10=customPhoto;
   const cards=page(data,'index').blocks[2];
   cards.values.f12=customPhoto;
   const hiddenHome=page(data,'index').blocks[5];
@@ -64,6 +66,8 @@ test('editor-authored drafts preserve mapped photos, custom copy, unpublished bl
   assert.ok(page(data,'index').blocks.find(b=>b.id===hiddenHome.id).hidden);
   const home=output(data,'index');
   assert.match(home.body.textContent,/Staff have written a new introduction/);
+  assert.equal(home.querySelector('.cover-image img').getAttribute('src'),customPhoto);
+  assert.equal(home.querySelector('.cover-image img').hasAttribute('srcset'),false);
   assert.doesNotMatch(home.body.textContent,/photo feature for next month/);
   assert.equal(home.querySelectorAll('h1').length,1);
   assert.equal(output(data,'products').querySelectorAll('.installation-photo').length,0);
@@ -110,4 +114,22 @@ test('gallery follows manual product selection and order and clears stale tags o
   assert.equal(upload.product,'');
   assert.equal(output(data,'motorized-blinds').querySelectorAll('.installation-photo').length,0);
   assert.equal(output(data,'products').querySelectorAll('.installation-photo').length,data.gallery.length);
+});
+
+test('gallery tiles have responsive stock sources, full-size lightboxes and a fallback for staff photos',()=>{
+  const data=upgradeSite(cloneSeed());
+  const staffImage='/media/00000000-0000-4000-8000-000000000000/11111111-1111-4111-8111-111111111111.webp';
+  data.gallery.push({...data.gallery[0],image:staffImage});
+  for (const slug of ['products','gallery']) {
+    const doc=output(data,slug);
+    const path='assets/images/website/gallery-10.webp';
+    const stock=doc.querySelector(`[data-photo="${path}"] img`);
+    assert.equal(stock.getAttribute('src'),'assets/images/website/gallery-preview/gallery-10.webp');
+    assert.equal(stock.getAttribute('srcset'),`${stock.getAttribute('src')} 896w, ${path} 1889w`);
+    assert.ok(stock.getAttribute('sizes'));
+    assert.equal(doc.querySelector('.photo-dialog img').hasAttribute('src'),false);
+    const custom=doc.querySelector(`[data-photo="${staffImage}"] img`);
+    assert.equal(custom.getAttribute('src'),staffImage);
+    assert.equal(custom.hasAttribute('srcset'),false);
+  }
 });
