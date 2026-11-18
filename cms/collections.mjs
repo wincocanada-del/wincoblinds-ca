@@ -18,6 +18,13 @@ const imageFields = (prefix='',label='') => [
   field(prefix+'image',label+'사진','image'), field(prefix+'alt',label+'사진 설명','alt'),
 ];
 const buttonFields = [field('action','버튼 문구'),field('url','버튼 연결','url')];
+const homeCopy = {
+  eyebrow: 'WINDOW COVERINGS · EDMONTON',
+  title: 'A quieter kind\nof beautiful.',
+  body: 'Custom shades and blinds,\nthoughtfully made for your space.',
+  action: 'Explore Products',
+  url: 'products.html',
+};
 const imageMarkup = (prefix='',priority=false) => `<img data-cms-image="${prefix}image" data-cms-alt="${prefix}alt" ${priority?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 const arrow = '<span aria-hidden="true">↗</span>';
 const actionMarkup = `<a class="button" data-cms-text="action" data-cms-url="url">${arrow}</a>`;
@@ -48,8 +55,8 @@ function cardTemplate(home) {
 export const collectionTemplates = {
   'cover-home':{
     label:'메인 사진 및 제목',
-    fields:[field('title','큰 제목'),...imageFields(),...buttonFields],
-    html:`<section class="cover-hero"><div class="cover-copy"><h1 data-cms-text="title"></h1>${actionMarkup}</div><figure class="cover-image">${imageMarkup('',true)}</figure></section>`,
+    fields:[field('eyebrow','제목 위 문구'),field('title','큰 제목'),field('body','소개 문장'),...imageFields(),...buttonFields],
+    html:`<section class="cover-hero"><div class="cover-copy"><p class="cover-eyebrow" data-cms-text="eyebrow"></p><h1 data-cms-text="title"></h1><p class="cover-intro" data-cms-text="body"></p><a class="button" data-cms-text="action" data-cms-url="url"><span aria-hidden="true">→</span></a></div><figure class="cover-image">${imageMarkup('',true)}</figure></section>`,
   },
   'cover-products-title': {
     label:'제품 제목', fields:[field('title','큰 제목')],
@@ -130,7 +137,11 @@ const productDescriptions={
 
 function adaptBlock(block,slug) {
   if(block.template==='index-0'){
-    return replaceBlock(block,'cover-home',{title:value(block,'f1','Custom blinds & shades in Edmonton'),image:block.values.f10,alt:block.values.f11,action:value(block,'f3','Request a Free Quote'),url:value(block,'f12','contact.html')},['f1','f3','f10','f11','f12']);
+    return replaceBlock(block,'cover-home',{
+      eyebrow:value(block,'f0',homeCopy.eyebrow),title:value(block,'f1',homeCopy.title),
+      body:value(block,'f2',homeCopy.body),image:block.values.f10,alt:block.values.f11,
+      action:value(block,'f3',homeCopy.action),url:block.values.f12,
+    },['f0','f1','f2','f3','f10','f11','f12']);
   }
   if(block.template==='products-0'){
     return replaceBlock(block,'cover-products-title',{title:value(block,'f1','Products')},['f1']);
@@ -162,5 +173,20 @@ export function upgradeCollections(data) {
   for(const page of data.pages) {
     if(!pages.has(page.slug)||page.blocks.some(block=>block.template.startsWith('cover-')||block.template==='installation-photos'))continue;
     page.blocks=page.blocks.flatMap(block=>adaptBlock(block,page.slug));
+  }
+}
+
+export function upgradeHomeCopy(data) {
+  const home = data.pages.find(page => page.slug === 'index');
+  for (const block of home?.blocks || []) {
+    if (block.template !== 'cover-home') continue;
+    const values = block.values;
+    values.eyebrow ??= homeCopy.eyebrow;
+    values.body ??= homeCopy.body;
+    if (values.title === 'Custom blinds & shades in Edmonton') values.title = homeCopy.title;
+    if (values.action === 'Request a Free Quote' && values.url === 'contact.html') {
+      values.action = homeCopy.action;
+      values.url = homeCopy.url;
+    }
   }
 }

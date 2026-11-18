@@ -25,7 +25,11 @@ test('published and restored stock documents upgrade to four links and fourteen 
   }
   const home=output(data,'index');
   assert.equal(home.querySelector('.cover-image img').getAttribute('src'),page(seed,'index').blocks[0].values.f10);
-  assert.equal(home.querySelector('.cover-copy a').getAttribute('href'),'contact.html');
+  assert.equal(home.querySelector('.cover-eyebrow').textContent,'WINDOW COVERINGS · EDMONTON');
+  assert.equal(home.querySelector('.cover-copy h1').innerHTML,'A quieter kind<br>of beautiful.');
+  assert.equal(home.querySelector('.cover-intro').innerHTML,'Custom shades and blinds,<br>thoughtfully made for your space.');
+  assert.equal(home.querySelector('.cover-copy a').getAttribute('href'),'products.html');
+  assert.match(home.querySelector('.cover-copy a').textContent,/^Explore Products/);
   assert.equal(home.querySelectorAll('.cover-card').length,3);
   const productDoc=output(data,'products');
   assert.deepEqual([...productDoc.querySelectorAll('.cover-card')].map(el=>el.getAttribute('href')),['dual-shades.html','roller-shades.html','motorized-blinds.html']);
@@ -55,7 +59,7 @@ test('editor-authored drafts preserve mapped photos, custom copy, unpublished bl
   page(data,'products').blocks[1].hidden=true;
   upgradeSite(data);
   assert.deepEqual(data.navigation,originalMenu);
-  assert.equal(page(data,'index').blocks[0].values.f2,customHero.values.f2);
+  assert.equal(page(data,'index').blocks[0].values.body,customHero.values.f2);
   assert.equal(page(data,'index').blocks.find(b=>b.template==='cover-product-cards').values.dualimage,customPhoto);
   assert.ok(page(data,'index').blocks.find(b=>b.id===hiddenHome.id).hidden);
   const home=output(data,'index');
@@ -64,6 +68,26 @@ test('editor-authored drafts preserve mapped photos, custom copy, unpublished bl
   assert.equal(home.querySelectorAll('h1').length,1);
   assert.equal(output(data,'products').querySelectorAll('.installation-photo').length,0);
   assert.deepEqual(validateSite(data),[]);
+});
+
+test('previous cover drafts gain the new home copy while keeping staff edits',()=>{
+  const data=upgradeSite(cloneSeed());
+  const block=page(data,'index').blocks.find(b=>b.template==='cover-home');
+  const current=structuredClone(block.values);
+  delete block.values.eyebrow;
+  delete block.values.body;
+  Object.assign(block.values,{title:'Custom blinds & shades in Edmonton',action:'Request a Free Quote',url:'contact.html'});
+  data.designVersion=2;
+  const custom=structuredClone(data);
+  const customValues=page(custom,'index').blocks.find(b=>b.template==='cover-home').values;
+  Object.assign(customValues,{title:'Our showroom',action:'Book a visit'});
+  upgradeSite(data);
+  assert.deepEqual(block.values,current);
+  upgradeSite(custom);
+  assert.equal(customValues.title,'Our showroom');
+  assert.equal(customValues.action,'Book a visit');
+  assert.equal(customValues.url,'contact.html');
+  assert.equal(customValues.body,current.body);
 });
 
 test('gallery follows manual product selection and order and clears stale tags on image replacement',()=>{

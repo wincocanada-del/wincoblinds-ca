@@ -1,5 +1,5 @@
 import seed from './seed.json' with { type: 'json' };
-import { upgradeCollections } from './collections.mjs';
+import { upgradeCollections, upgradeHomeCopy } from './collections.mjs';
 import { upgradeInteriors } from './interiors.mjs';
 
 const defaultNavigation = [
@@ -17,13 +17,17 @@ function sameMenu(item, original) {
 // Apply to an in-memory publication, editable draft, or restored version.
 // The first editor save persists the version so future edits are kept verbatim.
 export function upgradeSite(data) {
-  if (data.designVersion >= 2) return data;
-  if (data.navigation.length === seed.navigation.length &&
-      data.navigation.every((item, i) => sameMenu(item, seed.navigation[i]))) {
-    data.navigation = structuredClone(defaultNavigation);
+  if (data.designVersion >= 3) return data;
+  if (data.designVersion === 2) {
+    upgradeHomeCopy(data);
+  } else {
+    if (data.navigation.length === seed.navigation.length &&
+        data.navigation.every((item, i) => sameMenu(item, seed.navigation[i]))) {
+      data.navigation = structuredClone(defaultNavigation);
+    }
+    upgradeCollections(data);
+    upgradeInteriors(data);
   }
-  upgradeCollections(data);
-  upgradeInteriors(data);
-  data.designVersion = 2;
+  data.designVersion = 3;
   return data;
 }
