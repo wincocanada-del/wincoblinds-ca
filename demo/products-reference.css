@@ -1,0 +1,146 @@
+.catalogue {
+  --catalogue-gutter: 4.33vw;
+  color: #302c29;
+  background: #f5f2f0;
+}
+
+.catalogue-intro {
+  position: relative;
+  min-height: 22.3vw;
+  padding: 2.75vw var(--catalogue-gutter) 1.85vw;
+  isolation: isolate;
+  background: #f2eeeb;
+}
+
+.catalogue-intro::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 46.1%;
+  background: url("assets/reference-window-light.jpg") center / 100% 100% no-repeat;
+  mask-image: linear-gradient(90deg, transparent, black 23%);
+  content: "";
+}
+
+.catalogue-heading {
+  position: relative;
+}
+
+.catalogue-label {
+  font-size: 1.02vw;
+  font-weight: 500;
+  letter-spacing: 0.19em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.catalogue-label::after {
+  display: block;
+  width: 3.52vw;
+  height: max(1px, 0.12vw);
+  margin-top: 1.15vw;
+  background: #91775e;
+  content: "";
+}
+
+.catalogue-heading h1 {
+  margin-top: 1.30vw;
+  font-size: 4.13vw;
+  font-weight: 400;
+  letter-spacing: -0.042em;
+  line-height: 1.02;
+}
+
+.catalogue-intro-copy {
+  margin-top: 1.32vw;
+  font-size: 1.44vw;
+  font-weight: 350;
+  line-height: 1.38;
+}
+
+.catalogue .product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.29vw;
+  padding: 2.05vw var(--catalogue-gutter) 2.95vw;
+}
+
+.catalogue .card-image {
+  aspect-ratio: 227 / 149;
+}
+
+.catalogue .product-name {
+  gap: 0.5rem;
+  padding: 1.04vw 0.1vw 0;
+  border: 0;
+}
+
+.catalogue .product-name h2 {
+  font-size: 2.24vw;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: -0.042em;
+}
+
+.catalogue .product-name span {
+  display: inline-block;
+  font-size: 2.03vw;
+  line-height: 1;
+  transition: transform 180ms ease;
+}
+
+.product-caption {
+  margin: 0.61vw 0.1vw 0;
+  font-size: 1.25vw;
+  font-weight: 350;
+  line-height: 1.42;
+}
+
+.catalogue .product-card:hover .product-name h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .catalogue .product-card:hover .product-name span {
+    transform: translateX(0.15em);
+  }
+}
+
+@media (max-width: 700px) {
+  .catalogue {
+    --catalogue-gutter: clamp(1.2rem, 5vw, 2rem);
+  }
+
+  .catalogue-intro {
+    min-height: auto;
+    padding: 2rem var(--catalogue-gutter) 2.25rem;
+  }
+
+  .catalogue-intro::before {
+    left: 47%;
+    opacity: 0.65;
+    mask-image: linear-gradient(90deg, transparent, black 30%);
+    background-size: cover;
+  }
+
+  .catalogue-label { font-size: 0.67rem; }
+  .catalogue-label::after { width: 2rem; margin-top: 0.8rem; }
+  .catalogue-heading h1 { margin-top: 0.75rem; font-size: clamp(2.25rem, 7.7vw, 3.25rem); }
+  .catalogue-intro-copy {
+    max-width: 34ch;
+    margin-top: 0.95rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .catalogue-line-break { display: none; }
+  .catalogue .product-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.85rem;
+    padding-block: 1.4rem 2rem;
+  }
+  .catalogue .product-name { padding-top: 0.6rem; }
+  .catalogue .product-name h2 { font-size: 1.65rem; }
+  .catalogue .product-name span { font-size: 1.35rem; }
+  .product-caption { margin-top: 0.25rem; font-size: 0.93rem; }
+}

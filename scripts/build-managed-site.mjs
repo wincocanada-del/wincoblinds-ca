@@ -18,6 +18,7 @@ if(process.env.NETLIFY==='true'||process.env.CMS_REMOTE==='1'){
 const errors=validateSite(data);if(errors.length)throw Error(errors.join('\n'));
 rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});
 copyTree(join(root,'assets'),join(out,'assets'));
+copyTree(join(root,'demo'),join(out,'demo'));
 // Freeze released images into each deployment so photos roll back with the pages.
 for(const path of imagePaths(data).filter(p=>p.startsWith('/media/'))){
  const response=await fetch(config.supabaseUrl+'/storage/v1/object/authenticated/winco-website/'+path.slice(7),{headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+config.supabaseAnonKey},signal:AbortSignal.timeout(20000)});

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/demo/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Contact | Winco Blinds</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="site.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="contact.html#main">Skip to content</a>
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="brand" href="index.html" aria-label="Winco Blinds home">
+        <img src="assets/winco-logo.png" alt="Winco Blinds" width="288" height="61">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span class="menu-icon" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="guides.html">Guides</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <button type="button" class="search-opener" aria-label="Search the site"><span class="search-mark" aria-hidden="true"></span></button>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="contact-page">
+    <div class="page-width contact-layout">
+      <section class="contact-form" aria-labelledby="contact-title">
+        <h1 id="contact-title">Request a quote</h1>
+        <form id="quote-form" aria-describedby="form-note" method="post">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" maxlength="120" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="200" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="product">I'm interested in</label>
+            <select id="product" name="product">
+              <option value="">Not sure yet</option>
+              <option value="dual">Dual Shades</option>
+              <option value="roller">Roller Shades</option>
+              <option value="motorized">Motorized Blinds</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" rows="4" maxlength="2000" required></textarea>
+          </div>
+          <button class="button" type="submit" disabled>Preview Enquiry <span aria-hidden="true">→</span></button>
+          <p class="form-note" id="form-note">Demo form. Messages are not sent.</p>
+          <p class="form-result" id="form-result" role="status" hidden></p>
+        </form>
+      </section>
+      <section class="showroom" id="showroom" aria-labelledby="showroom-title">
+        <h2 id="showroom-title">Edmonton showroom</h2>
+        <address>
+          9790 51 Ave NW<br>
+          Edmonton, AB T6E 0A6
+        </address>
+        <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=9790%2051%20Ave%20NW%2C%20Edmonton%2C%20AB%20T6E%200A6" target="_blank" rel="noopener noreferrer">
+          Get directions <span aria-hidden="true">↗</span>
+        </a>
+        <dl class="opening-hours" aria-label="Opening hours">
+          <div><dt>Mon–Fri</dt><dd>9:00 am – 5:00 pm</dd></div>
+          <div><dt>Saturday</dt><dd>10:30 am – 2:30 pm</dd></div>
+          <div><dt>Sunday</dt><dd>By appointment</dd></div>
+        </dl>
+        <div class="showroom-links">
+          <a href="tel:+17808092292">(780) 809-2292</a>
+          <a href="mailto:wincocanada@gmail.com">wincocanada@gmail.com</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <span>Winco Blinds &amp; Window Fashion</span>
+      <a href="contact.html#showroom">9790 51 Ave NW, Edmonton</a>
+      <a href="tel:+17808092292">(780) 809-2292</a>
+    </div>
+  </footer>
+</body>
+</html>
