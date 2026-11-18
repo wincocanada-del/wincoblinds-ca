@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { build } from 'esbuild';
 import seed from '../cms/seed.json' with {type:'json'};
 import config from '../cms/config.json' with {type:'json'};
+import {upgradeSite} from '../cms/design-upgrade.mjs';
 import {validateSite,renderPage,imagePaths} from '../cms/render.mjs';
 const root=resolve(import.meta.dirname,'..'),out=resolve(root,'dist');
 function copy(source,target){mkdirSync(resolve(target,'..'),{recursive:true});writeFileSync(target,readFileSync(source));}
@@ -15,6 +16,7 @@ if(process.env.NETLIFY==='true'||process.env.CMS_REMOTE==='1'){
  if(!response.ok)throw Error('CMS publication unavailable. Keeping the previous production deploy.');
  const publication=await response.json();if(publication){data=publication.data;release=publication.id;}
 }
+upgradeSite(data);
 const errors=validateSite(data);if(errors.length)throw Error(errors.join('\n'));
 rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});
 copyTree(join(root,'assets'),join(out,'assets'));

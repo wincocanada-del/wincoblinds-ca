@@ -1,0 +1,220 @@
+.cover-hero {
+  --cover-gutter: clamp(24px, 4.6vw, 88px);
+  width: min(100%, 1920px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 36fr) minmax(0, 64fr);
+  align-items: stretch;
+  background: var(--paper);
+}
+
+.cover-copy {
+  align-self: center;
+  padding: clamp(36px, 5vw, 90px) clamp(20px, 2.8vw, 58px) clamp(36px, 5vw, 90px) var(--cover-gutter);
+}
+
+.cover-copy h1 {
+  max-width: 13ch;
+  font-size: clamp(44px, 4.9vw, 91px);
+  line-height: 1.04;
+  font-weight: 400;
+  letter-spacing: -.046em;
+  text-wrap: balance;
+}
+
+.cover-copy .button,
+.product-detail-copy .button {
+  margin-top: clamp(26px, 3vw, 48px);
+}
+
+.cover-image {
+  margin: 0;
+  min-width: 0;
+  aspect-ratio: 1.46;
+  background: var(--sage);
+}
+
+.cover-image img,
+.product-detail-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 54% 50%;
+}
+
+.cover-products {
+  padding-block: clamp(48px, 6.2vw, 104px);
+}
+
+.cover-products h2,
+.installation-section h2 {
+  font-size: clamp(34px, 3.4vw, 58px);
+  margin-bottom: clamp(20px, 2.3vw, 36px);
+}
+
+.cover-card-grid,
+.installation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 34px);
+}
+
+.cover-card {
+  display: block;
+  min-width: 0;
+}
+
+.cover-card-image {
+  overflow: hidden;
+  aspect-ratio: 1.45;
+  background: var(--sage);
+}
+
+.cover-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .26s ease-out;
+}
+
+.cover-card:hover img,
+.cover-card:focus-visible img { transform: scale(1.025); }
+
+.cover-card :is(h2,h3) {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .4em;
+  padding: .62em 0;
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(23px, 2.15vw, 36px);
+  font-weight: 400;
+  letter-spacing: -.03em;
+  line-height: 1.16;
+}
+
+.cover-card :is(h2,h3) span {
+  font-family: var(--sans);
+  font-size: .72em;
+  line-height: 1;
+}
+
+.collection-intro {
+  padding-top: clamp(40px, 4.8vw, 76px);
+}
+
+.collection-intro h1,
+.product-detail-copy h1 {
+  font-size: clamp(44px, 5.3vw, 78px);
+  font-weight: 400;
+  line-height: 1.03;
+  letter-spacing: -.043em;
+}
+
+.collection-intro + .cover-products {
+  padding-top: clamp(24px, 2.5vw, 40px);
+}
+
+.cover-product-detail {
+  display: grid;
+  grid-template-columns: minmax(0, .76fr) minmax(0, 1.24fr);
+  gap: clamp(30px, 6vw, 104px);
+  padding-block: clamp(34px, 4vw, 64px);
+  align-items: center;
+}
+
+.product-detail-copy p {
+  max-width: 34ch;
+  margin-top: 1.1em;
+  color: var(--muted);
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.52;
+}
+
+.product-detail-image {
+  margin: 0;
+  aspect-ratio: 1.6;
+  min-width: 0;
+  background: var(--sage);
+}
+
+.installation-section {
+  border-top: 1px solid var(--line);
+  padding-block: clamp(42px, 5vw, 84px);
+}
+
+.installation-section .filter-bar {
+  margin: 0 0 20px;
+  gap: 8px;
+}
+
+.installation-section .filter-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.installation-grid {
+  gap: clamp(10px, 1.35vw, 22px);
+}
+
+.installation-photo.gallery-open img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.32;
+  object-fit: cover;
+}
+
+.installation-more { margin-top: 1.2rem; }
+
+.installation-more summary {
+  padding-block: .75rem;
+  min-height: 44px;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: .28em;
+}
+
+.installation-more[open] summary { margin-bottom: .85rem; }
+
+@media (max-width: 760px) {
+  .cover-hero, .cover-product-detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .cover-image, .product-detail-image {
+    order: -1;
+    width: 100%;
+    aspect-ratio: 1.45;
+  }
+  .cover-image img { object-position: 54% 55%; }
+  .cover-copy {
+    align-self: stretch;
+    padding: 28px var(--cover-gutter) 36px;
+  }
+  .cover-copy h1 {
+    max-width: 17ch;
+    font-size: clamp(40px, 8.7vw, 58px);
+  }
+  .cover-copy .button, .product-detail-copy .button { margin-top: 22px; }
+  .cover-products { padding-block: 36px 44px; }
+  .cover-card-grid { gap: 22px; }
+  .cover-product-detail { align-items: stretch; gap: 24px; }
+  .cover-product-detail h1 { font-size: clamp(38px, 7.3vw, 54px); }
+  .installation-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (max-width: 580px) {
+  .cover-card-grid { grid-template-columns: 1fr; }
+  .cover-card-image { aspect-ratio: 1.7; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover-card img { transition: none; }
+}

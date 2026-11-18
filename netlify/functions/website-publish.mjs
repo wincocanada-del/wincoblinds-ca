@@ -1,4 +1,5 @@
 import config from '../../cms/config.json' with {type:'json'};
+import {upgradeSite} from '../../cms/design-upgrade.mjs';
 import { validateSite, imagePaths } from '../../cms/render.mjs';
 const reply=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store'}});
 export default async request=>{
@@ -18,7 +19,7 @@ export default async request=>{
   const state=await rpc('winco_web_state');
   if(!['owner','publisher'].includes(state.role))return reply({error:'게시 권한이 없습니다.'},403);
   if(!state.draft||input.version!==state.draft.version)return reply({error:'다른 변경이 저장되었습니다. 새로 불러온 뒤 게시해 주세요.'},409);
-  const data=structuredClone(state.draft.data);
+  const data=upgradeSite(structuredClone(state.draft.data));
   const errors=validateSite(data);if(errors.length)return reply({error:errors.join('\n')},400);
   // Strip unpublished pages and unused private uploads from the public build snapshot.
   data.pages=data.pages.filter(p=>p.visible).map(p=>({...p,blocks:p.blocks.filter(b=>!b.hidden)}));

@@ -1,5 +1,6 @@
 import { parseHTML } from 'linkedom';
-import registry from './templates.json' with { type:'json' };
+import { templates } from './registry.mjs';
+import { renderInstallationGallery } from './collections.mjs';
 
 export const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const plain=value=>String(value??'').split('\n').map(esc).join('<br>');
@@ -11,8 +12,8 @@ export const genericTemplates={
  'callout':{label:'안내와 버튼',fields:[['title','제목'],['body','내용'],['button','버튼 문구'],['url','연결 주소','url']]},
  'faq':{label:'질문과 답변',fields:[['title','질문'],['body','답변']]}
 };
-export function fieldsFor(block){return registry.templates[block.template]?.fields || (genericTemplates[block.template]?.fields||[]).map(([key,label,kind='text'])=>({key,label,kind}));}
-export const templateLabel=block=>registry.templates[block.template]?.label||genericTemplates[block.template]?.label||({'gallery':'시공 갤러리','catalog-dual':'듀얼 원단 목록','catalog-roller':'롤러 원단 목록'}[block.template])||block.template;
+export function fieldsFor(block){return templates[block.template]?.fields || (genericTemplates[block.template]?.fields||[]).map(([key,label,kind='text'])=>({key,label,kind}));}
+export const templateLabel=block=>templates[block.template]?.label||genericTemplates[block.template]?.label||({'installation-photos':'제품별 시공 사진','gallery':'시공 갤러리','catalog-dual':'듀얼 원단 목록','catalog-roller':'롤러 원단 목록'}[block.template])||block.template;
 export function safeImage(value){return typeof value==='string' && /^(?:\/?assets\/images\/[a-zA-Z0-9_./ -]+\.(?:png|jpe?g|webp|svg)|\/media\/[a-f0-9-]{36}\/[a-f0-9-]{36}\.webp)$/.test(value) && !value.includes('..');}
 export function safeLink(value){
  if(typeof value!=='string'||value.length>1200||/[\x00-\x20\\<>"']/.test(value))return false;
@@ -28,6 +29,7 @@ function gallery(data){return `<section class="wrap gallery-section"><div class=
 function catalog(data,group){const items=data.catalog[group];return `<section class="section wrap" id="fabrics"><div class="section-heading"><div><p class="eyebrow">EXPLORE THE FABRICS</p><h2>Find your finish.</h2></div><p>Compare colour and texture in person at our showroom.</p></div><div class="filter-bar" role="group" aria-label="Filter fabrics">${['all',...new Set(items.map(x=>x.type))].map((c,i)=>`<button class="filter-button" data-filter="${esc(c)}" aria-pressed="${i===0}">${i===0?'All fabrics':esc(c)}</button>`).join('')}</div><p class="filter-status" role="status">${items.length} fabrics</p><div class="fabric-grid">${items.map(x=>`<article class="fabric-card" id="${esc(x.slug)}" data-category="${esc(x.type)}">${photo(x.image.startsWith('/')||x.image.startsWith('assets/')?x.image:'assets/images/website/'+x.image,x.name+' fabric sample')}<div><span class="eyebrow">${esc(x.type)}</span><h3>${esc(x.name)}</h3>${link('Ask about this fabric','contact.html?product='+encodeURIComponent(x.name))}</div></article>`).join('')}</div><p class="fine-print">Colours vary by screen. Fabric availability, finished sizes and operation options are confirmed with your quote.</p></section>`;}
 function blockHtml(block,data){
  if(block.hidden)return '';
+ if(block.template==='installation-photos')return renderInstallationGallery(block,data,esc);
  if(block.template==='gallery')return gallery(data);
  if(block.template.startsWith('catalog-'))return catalog(data,block.template==='catalog-dual'?'dualShades':'rollerShades');
  const v=block.values;
@@ -37,7 +39,7 @@ function blockHtml(block,data){
   if(block.template==='faq')return `<section class="wrap narrow"><div class="faq-list"><details><summary>${esc(v.title)}<span aria-hidden="true">+</span></summary><p>${plain(v.body)}</p></details></div></section>`;
   return `<section class="section wrap${block.template==='callout'?' tinted':''}"><div class="narrow"><h2>${plain(v.title)}</h2><p style="margin-top:24px;white-space:normal">${plain(v.body)}</p>${v.button&&v.url?link(v.button,v.url):''}</div></section>`;
  }
- const template=registry.templates[block.template];
+ const template=templates[block.template];
  const {document}=parseHTML(`<html><body>${template.html}</body></html>`);
  for(const field of template.fields){
   const attr={'text':'text','image':'image','alt':'alt','url':'url'}[field.kind];
@@ -60,13 +62,35 @@ function shared(html,data){
  html=html.replace(/Winco Blinds(?: &amp; Window Fashion| & Window Fashion)?/g,()=>esc(data.settings.name));
  return html;
 }
-function header(data,slug){
- const {document}=parseHTML(`<html><body>${shared(registry.shell.header,data)}</body></html>`);
- const nav=document.querySelector('#site-nav'),cta=nav.querySelector('.nav-cta').outerHTML;
- const active=url=>!url.startsWith('https:')&&(url.split(/[?#]/)[0].replace(/^\//,'').replace(/\.html$/,'')||'index')===slug;
- const one=(label,url)=>`<a href="${esc(url)}"${active(url)?' aria-current="page"':''}>${esc(label)}</a>`;
- nav.innerHTML=data.navigation.filter(x=>!x.hidden).map(item=>item.children?.length?`<details class="nav-group"${item.children.some(([,url])=>active(url))?' data-current="true"':''}><summary>${esc(item.label)}<span aria-hidden="true">⌄</span></summary><div class="nav-dropdown">${item.children.map(([label,url])=>one(label,url)).join('')}</div></details>`:one(item.label,item.url)).join('')+cta;
- return document.body.innerHTML;
+function header(data, slug) {
+  const pageSlug = url => url.split(/[?#]/)[0].replace(/^\//, '').replace(/\.html$/, '') || 'index';
+  const active = url => pageSlug(url) === slug;
+  function navLink(label, url) {
+    const inProducts = pageSlug(url) === 'products' && ['dual-shades', 'roller-shades', 'motorized-blinds'].includes(slug);
+    const state = active(url) ? ' aria-current="page"' : inProducts ? ' data-current="true"' : '';
+    return `<a href="${esc(url)}"${state}>${esc(label)}</a>`;
+  }
+  const navigation = data.navigation.filter(item => !item.hidden).map(item => {
+    if (!item.children?.length) return navLink(item.label, item.url);
+    const state = item.children.some(([,url]) => active(url)) ? ' data-current="true"' : '';
+    return `<details class="nav-group"${state}><summary>${esc(item.label)} <span aria-hidden="true">⌄</span></summary><div class="nav-dropdown">${item.children.map(([label,url]) => navLink(label,url)).join('')}</div></details>`;
+  }).join('');
+  return `<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap header-inner">
+  <a class="brand" href="index.html" aria-label="${esc(data.settings.name)} home"><img src="${esc(data.settings.logo)}" alt="${esc(data.settings.name)}" width="288" height="61"></a>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+  <nav id="site-nav" aria-label="Main navigation">${navigation}</nav>
+</div></header>`;
+}
+function footer(settings) {
+  return `<footer class="showroom-footer"><div class="wrap">
+  <div class="showroom-footer-main">
+    <a href="index.html" class="brand" aria-label="${esc(settings.name)} home"><img src="${esc(settings.logo)}" width="288" height="61" loading="lazy" alt="${esc(settings.name)}"></a>
+    <address><a href="contact.html#showroom">${esc(settings.address)}<br>${esc(settings.city)}</a></address>
+    <div class="showroom-footer-contact"><a href="tel:${esc(settings.phoneDigits)}">${esc(settings.phone)}</a><a href="mailto:${esc(settings.email)}">${esc(settings.email)}</a></div>
+  </div>
+  <div class="showroom-footer-links"><small>© ${new Date().getFullYear()} ${esc(settings.name)}</small><nav aria-label="Customer support"><a href="care.html">Care</a><a href="faq.html">FAQ</a><a href="reviews.html">Reviews</a><a href="${esc(settings.instagram)}">Instagram</a><a href="/app/">Staff access</a></nav></div>
+</div></footer>`;
 }
 export function renderPage(data,page,{preview=false,mediaUrls={}}={}){
  let body=page.blocks.map(b=>blockHtml(b,data)).join('');
@@ -77,7 +101,7 @@ export function renderPage(data,page,{preview=false,mediaUrls={}}={}){
  body=shared(body,data);
  const canonical=`https://wincoblinds.ca/${page.slug==='index'?'':page.slug}`;
  const structured=JSON.stringify({'@context':'https://schema.org','@type':'HomeGoodsStore',name:data.settings.name,url:'https://wincoblinds.ca/',telephone:data.settings.phoneDigits,email:data.settings.email,address:{'@type':'PostalAddress',streetAddress:data.settings.address,addressLocality:data.settings.city,addressCountry:'CA'}}).replaceAll('<','\\u003c');
- let html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(page.title)} | ${esc(data.settings.name)}</title><meta name="description" content="${esc(page.description)}"><link rel="canonical" href="${canonical}"><meta name="theme-color" content="#302b27"><meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.description)}"><meta property="og:image" content="https://wincoblinds.ca/assets/images/website/original-hero.jpg"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><link rel="icon" href="/assets/images/logo/favicon.svg"><link rel="stylesheet" href="/assets/css/style.css">${preview?'<meta name="robots" content="noindex,nofollow"><base href="/">':''}<script type="application/ld+json">${structured}</script><script defer src="/assets/js/main.js"></script></head><body>${header(data,page.slug)}<main id="main">${body}</main>${shared(registry.shell.footer,data)}</body></html>`;
+ let html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(page.title)} | ${esc(data.settings.name)}</title><meta name="description" content="${esc(page.description)}"><link rel="canonical" href="${canonical}"><meta name="theme-color" content="#302b27"><meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.description)}"><meta property="og:image" content="https://wincoblinds.ca/assets/images/website/original-hero.jpg"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><link rel="icon" href="/assets/images/logo/favicon.svg"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="/assets/css/collections.css"><link rel="stylesheet" href="/assets/css/interiors.css">${preview?'<meta name="robots" content="noindex,nofollow"><base href="/">':''}<script type="application/ld+json">${structured}</script><script defer src="/assets/js/main.js"></script></head><body>${header(data,page.slug)}<main id="main">${body}</main>${footer(data.settings)}</body></html>`;
  if(preview){
   for(const [path,url] of Object.entries(mediaUrls))html=html.split(esc(path)).join(esc(url));
   html=html.replace(/<form\b[^>]*>/g,'<form onsubmit="return false"><fieldset disabled style="border:0;padding:0;margin:0">').replaceAll('</form>','</fieldset></form>');
@@ -100,19 +124,19 @@ export function validateSite(data){
   slugs.add(p.slug);
   if(!p.title?.trim()||!p.description?.trim()||!Array.isArray(p.blocks)||p.blocks.length>70)fail('페이지 제목·설명·내용을 확인해 주세요: '+p.slug);
   for(const b of p.blocks||[]){
-   if(!registry.templates[b.template]&&!genericTemplates[b.template]&&!['gallery','catalog-dual','catalog-roller'].includes(b.template)){fail('알 수 없는 내용 블록입니다.');continue;}
+   if(!templates[b.template]&&!genericTemplates[b.template]&&!['installation-photos','gallery','catalog-dual','catalog-roller'].includes(b.template)){fail('알 수 없는 내용 블록입니다.');continue;}
    if(!b.values||typeof b.values!=='object'){fail('내용 블록 값이 없습니다.');continue;}
    for(const f of fieldsFor(b)){
     const value=b.values[f.key]??'';
     if(typeof value!=='string'||value.length>12000)fail('너무 긴 내용이 있습니다.');
     if(f.kind==='url'&&value&&!safeLink(value))fail('올바른 연결 주소를 입력해 주세요: '+f.label);
-    if(f.kind==='url'&&!value&&(registry.templates[b.template]||b.values.button))fail('버튼의 연결 주소를 입력해 주세요: '+f.label);
+    if(f.kind==='url'&&!value&&(templates[b.template]||b.values.button))fail('버튼의 연결 주소를 입력해 주세요: '+f.label);
     if(f.kind==='image'&&!safeImage(value))fail('사진을 선택해 주세요: '+f.label);
    }
   }
  }
  for(const slug of builtins)if(!data.pages.some(p=>p.slug===slug&&p.visible))fail('기본 페이지는 유지해야 합니다: '+slug);
- if(!data.pages.find(p=>p.slug==='contact')?.blocks.some(b=>!b.hidden&&registry.templates[b.template]?.html.includes('id="enquiry-form"')))fail('고객 문의 양식은 유지해야 합니다.');
+ if(!data.pages.find(p=>p.slug==='contact')?.blocks.some(b=>!b.hidden&&templates[b.template]?.html.includes('id="enquiry-form"')))fail('고객 문의 양식은 유지해야 합니다.');
  const checkLink=url=>{
   if(!url){fail('메뉴의 연결 주소를 입력해 주세요.');return;}
   if(!safeLink(url)){fail('올바르지 않은 메뉴/버튼 주소: '+url);return;}
@@ -120,6 +144,7 @@ export function validateSite(data){
  };
  for(const n of data.navigation.filter(n=>!n.hidden)){if(!n.label?.trim())fail('메뉴 이름을 입력해 주세요.');if(n.children?.length){if(n.children.length>15)fail('하위 메뉴는 15개 이하로 구성해 주세요.');for(const child of n.children){if(!Array.isArray(child)||!child[0]?.trim())fail('하위 메뉴 이름을 입력해 주세요.');else checkLink(child[1]);}}else checkLink(n.url);}
  for(const p of data.pages.filter(p=>p.visible))for(const b of p.blocks.filter(b=>!b.hidden))for(const f of fieldsFor(b))if(f.kind==='url'&&b.values[f.key])checkLink(b.values[f.key]);
+ if(data.gallery.some(x=>x.product && !['dual-shades','roller-shades','motorized-blinds'].includes(x.product)))fail('갤러리 사진의 제품 종류를 확인해 주세요.');
  for(const x of data.gallery)if(!x.title?.trim()||!x.alt?.trim()||!x.category?.trim()||!safeImage(x.image))fail('갤러리의 사진·설명·분류를 입력해 주세요.');
  for(const key of ['dualShades','rollerShades']){if(!Array.isArray(data.catalog[key])||data.catalog[key].length>150){fail('원단 목록을 확인해 주세요.');continue;}const ids=new Set();for(const x of data.catalog[key]){if(!x.name?.trim()||!x.type?.trim()||!/^[a-z0-9-]+$/.test(x.slug)||ids.has(x.slug))fail('원단 이름·분류·고유 주소를 확인해 주세요.');ids.add(x.slug);if(!safeImage(x.image?.startsWith('/')||x.image?.startsWith('assets/')?x.image:'assets/images/website/'+x.image))fail('원단 사진을 확인해 주세요.');}}
  for(const key of ['name','phone','phoneDigits','email','address','city','weekdayHours','saturdayHours','sundayHours'])if(typeof data.settings[key]!=='string'||!data.settings[key].trim()||data.settings[key].length>200)fail('매장 정보를 확인해 주세요: '+key);

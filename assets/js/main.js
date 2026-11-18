@@ -29,16 +29,16 @@ document.querySelectorAll('.filter-bar').forEach(bar => {
     bar.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
     items.forEach(item => { item.hidden = button.dataset.filter !== 'all' && item.dataset.category !== button.dataset.filter; });
     const count = items.filter(item => !item.hidden).length;
-    const noun = section.querySelector('.gallery-grid') ? 'photo' : 'fabric';
+    const noun = section.querySelector('.gallery-grid, .installation-grid') ? 'photo' : 'fabric';
     section.querySelector('.filter-status').textContent = `${count} ${noun}${count === 1 ? '' : 's'}`;
   });
 });
-const dialog = document.querySelector('.photo-dialog');
-if (dialog) {
-  document.querySelectorAll('.gallery-open').forEach(button => button.addEventListener('click', () => {
+document.querySelectorAll('.photo-dialog').forEach(dialog => {
+  const section = dialog.closest('section');
+  section.querySelectorAll('.gallery-open').forEach(button => button.addEventListener('click', () => {
     const image = dialog.querySelector('img'); image.src = button.dataset.photo;
     image.alt = button.querySelector('img').alt;
-    dialog.querySelector('#photo-caption').textContent = button.dataset.caption;
+    dialog.querySelector('p').textContent = button.dataset.caption;
     dialog.showModal();
   }));
   dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
@@ -46,7 +46,7 @@ if (dialog) {
     const box = dialog.getBoundingClientRect();
     if(event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close();
   }});
-}
+});
 const form = document.querySelector('#enquiry-form');
 if (form) {
   const product = new URLSearchParams(location.search).get('product');

@@ -1,7 +1,7 @@
-import registry from '../cms/templates.json' with {type:'json'};
+import { templates } from '../cms/registry.mjs';
 
 export function protectedBlock(block) {
-  return block.template === 'intro' || block.template.startsWith('contact-') || /<h1\b/i.test(registry.templates[block.template]?.html || '');
+  return block.template === 'intro' || block.template.startsWith('contact-') || /<h1\b/i.test(templates[block.template]?.html || '');
 }
 
 export function pageAddressError(slug, pages) {
